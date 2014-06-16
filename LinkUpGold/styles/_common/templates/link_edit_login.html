@@ -1,0 +1,71 @@
+
+#%head%#
+
+
+
+
+<div class="div_navigation">
+<a href="#%site_url%#/index.php">Home</a> >> <h1>Edit Your Link</h1>
+</div>
+
+<table cellspacing="0" cellpadding="0" style="table-layout:fixed;">
+<tr>
+<td style="width:250px;height:1px;padding:0px;margin:0px;line-height:1px;" class="left_column"><img border="0" src="#%site_url%#/images/blank.gif" width="250" height="1"></td>
+<td width="100%" style="height:1px;padding:0px;margin:0px;line-height:1px;"><img border="0" src="#%site_url%#/images/blank.gif" width="50" height="1"></td>
+<td style="width:250px;height:1px;padding:0px;margin:0px;line-height:1px;" class="right_column"><img border="0" src="#%site_url%#/images/blank.gif" width="250" height="1"></td>
+</tr>
+<tr>
+<td class="left_column">
+
+#%in1%#
+
+
+</td>
+<td class="cell_middle">
+
+#%in3%#
+
+#%info%#
+
+<div class="common_div_main">
+<div class="common_div_title">Edit Your Link</div>
+<div class="common_div_content"><table border="0" width="100%" cellpadding="5" cellspacing="0" class="inside_table">
+<tr><td align="center">
+
+<form action="#%site_url%#/link_edit.php" method="post" name="edit">
+<input type="hidden" name="action" value="link_edit">
+<table cellspacing="0" cellpadding="2" width="100%" border="0">
+<tr>
+<td colspan=3 align="center">Please enter URL of the link which you want to edit<br />or number of the link and your password.</td></tr>
+<tr>
+<td nowrap align="left">URL: </td>
+<td align="left" colspan=2><input maxlength="150"  name="url" class="field10" style="width:450px"></td>
+</tr>
+<tr>
+<td nowrap align="left">Number: </td>
+<td align="left" colspan=2><input maxlength="15" size="15" name="n" class="field10" value="#%n%#"></td>
+</tr>
+<tr>
+<td nowrap align="left">Password: </td>
+<td align="left"><input maxlength="15" size="15"  name="password" class="field10"></td>
+<td align="right"><input type="submit" value="Submit" name="B1" class="button10"></td></tr>
+</form>
+<form action="#%site_url%#/link_edit.php" method="get" name="edit">
+<input type="hidden" name="action" value="links_list">
+<tr><td colspan=3 align="center">Or enter your email address to show list of your links.</td></tr>
+<tr><td colspan=3 align="center"><input maxlength="150"  name="email" class="field10" style="width:500px"></td></tr>
+<tr><td colspan=3 align="center"><input type="submit" value="Show my links" name="B1" class="button10"></td></tr>
+</table></form>
+
+</td></tr></table></div>
+</div>
+
+</td>
+
+<td class="right_column">
+
+#%in2%#
+
+</td></tr></table>
+
+

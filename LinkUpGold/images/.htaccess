@@ -1,0 +1,4 @@
+AddType image/jpeg php
+AddType image/jpeg html
+AddType image/jpeg shtml
+AddType image/jpeg htm

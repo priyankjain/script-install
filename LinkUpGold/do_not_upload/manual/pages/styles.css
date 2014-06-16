@@ -1,0 +1,47 @@
+BODY {
+	background-color: #E4EBFA; margin-top:20px;
+    FONT-FAMILY: "VERDANA", "ARIAL","HELVETICA"; COLOR: #000000; FONT-SIZE: 13px; FONT-WEIGHT: normal; text-decoration:none;
+}
+
+
+A:link {
+	FONT-WEIGHT: normal; FONT-SIZE: 13px; COLOR: #0000FF; FONT-FAMILY: "VERDANA", "ARIAL","HELVETICA"; TEXT-DECORATION: underline
+}
+A:visited {
+	FONT-WEIGHT: normal; FONT-SIZE: 13px; COLOR: #0000FF; FONT-FAMILY: "VERDANA", "ARIAL","HELVETICA"; TEXT-DECORATION: underline
+}
+A:hover {
+	FONT-WEIGHT: normal; FONT-SIZE: 13px; COLOR: #0000FF; FONT-FAMILY: "VERDANA", "ARIAL","HELVETICA"; TEXT-DECORATION: none;
+}
+A:active {
+	FONT-WEIGHT: normal; FONT-SIZE: 13px; COLOR: #0000FF; FONT-FAMILY: "VERDANA", "ARIAL","HELVETICA"; TEXT-DECORATION: underline
+}
+table {
+    FONT-FAMILY: "VERDANA", "ARIAL","HELVETICA"; COLOR: #000000; FONT-SIZE: 13px; FONT-WEIGHT: normal;
+}
+
+
+.fakelink {
+	FONT-WEIGHT: normal; FONT-SIZE: 13px; COLOR: #0000FF; FONT-FAMILY: "VERDANA", "ARIAL","HELVETICA"; TEXT-DECORATION: none
+}
+.template {
+	FONT-WEIGHT: bold; font-style:italic; FONT-SIZE: 13px; COLOR: #000000; FONT-FAMILY: "VERDANA", "ARIAL","HELVETICA"; TEXT-DECORATION: none
+}
+.text13a_bold {
+	FONT-WEIGHT: bold; FONT-SIZE: 15px; COLOR: #1D4194; FONT-FAMILY: "VERDANA", "ARIAL","HELVETICA"; TEXT-DECORATION: none
+}
+
+
+.common_table {
+	BACKGROUND-COLOR: #E4EBFA;
+}
+.left_table {
+	border: solid 1px #4672DC; background-color: #ECF3FB;
+}
+.left_title_cell {
+	BACKGROUND-COLOR: #2049AA; COLOR: #FFFFFF; FONT-WEIGHT: bold;
+}
+.left_subtitle_cell {
+	BACKGROUND-COLOR: #AEC2F0; COLOR: #000000;
+}
+

@@ -1,0 +1,108 @@
+
+#%info%#
+
+<form method="POST" action="messages.php">
+<input class="field10" style="width:500px" type="hidden" name="action" value="messages_edited">
+<input class="field10" style="width:500px" type="hidden" name="selected_style" value="#%selected_style%#">
+<input class="field10" style="width:500px" type="hidden" name="script" value="payment_process.php">
+<table border="0" width="900" cellspacing="0" cellpadding="0" class="common_table">
+<tr><td class="common_table_top_cell" colspan="2" nowrap>Messages for script payment_process.php</td></tr>
+<tr><td align="center" width="100%">
+<table border="0" width="100%" cellspacing="0" cellpadding="2" class="inside_table">
+<tr>
+<td align="left" nowrap><span class="text10a_bold">Original message</span></td>
+<td align="left" nowrap><span class="text10a_bold">Your message</span></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">Unable to make a connection to www.paypal.com </span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="no_connect" value="#%no_connect%#"></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">Payment successful. Ordered resources added to your account.</span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="order_success" value="#%order_success%#"></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">Payment completed however some errors occurred. Purchased funds are not available yet. Please wait for an admin to review it.</span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="success_errors" value="#%success_errors%#"></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">Payment failed.</span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="failed" value="#%failed%#"></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">Valid price of this order doesn&#039;t match to the price reported by Paypal. Price of the order is: </span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="wrong_price_1" value="#%wrong_price_1%#"></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">Price reported by Paypal is: </span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="wrong_price_2" value="#%wrong_price_2%#"></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">Currency reported by Paypal was incorrect. The required currency was </span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="wrong_currency_1" value="#%wrong_currency_1%#"></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">Currency reported by Paypal was: </span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="wrong_currency_2" value="#%wrong_currency_2%#"></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">Your payment was successful but Paypal marked it as &quot;pending&quot; for the following reason: </span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="pending" value="#%pending%#"></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">Your payment was successful but Paypal did not mark it as &quot;completed&quot;.</span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="not_completed" value="#%not_completed%#"></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">Your payment was successful but the email address of the recipient is not ours.</span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="wrong_pp_email" value="#%wrong_pp_email%#"></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">Paypal marked your payment as Invalid.</span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="invalid" value="#%invalid%#"></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">Unknown error in communication between Paypal and our server.</span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="na_error" value="#%na_error%#"></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">Order not found in our database or has been paid earlier. </span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="na_order" value="#%na_order%#"></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">Missing 2CheckOut Order Number.</span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="missing_2co_number" value="#%missing_2co_number%#"></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">The account at 2CheckOut which received the payment was not ours.</span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="twoco_id_wrong" value="#%twoco_id_wrong%#"></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">Valid price of this order doesn&#039;t match to the price reported by 2CheckOut. Price of the order is: </span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="wrong_co_price_1" value="#%wrong_co_price_1%#"></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">Price reported by 2CheckOut was: </span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="wrong_co_price_2" value="#%wrong_co_price_2%#"></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">2CheckOut was not able to process the credit card.</span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="card_error" value="#%card_error%#"></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">The payment has been made in Demo mode.</span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="was_demo" value="#%was_demo%#"></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">Unknown error, someone may try to cheat the payment system.</span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="na_2co_error" value="#%na_2co_error%#"></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">Quantity should be 1, was</span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="wrong_quantity" value="#%wrong_quantity%#"></td>
+</tr>
+<tr>
+<td align="middle" width="100%" colSpan=2><input class="button10" type="submit" value="Save" name="submitbut"></td>
+</tr>
+</table></td></tr></table></form>
+<br />

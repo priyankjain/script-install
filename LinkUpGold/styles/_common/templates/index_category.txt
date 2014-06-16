@@ -1,0 +1,5 @@
+<td width="#%width%#%" style="text-align:left;vertical-align:top;">
+<img alt="" src="#%folder_icon%#">&nbsp;<a href="#%catlink%#" style="font-size: 15px;">#%name%# (#%items%#)</a><br />
+<span class="text10">
+#%subcats%# 
+<br /></span></td>

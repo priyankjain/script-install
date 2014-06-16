@@ -1,0 +1,1 @@
+<p><img alt="" src="#%site_url%#/images/arrow.gif"><a target="_top" href="#%url%#">#%title%#</a></p>

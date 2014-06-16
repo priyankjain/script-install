@@ -1,0 +1,128 @@
+<div class="div_left_right_main">
+
+#_hide_home_begin_#
+#%begin_l%#
+<div class="div_left_right_small">
+<div class="div_left_right_small_topcell"><img alt="" src="#%site_url%#/images/icon_links.png" style="margin-bottom:-3px;">&nbsp;&nbsp;Links</div>
+<div class="div_left_right_small_inside">
+#%l_first_cats%#
+</div>
+</div>
+#%end_l%#
+
+#%begin_v%#
+<div class="div_left_right_small">
+<div class="div_left_right_small_topcell"><img alt="" src="#%site_url%#/images/icon_videos.png" style="margin-bottom:-3px;">&nbsp;&nbsp;Videos</div>
+<div class="div_left_right_small_inside">
+#%v_first_cats%#
+</div>
+</div>
+#%end_v%#
+
+#%begin_b%#
+<div class="div_left_right_small">
+<div class="div_left_right_small_topcell"><img alt="" src="#%site_url%#/images/icon_blogs.png" style="margin-bottom:-3px;">&nbsp;&nbsp;Blogs</div>
+<div class="div_left_right_small_inside">
+#%b_first_cats%#
+</div>
+</div>
+#%end_b%#
+
+#%begin_n%#
+<div class="div_left_right_small">
+<div class="div_left_right_small_topcell"><img alt="" src="#%site_url%#/images/icon_news.png" style="margin-bottom:-3px;">&nbsp;&nbsp;News</div>
+<div class="div_left_right_small_inside">
+#%n_first_cats%#
+</div>
+</div>
+#%end_n%#
+
+#%begin_a%#
+<div class="div_left_right_small">
+<div class="div_left_right_small_topcell"><img alt="" src="#%site_url%#/images/icon_articles.png" style="margin-bottom:-3px;">&nbsp;&nbsp;Articles</div>
+<div class="div_left_right_small_inside">
+#%a_first_cats%#
+</div>
+</div>
+#%end_a%#
+#_hide_home_end_#
+
+<div class="div_left_right_small">
+<a name="poll"></a>
+<div id="poll_results"></div>
+<div id="poll_show"><script type="text/javascript" language="javascript" src="#%site_url%#/poll.php"></script></div>
+</div>
+
+#%begin_l%#
+<div class="div_left_right_small">
+<div class="div_left_right_small_topcell">RSS Feeds - Links</div>
+<div class="div_left_right_small_inside">
+<p><a href="#%site_url%#/rss.php?action=links_new"><img alt="" border="0" src="#%site_url%#/images/rss.gif">New links</a></p>
+<p><a href="#%site_url%#/rss.php?action=links_pick"><img alt="" border="0" src="#%site_url%#/images/rss.gif">Editor's pick</a></p>
+<p><a href="#%site_url%#/rss.php?action=links_popular"><img alt="" border="0" src="#%site_url%#/images/rss.gif">Popular links</a></p>
+#_hide_rss_links_category_begin_#
+<p><a href="#_rss_links_category_url_#"><img alt="" border="0" src="#%site_url%#/images/rss.gif"><a href="#_rss_links_category_url_#">This category</a></p>
+#_hide_rss_links_category_end_#
+</div>
+</div>
+#%end_l%#
+
+#%begin_v%#
+<div class="div_left_right_small">
+<div class="div_left_right_small_topcell">RSS Feeds - Videos</div>
+<div class="div_left_right_small_inside">
+<p><a href="#%site_url%#/rss.php?action=videos_new"><img alt="" border="0" src="#%site_url%#/images/rss.gif"><a href="#%site_url%#/rss.php?action=videos_new">New videos</a></p>
+<p><a href="#%site_url%#/rss.php?action=videos_pick"><img alt="" border="0" src="#%site_url%#/images/rss.gif"><a href="#%site_url%#/rss.php?action=videos_pick">Editor's pick</a></p>
+<p><a href="#%site_url%#/rss.php?action=videos_popular"><img alt="" border="0" src="#%site_url%#/images/rss.gif"><a href="#%site_url%#/rss.php?action=videos_popular">Popular videos</a></p>
+#_hide_rss_videos_category_begin_#
+<p><a href="#_rss_videos_category_url_#"><img alt="" border="0" src="#%site_url%#/images/rss.gif"><a href="#_rss_videos_category_url_#">This category</a></p>
+#_hide_rss_videos_category_end_#
+</div>
+</div>
+#%end_v%#
+
+#%begin_b%#
+<div class="div_left_right_small">
+<div class="div_left_right_small_topcell">RSS Feeds - Blogs</div>
+<div class="div_left_right_small_inside">
+<p><a href="#%site_url%#/rss.php?action=blogs_new"><img alt="" border="0" src="#%site_url%#/images/rss.gif"><a href="#%site_url%#/rss.php?action=blogs_new">New blogs</a></p>
+<p><a href="#%site_url%#/rss.php?action=blogs_pick"><img alt="" border="0" src="#%site_url%#/images/rss.gif"><a href="#%site_url%#/rss.php?action=blogs_pick">Editor's pick</a></p>
+<p><a href="#%site_url%#/rss.php?action=blogs_popular"><img alt="" border="0" src="#%site_url%#/images/rss.gif"><a href="#%site_url%#/rss.php?action=blogs_popular">Popular blogs</a></p>
+#_hide_rss_blogs_category_begin_#
+<p><a href="#_rss_blogs_category_url_#"><img alt="" border="0" src="#%site_url%#/images/rss.gif"><a href="#_rss_blogs_category_url_#">This category</a></p>
+#_hide_rss_blogs_category_end_#
+</div>
+</div>
+#%end_b%#
+
+#%begin_n%#
+<div class="div_left_right_small">
+<div class="div_left_right_small_topcell">RSS Feeds - News</div>
+<div class="div_left_right_small_inside">
+<p><a href="#%site_url%#/rss.php?action=news_new"><img alt="" border="0" src="#%site_url%#/images/rss.gif"><a href="#%site_url%#/rss.php?action=news_new">New items</a></p>
+<p><a href="#%site_url%#/rss.php?action=news_pick"><img alt="" border="0" src="#%site_url%#/images/rss.gif"><a href="#%site_url%#/rss.php?action=news_pick">Editor's pick</a></p>
+<p><a href="#%site_url%#/rss.php?action=news_popular"><img alt="" border="0" src="#%site_url%#/images/rss.gif"><a href="#%site_url%#/rss.php?action=news_popular">Popular items</a></p>
+#_hide_rss_news_category_begin_#
+<p><a href="#_rss_news_category_url_#"><img alt="" border="0" src="#%site_url%#/images/rss.gif"><a href="#_rss_news_category_url_#">This category</a></p>
+#_hide_rss_news_category_end_#
+</div>
+</div>
+#%end_n%#
+
+#%begin_a%#
+<div class="div_left_right_small">
+<div class="div_left_right_small_topcell">RSS Feeds - Articles</div>
+<div class="div_left_right_small_inside">
+<p><a href="#%site_url%#/rss.php?action=articles_new"><img alt="" border="0" src="#%site_url%#/images/rss.gif"><a href="#%site_url%#/rss.php?action=articles_new">New articles</a></p>
+<p><a href="#%site_url%#/rss.php?action=articles_pick"><img alt="" border="0" src="#%site_url%#/images/rss.gif"><a href="#%site_url%#/rss.php?action=articles_pick">Editor's pick</a></p>
+<p><a href="#%site_url%#/rss.php?action=articles_popular"><img alt="" border="0" src="#%site_url%#/images/rss.gif"><a href="#%site_url%#/rss.php?action=articles_popular">Popular articles</a></p>
+#_hide_rss_articles_category_begin_#
+<p><a href="#_rss_articles_category_url_#"><img alt="" border="0" src="#%site_url%#/images/rss.gif"><a href="#_rss_articles_category_url_#">This category</a></p>
+#_hide_rss_articles_category_end_#
+</div>
+</div>
+#%end_a%#
+
+#_qrimage_#
+
+</div>

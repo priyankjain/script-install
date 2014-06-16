@@ -1,0 +1,2 @@
+<td colspan="#%colspan%#">
+<span class="text10">&nbsp;<br /></span></td>

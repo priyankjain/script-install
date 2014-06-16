@@ -1,0 +1,6 @@
+Subject: Your Membership
+
+Your membership has been rejected.
+Username: #%username%#
+Email: #%email%#
+Name: #%name%#

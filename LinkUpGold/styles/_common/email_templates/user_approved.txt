@@ -1,0 +1,7 @@
+Subject: Your Membership
+
+Your membership has been approved. Now you can log in at #%site_url%#/user.php.
+Username: #%username%#
+Password: #%password%#
+Email: #%email%#
+Name: #%name%#

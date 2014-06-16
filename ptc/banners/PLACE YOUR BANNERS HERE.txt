@@ -1,0 +1,7 @@
+Please your banner's in this folder with the names
+banner1.gif			STANDARD BANNER (468x60 )
+banner2.gif			STANDARD BANNER (468x60 )
+banner3.gif			STANDARD BANNER (468x60 )
+fbanner1.gif		FEATURED BANNER (180x100)
+fbanner2.gif		FEATURED BANNER (180x100)
+fbanner3.gif		FEATURED BANNER (180x100)

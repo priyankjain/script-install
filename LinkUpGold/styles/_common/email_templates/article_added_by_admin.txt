@@ -1,0 +1,6 @@
+Subject: Your Article
+
+Title: #%title%#
+Subtitle: #%description%#
+Article number: #%n%#
+Detail page URL: #%detail_url%#

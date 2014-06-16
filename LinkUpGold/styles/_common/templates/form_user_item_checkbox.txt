@@ -1,0 +1,4 @@
+<tr>
+<td nowrap align="left" valign="top">#%description%# </td>
+<td align="left"><input type="checkbox" name="user_item_#%item_n%#" value="1" #%checked%#></td>
+</tr>

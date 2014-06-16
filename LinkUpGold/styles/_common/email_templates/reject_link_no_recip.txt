@@ -1,0 +1,7 @@
+Subject: Your Link
+
+Your link has been rejected for the following reason:
+No recip found.
+Title: #%title%#
+URL: #%url%#
+Description: #%description%#

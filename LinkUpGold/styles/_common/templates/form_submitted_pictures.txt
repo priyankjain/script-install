@@ -1,0 +1,4 @@
+<tr>
+<td nowrap align="left" valign="top">Pictures </td>
+<td align="left">#%pictures%#</td>
+</tr>

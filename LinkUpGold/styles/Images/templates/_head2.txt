@@ -1,0 +1,236 @@
+<body>
+
+<div id="container" align="center">
+<div id="content">
+
+<div class="main_div">
+
+<div id="contact_box0" style="display:none;width:700px;height:500px;position:absolute;left:200px;top:150px;z-index:100;">#%contact_site_box%#</div>
+<div id="tell_friend_box0" style="display:none;width:700px;height:500px;position:absolute;left:200px;top:150px;z-index:100;">#%tell_friend_site_box%#</div>
+
+<div class="top_div">
+<table class="top_table" cellpadding="0" cellspacing="0" width="100%" border=0>
+<td align="left" valign="top" nowrap style="padding:20px;"><a href="#%site_url%#/"><img border="0" src="#%logo_url%#" width="200"></a></td>
+<td align="right" style="padding:10px;"><div id="top_search_form"><div style="padding-bottom:15px;">
+
+<a name="search_form"></a>
+<table cellspacing="0" cellpadding="0" width="555" border="0"><tr><td>
+<div class="item_detail_menu">
+<ul style="padding-left:0px;padding-right:0px;margin-left:0px;margin-right:0px;">
+<li><a href="javascript:show_simple_search_submenu('1');" style="margin-right:2px;" id="simple_search_li_1">Whole&nbsp;site</a></li><li><a href="javascript:show_simple_search_submenu('2');" style="margin-right:2px;" id="simple_search_li_2">Web&nbsp;search</a></li>#%begin_l%#<li><a href="javascript:show_simple_search_submenu('3');" style="margin-right:2px;" id="simple_search_li_3">Links</a></li>#%end_l%##%begin_a%#<li><a href="javascript:show_simple_search_submenu('4');" style="margin-right:2px;" id="simple_search_li_4">Articles</a></li>#%end_a%##%begin_b%#<li><a href="javascript:show_simple_search_submenu('5');" style="margin-right:2px;" id="simple_search_li_5">Blogs</a></li>#%end_b%##%begin_v%#<li><a href="javascript:show_simple_search_submenu('6');" style="margin-right:2px;" id="simple_search_li_6">Videos</a></li>#%end_v%##%begin_n%#<li><a href="javascript:show_simple_search_submenu('7');" style="margin-right:2px;">News</a></li><li><a href="#%site_url%#/search.php" style="margin-right:0px;" id="simple_search_li_7">Advanced</a></li>#%end_n%#
+</ul>
+</div>
+</td></tr>
+<tr><td>
+
+<table cellspacing=0 cellpadding=5 width="100%" border=0 class="search_table">
+<tr><td align="left" valign="middle" nowrap>
+
+<div id="simple_search_div_1" style="display:#%search_display_all%#">
+<form method="get" action="#%site_url%#/search.php">
+<img src="#%site_url%#/images/icon_search_small.png">&nbsp;<input name="phrase" maxlength=120 class="field13" value="#%original_phrase%#" style="width:360px;">
+<input type="submit" value="Site search" name="B1" class="button13" style="width:140px;">
+</form>
+</div>
+
+<div id="simple_search_div_2" style="display:#%search_display_google%#">
+<form method="get" action="#%site_url%#/search.php">
+<input type="hidden" name="action" value="shared_simple">
+<input type="hidden" name="bigboss" value="google">
+<img src="#%site_url%#/images/icon_search_small.png">&nbsp;<input name="phrase" maxlength=120 class="field13" value="#%original_phrase%#" style="width:360px;">
+<input type="submit" value="Web search" name="B1" class="button13" style="width:140px;FONT-SIZE:16px;">
+</form>
+</div>
+
+<div id="simple_search_div_3" style="display:#%search_display_l%#">
+<form method="get" action="#%site_url%#/search.php">
+<input type="hidden" name="action" value="links_simple">
+<img src="#%site_url%#/images/icon_search_small.png">&nbsp;<input name="phrase" maxlength=120 class="field13" value="#%original_phrase%#" style="width:360px;">
+<input type="submit" value="Links search" name="B1" class="button13" style="width:140px;FONT-SIZE:16px;">
+</form>
+</div>
+
+<div id="simple_search_div_4" style="display:#%search_display_a%#">
+<form method="get" action="#%site_url%#/search.php">
+<input type="hidden" name="action" value="articles_simple">
+<img src="#%site_url%#/images/icon_search_small.png">&nbsp;<input name="phrase" maxlength=120 class="field13" value="#%original_phrase%#" style="width:360px;">
+<input type="submit" value="Articles search" name="B1" class="button13" style="width:140px;FONT-SIZE:16px;">
+</form>
+</div>
+
+<div id="simple_search_div_5" style="display:#%search_display_b%#">
+<form method="get" action="#%site_url%#/search.php">
+<input type="hidden" name="action" value="blogs_simple">
+<img src="#%site_url%#/images/icon_search_small.png">&nbsp;<input name="phrase" maxlength=120 class="field13" value="#%original_phrase%#" style="width:360px;">
+<input type="submit" value="Blogs search" name="B1" class="button13" style="width:140px;FONT-SIZE:16px;">
+</form>
+</div>
+
+<div id="simple_search_div_6" style="display:#%search_display_v%#">
+<form method="get" action="#%site_url%#/search.php">
+<input type="hidden" name="action" value="videos_simple">
+<img src="#%site_url%#/images/icon_search_small.png">&nbsp;<input name="phrase" maxlength=120 class="field13" value="#%original_phrase%#" style="width:360px;">
+<input type="submit" value="Videos search" name="B1" class="button13" style="width:140px;FONT-SIZE:16px;">
+</form>
+</div>
+
+<div id="simple_search_div_7" style="display:#%search_display_n%#">
+<form method="get" action="#%site_url%#/search.php">
+<input type="hidden" name="action" value="news_simple">
+<img src="#%site_url%#/images/icon_search_small.png">&nbsp;<input name="phrase" maxlength=120 class="field13" value="#%original_phrase%#" style="width:360px;">
+<input type="submit" value="News search" name="B1" class="button13" style="width:140px;FONT-SIZE:16px;">
+</form>
+</div>
+
+</td></tr></table>
+</td></tr></table>
+
+</div>
+<div#%hide_div_user%#" style="font-size:15px;">
+<div style="margin-bottom:10px;">
+<a href="#" onclick="show_hide_div_id(0,'top_search_form');show_hide_div_id(1,'user_login_div');"><span><img src="#%site_url%#/images/menu/users.gif" border="0"></span>&nbsp;Click here to login</a>
+</div>
+<div style="margin-bottom:10px;">
+<a href="#%site_url%#/user.php" style="margin-bottom:15px;"><span><img src="#%site_url%#/images/menu/users.gif" border="0"></span>&nbsp;Join now for free</a>
+</div>
+</div>
+<div id="user_login_div" style="display:none;text-align:left;width:350px;">
+#%user_login_form%#
+</div>
+</div>
+</td>
+</tr>
+</td></tr></table>
+</div>
+
+
+<ul id="top_menu">
+<li style="text-align:center;"><a href="#%site_url%#/"><span><img src="#%site_url%#/images/menu/images_home.gif" style="margin-bottom:2px;" border="0"></span><br>Home</a>
+<ul>
+	<li><a href="#%site_url%#/#recently_added_home">Recently added</a></li>
+	<li><a href="#" onclick="check_show_hide_div('tell_friend_box0');">Tell Friend</a></li>
+	<li><a href="#%site_url%#/board.php">Message board</a></li>
+	<li><a href="#%site_url%#/search.php">Advanced search</a></li>
+	<li><a href="#" onclick="check_show_hide_div('contact_box0');">Contact us</a></li>
+	
+</ul>
+</li>
+<li style="text-align:center;"><a href="#%site_url%#/"><span><img src="#%site_url%#/images/menu/images_links.png" style="margin-bottom:2px;" border="0"></span><br>Links</a>
+<ul>
+	<li><a href="#%site_url%#/#l_categories">We have #%s_categories_l%# categories</a></li>
+	<li><a href="#%site_url%#/#l_categories">There are #%s_active_l%# links</a></li>
+	<li><a href="#%site_url%#/links.php?action=popular">Popular</a></li>
+	<li><a href="#%site_url%#/links.php?action=new">New</a></li>
+	<li><a href="#%site_url%#/links.php?action=pick">Picked</a></li>
+	<li><a href="#%site_url%#/links.php?action=top_rated">Top Rated</a></li>
+	<li><a href="#%site_url%#/link_create.php">Submit your link</a></li>
+	#%menu_categories_l%#
+</ul>
+</li>
+<li style="text-align:center;"><a href="#%site_url%#/"><span><img src="#%site_url%#/images/menu/images_articles.png" style="margin-bottom:2px;" border="0"></span><br>Articles</a>
+<ul>
+	<li><a href="#%site_url%#/#a_categories">We have #%s_categories_a%# categories</a></li>
+	<li><a href="#%site_url%#/#a_categories">There are #%s_active_a%# articles</a></li>
+	<li><a href="#%site_url%#/articles.php?action=popular">Popular</a></li>
+	<li><a href="#%site_url%#/articles.php?action=new">New</a></li>
+	<li><a href="#%site_url%#/articles.php?action=pick">Picked</a></li>
+	<li><a href="#%site_url%#/articles.php?action=top_rated">Top Rated</a></li>
+	<li><a href="#%site_url%#/article_create.php">Submit your article</a></li>
+	#%menu_categories_a%#
+</ul>
+</li>
+<li style="text-align:center;"><a href="#%site_url%#/"><span><img src="#%site_url%#/images/menu/images_blogs.png" style="margin-bottom:2px;" border="0"></span><br>Blogs</a>
+<ul>
+	<li><a href="#%site_url%#/#b_categories">We have #%s_categories_b%# categories</a></li>
+	<li><a href="#%site_url%#/#b_categories">There are #%s_active_b%# blogs</a></li>
+	<li><a href="#%site_url%#/blogs.php?action=popular">Popular</a></li>
+	<li><a href="#%site_url%#/blogs.php?action=new">New</a></li>
+	<li><a href="#%site_url%#/blogs.php?action=pick">Picked</a></li>
+	<li><a href="#%site_url%#/blogs.php?action=top_rated">Top Rated</a></li>
+	<li><a href="#%site_url%#/blog_create.php">Submit your blog</a></li>
+	#%menu_categories_b%#
+</ul>
+</li>
+<li style="text-align:center;"><a href="#%site_url%#/"><span><img src="#%site_url%#/images/menu/images_videos.gif" style="margin-bottom:2px;" border="0"></span><br>Videos</a>
+<ul>
+	<li><a href="#%site_url%#/#v_categories">We have #%s_categories_v%# categories</a></li>
+	<li><a href="#%site_url%#/#v_categories">There are #%s_active_v%# videos</a></li>
+	<li><a href="#%site_url%#/videos.php?action=popular">Popular</a></li>
+	<li><a href="#%site_url%#/videos.php?action=new">New</a></li>
+	<li><a href="#%site_url%#/videos.php?action=pick">Picked</a></li>
+	<li><a href="#%site_url%#/videos.php?action=top_rated">Top Rated</a></li>
+	#%menu_categories_v%#
+</ul>
+</li>
+<li style="text-align:center;"><a href="#%site_url%#/"><span><img src="#%site_url%#/images/menu/images_news.gif" style="margin-bottom:2px;" border="0"></span><br>News</a>
+<ul>
+	<li><a href="#%site_url%#/#n_categories">We have #%s_categories_n%# categories</a></li>
+	<li><a href="#%site_url%#/#n_categories">There are #%s_active_n%# news</a></li>
+	<li><a href="#%site_url%#/news.php?action=popular">Popular</a></li>
+	<li><a href="#%site_url%#/news.php?action=new">New</a></li>
+	<li><a href="#%site_url%#/news.php?action=pick">Picked</a></li>
+	<li><a href="#%site_url%#/news.php?action=top_rated">Top Rated</a></li>
+	<li><a href="#a_categories">We have #%s_categories_a%# categories</a></li>
+	<li><a href="#" style="cursor:default;">There are #%s_active_a%# articles</a></li>
+	#%menu_categories_n%#
+</ul>
+</li>
+<li style="text-align:center;"><a href="#%site_url%#/"><span><img src="#%site_url%#/images/menu/images_users.png" style="margin-bottom:2px;" border="0"></span><br>Users</a>
+<ul>
+	<li><a href="#%site_url%#/users.php?action=new">We have #%total_users%# registered users</a></li>
+	<li><a href="#%site_url%#/users.php?action=new">Recently joined</a></li>
+	<li><a href="#%site_url%#/users.php?action=most_submissions">Users with most submissions</a></li>
+	<li><a href="#%last_user_url%#">The newest registered user is #%last_user_name%#</a></li>
+	<li><a href="#" style="cursor:default;">There are #%online%# users online</a></li>
+</ul>
+</li>
+<li #%hide_div_no_user%#><a href="#%site_url%#/"><span><img src="#%site_url%#/images/menu/images_account.png" style="margin-bottom:2px;" border="0"></span><br>Account</a>
+<ul>
+	<li><a href="#%site_url%#/user.php?action=user_home">Home</a></li>
+	<li><a href="#%site_url%#/user.php?action=user_edit">Edit your data</a></li>
+	<li><a href="#%site_url%#/adlinks.php?action=adlink_create">Create an AdLink</a></li>
+	#%begin_l%#
+	<li><a href="#%site_url%#/link_create.php">Create a link</a></li>
+	<li><a href="#%site_url%#/link_edit.php?action=links_list">Your links</a></li>
+	#%end_l%#
+	<li><a href="#%site_url%#/user.php?action=user_adlinks">Your AdLinks</a></li>
+	<li><a href="#%site_url%#/link_extra_features.php?action=funds_add">Purchase funds</a></li>
+	<li><a href="#%site_url%#/user.php?action=user_orders">Your orders</a></li>
+	#%begin_a%#
+	<li><a href="#%site_url%#/article_create.php">Create an article</a></li>
+	<li><a href="#%site_url%#/article_edit.php?action=articles_list">Your articles</a></li>
+	#%end_a%#
+	#%begin_b%#
+	<li><a href="#%site_url%#/blog_create.php">Create a blog</a></li>
+	<li><a href="#%site_url%#/blog_edit.php?action=blogs_list">Your blogs</a></li>
+	#%end_b%#
+	<li><a href="#%site_url%#/user.php?action=user_friends">Friends</a></li>
+	<li><a href="#%site_url%#/user.php?action=user_wall">Wall</a></li>
+	<li><a href="#%site_url%#/user.php?action=user_favorites">Bookmarks</a></li>
+	<li><a href="#%site_url%#/user.php?action=user_log_off">Log off</a></li>
+</ul>
+</li>
+<li#%hide_div_user%#><a href="#%site_url%#/"><span><img src="#%site_url%#/images/menu/images_styles.png" style="margin-bottom:2px;" border="0"></span><br>Colors</a>
+<ul>
+#%menu_styles%#
+</ul>
+</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table border="0" cellspacing="0" cellpadding="0" width="100%" class="main_table">
+<tr><td align="center">

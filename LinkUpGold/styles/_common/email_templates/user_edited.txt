@@ -1,0 +1,11 @@
+Subject: Account edited
+
+Your account in our users area has been edited. If you haven't authorized the changes, please inform us as soon as possible.
+
+Your current info:
+Username: #%username%#
+Password: #%password%#
+Email: #%email%#
+Name: #%name%#
+Address: #%address%#
+Phones: #%phones%#

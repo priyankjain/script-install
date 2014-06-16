@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<GoogleCustomizations>
+    <CustomSearchEngine>
+        <Title>Web search</Title>
+        <Description>Web search</Description>
+        <LookAndFeel>
+           <Colors url="#0000FF" background="#FFFFFF" border="#FFFFFF" title="#0000FF" text="#000000" visited="#0000FF"/>
+        </LookAndFeel>
+    </CustomSearchEngine>
+</GoogleCustomizations>

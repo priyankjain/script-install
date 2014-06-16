@@ -1,0 +1,11 @@
+Subject: Comment Submitted
+
+A comment has been submitted to your search engine. If you want review this comment, you have to go to #%site_url%#/administration/
+#%what%# number: #%n%#
+Comment: #%comment%#
+Title: #%title%#
+URL: #%url%#
+Name: #%name%#
+Email: #%email%#
+IP: #%ip%#
+Comment number: #%comment_number%#

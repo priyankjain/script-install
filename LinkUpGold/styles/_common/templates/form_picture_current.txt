@@ -1,0 +1,4 @@
+<tr>
+<td nowrap align="left" valign="top">Current Picture </td>
+<td align="left">#%current_picture%#  Delete this image <input type="checkbox" name="delete_image[]" value="#%image_n%#"></td>
+</tr>

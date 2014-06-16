@@ -1,0 +1,124 @@
+<html>
+
+<head>
+<title>advertiser.php</title>
+
+<LINK href="styles.css" rel=StyleSheet>
+</head>
+
+
+<body>
+<p><b><span class="text13a_bold">Payment system</span></b><span class="text13a_bold"><br /></span></p>
+<p>There are two main ways to pay for advertising listing.</p>
+<p><b>1) Payment for a particular link or AdLink - simple payment option</b></p>
+<ul type="disc">
+    <li><b>a) Payment for a particular link</b>: Users pay 
+for a limited number of days to be added to a particular link. To get it to 
+work you have to create price plans in Administration =&gt; Simple prices. There 
+is the option to set a price for any number of days. For example you can set 
+prices for 30 days, 90 days etc. Once a payment has been made, users can't cancel 
+the order.<br><br>User who wants to add extra features to his/her link or who wants to add additional 
+days to an existing advertising link needs to click to the link &quot;Your links 
+&amp; invoices&quot; in the menu in users area. This page uses template <span class="template">links_for_owner_list.html</span>. 
+The first table on this page is &quot;Your links&quot;. Each line in this table 
+uses template <span class="template">links_for_owner_list.txt</span>. There 
+is the option to view a selected link, get edit form and statistic and also 
+a link &quot;extra options&quot;. When your users click on this link, it shows 
+a page based on template <span class="template">link_extra_features.html</span>. 
+There are two tables in the middle of the page. The first lets your users to 
+manage Flexible options (see below), the second table allows your users to add 
+advertising days to the selected link. There are available the numbers of days 
+you configured in Administration =&gt; Simple prices. Users choose one of these 
+options and receive an order summary page - template<span class="template"> 
+link_extra_payment_page.html</span>.<br>The next page shows all the payment options 
+    you offer 
+- template <span class="template">link_extra_payment_page.html</span>. If you 
+entered your Paypal data in Configuration, it shows Paypal button. If you entered 
+2CheckOut data, it also shows its button. Both these ways support automatic 
+payment - your users pay and the ordered days are instantly available for the selected 
+link. If the link is already approved, it becomes sponsored immediately.<br>If you entered 
+HTML code of another  payment company in Configuration, it also shows 
+a link or button which is based on the HTML code you entered. If this is used, the payment is not automatic 
+- once a payment has been made, you need to go to Administration =&gt; Orders 
+and mark the order as paid. Then the ordered days are added to the selected 
+    link.<br>&nbsp;</li>
+    <li><b>b) Payment for a particular AdLink</b>: Users pay 
+for a limited number of clicks to be added to a particular AdLink. There are 
+used prices you entered in Administration =&gt; Configuration =&gt; AdLinks 
+section.<br><br>An user who wants to add new clicks to his/her AdLink needs to click to the link &quot;Your links 
+&amp; invoices&quot; in the menu in users area. This page uses template <span class="template">links_for_owner_list.html</span>. 
+The second table on this page is &quot;Your AdLinks&quot;. Each line in this table 
+uses the template <span class="template">links_for_owner_list_adlink.txt</span>. This 
+table contains a preview of each AdLink, there are also links to delete and 
+edit each of them. When your users click on the link &quot;Edit it &amp; Add 
+clicks&quot;, it shows 
+a page based on template<span class="template"> adlink_edit.html</span>. 
+There are two tables in the middle of the page. The first lets your users to edit 
+the selected AdLinks, the second table allows your users to add 
+clicks to it. There are available the numbers of days 
+you configured in Configuration =&gt; AdLinks. Users choose one of these 
+options and receive an order summary page - template 
+<span class="template">link_extra_payment_page.html</span>.<br>The next page shows all the payment options 
+    you offer 
+- template <span class="template">link_extra_payment_page.html</span>. If you 
+entered your Paypal data in Configuration, it shows Paypal button. If you entered 
+2CheckOut data, it also shows its button. Both these ways support automatic 
+payment - your users pay and the clicks are instantly available for the selected 
+AdLink. If the AdLink is approved, it's immediately visible on your pages.<br>If you entered 
+HTML code of another  payment company in Configuration, it also shows 
+a link or button which is based on the HTML code you entered. If this is used, the payment is not automatic 
+- once a payment has been made, you need to go to Administration =&gt; Orders 
+and mark the order as paid. Then the AdLink can use the ordered clicks.</li>
+</ul>
+<p><b>2) Packages - flexible options</b>: Your user can select from advertising packages 
+you have created 
+in the Administration =&gt; Packages. Packages are used to add money (funds) to an user&nbsp;account. 
+Your users can use these money (funds) to add clicks, impressions or days to their links 
+or AdLinks. 
+You can create multiple packages, each of them must contain 
+a price, some of them may also contain a bonus. A price is the value which your 
+users pay, a&nbsp;bonus is an additional value, free funds in other words. 
+You can use the bonus feature for example to motivate your users to order 
+more expensive packages (if you add the bonus to such packages only). </p>
+<p>By using this flexible system, your users can add funds to their account 
+and then use these to add a few clicks to one link, a few impressions to another 
+etc. They also can cancel unused clicks, impressions, days - then the funds 
+are refunded and can be exchanged for clicks, impressions or days for another 
+link(s).</p>
+<p>This flexible option uses the prices you entered in Administration =&gt; 
+Configuration =&gt; Advertising/Sponsored Links section and AdLinks section. There is also an explanation 
+of the system.</p>
+<p>Users who want to order one of your packages have to click to the link 
+&quot;Purchase new funds&quot; in the menu inside users area. It shows a page 
+from template <span class="template">link_extra_funds_order.html</span>. There 
+are available all the packages you created at Administration =&gt; Packages. 
+An user chooses one of them and receives payment links - template <span class="template">link_extra_payment_page.html</span>. 
+If you entered your Paypal data in Configuration, it shows Paypal button. If 
+you entered 2CheckOut data, it also shows its button. Both these ways support 
+automatic payment - your users pay and the funds&nbsp;are instantly available 
+- the user can immediately use them to add clicks, impressions or days to his/her links 
+and AdLinks.<br>If you entered 
+HTML code of another  payment company in Configuration, it also shows 
+a link or button which is based on the HTML code you entered. If this is used, the payment is not automatic 
+- once a payment has been made, you need to go to Administration =&gt; Orders 
+and mark the order as paid. Then the purchased funds become available 
+- the user can use them to add clicks, impressions or days to his/her links 
+and AdLinks.</p>
+<p><span class="text13a_bold">Emails sent to admin</span></p>
+<p>When an order has been placed, it sends email to admin. This email uses template 
+<span class="template">link_extra_order_placed.txt</span>. This is valid for 
+all orders, not depending if there is used Paypal, 2Checkout or another payment 
+service. Once&nbsp;the system receives the info from Paypal or 2Checkout that 
+they processed a payment, it marks the relevant order as paid and informs admin 
+by another email.</p>
+<p><span class="text13a_bold">List of existing payments/orders</span></p>
+<p>Existing orders are available inside users area, under the link &quot;Your 
+links &amp;&nbsp;invoices&quot;. This page uses template <span class="template">links_for_owner_list.html</span>. 
+The last table on this page is &quot;Your orders&quot;. Each line of this table 
+uses template <span class="template">links_for_owner_list_invoice.txt</span>. 
+There is the option to see all orders that have been made in the past. Unpaid orders 
+have available the link &quot;Click here to pay now&quot;.</p>
+<p>&nbsp;</p>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+
+#%info%#
+
+<div id="enter_comment_wait#%what%##%n%#" name="enter_comment_wait#%what%##%n%#"></div>
+
+<form method="post" id="enter_comment_form#%what%##%n%#" name="enter_comment_form#%what%##%n%#" action="javascript:parse_ajax_request(document.getElementById('enter_comment_form#%what%##%n%#'),'#%site_url%#/comments.php','enter_comment_box#%what%##%n%#');">
+<input type="hidden" name="action" value="comment_entered">
+<input type="hidden" name="what" value="#%what%#">
+<input type="hidden" name="n" value="#%n%#">
+
+<table border="0" width="100%" cellpadding="0" cellspacing="0" class="table_20px_padding">
+<tr><td align="left" colspan="2"><span class="text_bold">Enter Your Comment</span></td></tr>
+<tr>
+<td nowrap align="left" valign="top">Your Comment </td>
+<td align="left"><textarea class="field10" name="comment" style="width:500px;height:200px;">#%comment%#</textarea></td>
+</tr>
+#%field_name%#
+#%field_email%#
+#%field_captcha_test%#
+<tr>
+ <td align="center" colspan=2><input type="submit" value="Submit" name="B1" class="button10" onclick="show_waiting('enter_comment_wait#%what%##%n%#');">&nbsp;<input type="reset" value="Cancel" onclick="javascript:parse_ajax_request(document.getElementById('comments_show_form#%what%##%n%#'),'#%site_url%#/comments.php?what=#%what%#&n=#%n%#','comments_show_box#%what%##%n%#'); show_hide_div_id(0,'enter_comment_box#%what%##%n%#'); show_hide_div_id(1,'comments_show_box#%what%##%n%#');" class="button10"></td>
+</tr>
+</table>
+
+</form>
+
+
+

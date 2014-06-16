@@ -1,0 +1,5 @@
+Subject: New item in the category #%category%# you watch
+
+Title: #%title%#
+URL: #%url%#
+

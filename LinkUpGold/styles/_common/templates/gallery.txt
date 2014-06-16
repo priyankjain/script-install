@@ -1,0 +1,8 @@
+<table cellpadding="2" cellspacing="0" border="0" width="100%">
+<tr><td align="center">
+#%all_images%#
+</td></tr>
+<tr><td align="center">
+#%pictures%#
+</td></tr>
+</table>

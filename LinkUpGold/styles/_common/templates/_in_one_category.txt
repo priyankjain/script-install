@@ -1,0 +1,1 @@
+<p><img alt="" src="#%folder_icon%#"><a target="_top" href="#%url%#">#%title%#</a></p>

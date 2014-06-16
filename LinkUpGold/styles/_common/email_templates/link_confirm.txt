@@ -1,0 +1,7 @@
+Subject: Your Link
+
+Someone (probably you) just submitted a link (#%url%#) to our Search Engine. To confirm this submission, please go to 
+#%confirm_url%#
+
+Please confirm your submission as soon as possible. Unconfirmed links are automatically deleted after #%days%# days.
+

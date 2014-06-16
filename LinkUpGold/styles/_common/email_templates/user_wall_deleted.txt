@@ -1,0 +1,7 @@
+Subject: User deleted post from his/her wall
+
+User ##%n%#, name #%name%# deleted the following post.
+#%title%#
+#%text%#
+
+IP: #%ip%#

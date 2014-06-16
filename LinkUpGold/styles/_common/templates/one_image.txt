@@ -1,0 +1,3 @@
+<td align="center" valign="bottom" style="PADDING: 10px;">
+<img alt="#%description%#" src="#%url%#" border="0">
+</td>

@@ -1,0 +1,3 @@
+#%hide_pages_list_begin%#<div style="padding-top:5px;">Pages: #%pages_list%#</div>#%hide_pages_list_end%#
+#%hide_sortby_begin%#<div style="padding-top:5px;">Sort by: #%sortby_options%#&nbsp; <a #%link_asc%#><img alt="" border="0" src="#%site_url%#/images/arrow_up.gif"></a>&nbsp;<a #%link_desc%#><img alt="" border="0" src="#%site_url%#/images/arrow_down.gif"></a></div>#%hide_sortby_end%#
+

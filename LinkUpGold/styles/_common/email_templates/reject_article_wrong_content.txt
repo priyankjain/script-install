@@ -1,0 +1,5 @@
+Subject: Your Article
+
+Your article has been rejected for the following reason:
+Wrong content
+Title: #%title%#

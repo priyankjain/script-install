@@ -1,0 +1,4 @@
+<br />
+<a href="https://www2.2checkout.com/2co/buyer/purchase?sid=#%user_id%#&amp;total=#%price%#&amp;cart_order_id=#%order_id%#&amp;c_tangible=N#%test%#">Click here to pay by 2CheckOut</a>
+<br />
+

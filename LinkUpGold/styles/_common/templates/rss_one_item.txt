@@ -1,0 +1,2 @@
+<tr><td class="table_item_top_cell"><a target="_blank" href="#%url%#">#%title%#</a></td></tr>
+<tr><td align="left" valign="top">#%description%#</td></tr>

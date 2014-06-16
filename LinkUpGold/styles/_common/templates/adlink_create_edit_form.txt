@@ -1,0 +1,24 @@
+
+<form action="#%site_url%#/adlinks.php" method="post">
+<input type="hidden" name="action" value="#%action%#">
+<input type="hidden" name="n" value="#%n%#">
+<table cellspacing="0" cellpadding="2" width="100%" border="0" class="inside_table">
+#%field_categories%#
+#%field_keywords%#
+#%field_title%#
+#%field_url%#
+#%field_text1%#
+#%field_text2%#
+#%field_text3%#
+#%field_text4%#
+#%field_text5%#
+#%field_text6%#
+#%field_text7%#
+#%field_text8%#
+#%field_text9%#
+#%field_text10%#
+#%field_html%#
+#%field_enabled%#
+<tr><td align="center" colspan=2><input type="submit" value="Submit" name="B1" class="button10"></td></tr>
+</table>
+</form>

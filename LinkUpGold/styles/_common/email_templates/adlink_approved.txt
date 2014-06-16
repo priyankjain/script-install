@@ -1,0 +1,6 @@
+Subject: Your AdLink
+
+Thank you for your link submission. Your AdLink has been approved and is visible on our pages.
+Title: #%title%#
+URL: #%url%#
+Number: #%n%#

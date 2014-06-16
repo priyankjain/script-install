@@ -1,0 +1,71 @@
+<html>
+
+<head>
+<title>Videos</title>
+
+<LINK href="styles.css" rel=StyleSheet>
+</head>
+
+
+<body>
+<p><span class="text13a_bold">Extra categories of videos - videos.php</span><br /><br />Extra 
+categories are New Videos, Popular Videos, Editor Picks 
+and Top Rated Videos. Default URL's of these categories are as follows:<br /> New Videos <span class="fakelink">videos.php?action=new</span><br />Editor Picks <span class="fakelink">videos.php?action=pick</span><br />Top Rated&nbsp;Videos <span class="fakelink">videos.php?action=top_rated</span><br />Popular&nbsp;Videos <span class="fakelink">videos.php?action=popular</span><br /><br />The 
+template used for these pages is <span class="template">category_special.html</span>. 
+There are available the following variables:<br /><br /></p>
+<table class="common_table" bordercolordark="white" bordercolorlight="black" border="1" cellpadding="5" cellspacing="0">  <tr>
+    <td nowrap>
+      <p>#%in1%#<br />#%in2%#&nbsp;</p>
+    </td>
+    <td>
+      <p>Content of files _in1.txt .... . 
+            This may be used to insert some information to several or all pages. In 
+            these files may be also used some variables.
+            More info <a href="howitworks.htm">here</a>.</p>
+    </td>
+  </tr>  <tr>
+    <td nowrap>
+      <p>#%head%#<br /></p>
+    </td>
+    <td>
+      <p>Content of file _head2.txt. This may 
+            be used to insert some information to the begin of several or all&nbsp;pages. 
+            More info  
+            <a href="howitworks.htm">here</a>.</p>
+    </td>
+  </tr>
+ 
+<tr>
+    <td nowrap>
+      <p>#%site_url%#<br /></p>
+    </td>
+    <td>
+      <p>URL of your site</p>
+    </td>
+  </tr>
+ 
+
+ 
+<tr>
+    <td nowrap>
+      <p>#%title%#</p>
+    </td>
+    <td>
+      <p>Page title. You can define these titles in Administration =&gt; Messages.</p>
+    </td>
+  </tr>
+<tr>
+    <td nowrap>
+      <p>#%videos%#</p>
+    </td>
+    <td>
+      <p>List of videos. Each 
+video is based on template <a href="videos.htm">video_a.txt</a>.</p>
+    </td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</body>
+
+</html>

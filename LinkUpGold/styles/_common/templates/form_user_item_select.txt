@@ -1,0 +1,6 @@
+<tr>
+<td nowrap align="left" valign="top">#%description%# </td>
+<td align="left" valign="top"><select class="select10"name="user_item_#%item_n%#">
+#%options%#
+</select></td>
+</tr>

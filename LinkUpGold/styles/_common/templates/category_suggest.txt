@@ -1,0 +1,30 @@
+<div class="common_div_title">Suggest A Subcategory</div>
+<div class="common_div_content">
+<div id="suggest_category_form_wait" name="suggest_category_form_wait"></div>
+<form method="post" id="suggest_category_form" name="suggest_category_form" action="javascript:parse_ajax_request(document.getElementById('suggest_category_form'),'#%site_url%#/contact.php','suggest_category_box');">
+<input type="hidden" name="suggest_form_category" value="#%n%#">
+#%info%#
+<table border="0" width="100%" cellpadding="5" cellspacing="0">
+<tr>
+<td nowrap align="left" valign="top">Subcategory name </td>
+<td align="left"><input class="field10" maxlength="255" style="width:500px" name="suggest_form_subcategory" value="#%suggest_form_subcategory%#"></td>
+</tr>
+<tr>
+<td nowrap align="left" valign="top">Your name </td>
+<td align="left"><input class="field10" maxlength="255" style="width:500px" name="suggest_form_name" value="#%suggest_form_name%#"></td>
+</tr>
+<tr>
+<td nowrap align="left" valign="top">Email </td>
+<td align="left"><input class="field10" maxlength="255" style="width:500px" name="suggest_form_email" value="#%suggest_form_email%#"></td>
+</tr>
+#%field_captcha_test%#
+<tr>
+ <td align="center" colspan=2><input type="submit" value="Submit" name="B1" class="button10" onclick="show_waiting('suggest_category_form_wait');"></td>
+</tr>
+</table>
+</div>
+
+</form>
+
+
+</div>

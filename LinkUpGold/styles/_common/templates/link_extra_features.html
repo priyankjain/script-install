@@ -1,0 +1,146 @@
+
+#%head%#
+
+
+
+
+<div class="div_navigation">
+<a href="#%site_url%#/index.php">Home</a> >> <a href="#%site_url%#/user.php?action=user_home">User Home</a> >> <h1>Link #%title%#</h1>
+</div>
+
+<table cellspacing="0" cellpadding="0" style="table-layout:fixed;">
+<tr>
+<td style="width:250px;height:1px;padding:0px;margin:0px;line-height:1px;" class="left_column"><img border="0" src="#%site_url%#/images/blank.gif" width="250" height="1"></td>
+<td width="100%" style="height:1px;padding:0px;margin:0px;line-height:1px;"><img border="0" src="#%site_url%#/images/blank.gif" width="50" height="1"></td>
+<td style="width:250px;height:1px;padding:0px;margin:0px;line-height:1px;" class="right_column"><img border="0" src="#%site_url%#/images/blank.gif" width="250" height="1"></td>
+</tr>
+<tr>
+<td class="left_column">
+
+#%in1%#
+
+
+</td>
+<td class="cell_middle">
+
+#%in3%#
+
+
+#%info%#
+
+
+<div class="common_div_main">
+<div class="common_div_title">Your Link</div>
+<div class="common_div_content">
+
+<table class="inside_table" cellspacing="0" cellpadding="2" border="0">
+<tr>
+<td align="left">Number </td>
+<td align="left">#%n%#</td>
+</tr>
+<tr>
+<td align="left">Title </td>
+<td align="left">#%title%#</td>
+</tr>
+<tr>
+<td align="left">Description </td>
+<td>#%description%#</td>
+</tr>
+<tr>
+<td align="left">Status </td>
+<td align="left">#%status%#</td>
+</tr>
+<tr>
+<td align="left" valign="top" colspan="2">#%is_advertising%#</td>
+</tr>
+</table>
+
+</div>
+</div>
+
+#%hide_for_no_user_begin%#
+<div class="common_div_main">
+<div class="common_div_title">Flexible Options</div>
+<div class="common_div_content">
+<table class="inside_table" cellspacing="0" cellpadding="2" border="0">
+<tr><td nowrap align="center" colspan="4">Your current account balance: #%currency%##%funds_balance%#. <a href="#%site_url%#/link_extra_features.php?action=funds_add">Purchase new funds</a></td></tr>
+<tr><td nowrap align="center" colspan="4"><b>Static Prices Options</b></td></tr>
+<tr>
+<td nowrap align="left">Prices </td>
+<td nowrap align="left">100 impressions: #%currency%##%i_static_price%#</td>
+<td nowrap align="left">100 clicks: #%currency%##%c_static_price%#</td>
+<td nowrap align="left">1 day: #%currency%##%d_static_price%#</td>
+</tr>
+<tr>
+<td nowrap align="left">Ordered </td>
+<td nowrap align="left">#%i_order%# impressions</td>
+<td nowrap align="left">#%c_order%# clicks</td>
+<td nowrap align="left">#%d_order%# days</td>
+</tr>
+<tr>
+<td nowrap align="left">Left </td>
+<td nowrap align="left">#%i_now%# impressions</td>
+<td nowrap align="left">#%c_now%# clicks</td>
+<td nowrap align="left">Valid until: #%d_validby%#</td>
+</tr>
+<form action="#%site_url%#/link_extra_features.php" method="post" name="link">
+<input type="hidden" name="action" value="link_flexible_fixed_resources_added">
+<input type="hidden" name="n" value="#%n%#">
+<tr><td nowrap align="center" colspan="4">
+Add <input maxlength="10" size="10" name="amount" class="field10"> <select class="select10" name="what"><option value="impressions">Impressions</option><option value="clicks">Clicks</option><option value="days">Days</option></select> <input type="submit" value="Submit" name="B1" class="button10">
+</td></tr></form>
+<tr><td nowrap align="center" colspan="4"><b>Dynamic Prices Options</b></td></tr>
+<tr>
+<td nowrap align="left">Price for 1 click </td>
+<td nowrap align="left">Minimal price: #%currency%##%price_dynamic_min%#</td>
+<td nowrap align="left">Maximal price: #%currency%##%price_dynamic_max%#</td>
+<td nowrap align="left">Your price: #%currency%##%c_dynamic_price%#</td>
+</tr>
+<tr>
+<td nowrap align="left">Your clicks </td>
+<td nowrap align="left">Ordered: #%c_dynamic_order%#</td>
+<td nowrap align="left">Left: #%c_dynamic_now%#</td>
+<td nowrap align="left">&nbsp;</td>
+</tr>
+<form action="#%site_url%#/link_extra_features.php" method="post" name="link">
+<input type="hidden" name="action" value="link_dynamic_click_set_price">
+<input type="hidden" name="n" value="#%n%#">
+<tr><td nowrap align="center" colspan="4">
+Set a new price for 1 click: #%currency%#<input maxlength="10" size="10" name="new_price" value="#%new_price%#" class="field10">&nbsp;<input type="submit" value="Submit" name="B1" class="button10">
+</td></tr></form>
+<form action="#%site_url%#/link_extra_features.php" method="post" name="link">
+<input type="hidden" name="action" value="link_dynamic_clicks_added">
+<input type="hidden" name="n" value="#%n%#">
+<tr><td nowrap align="center" colspan="4">
+Add <input maxlength="10" size="10" name="amount" class="field10"> clicks for #%currency%##%c_dynamic_price%# each&nbsp;<input type="submit" value="Submit" name="B1" class="button10">
+</td></tr></form>
+<tr><td nowrap align="center" colspan="4"><a href="#%site_url%#/link_extra_features.php?action=link_funds_away&amp;n=#%n%#">Stop to show this link and return all funds to my account</a></td></tr>
+</table>
+</div>
+</div>
+#%hide_for_no_user_end%#
+
+
+<div class="common_div_main">
+<div class="common_div_title">Simple Options</div>
+<div class="common_div_content">
+<table class="inside_table" cellspacing="0" cellpadding="2" border="0">
+<form action="#%site_url%#/link_extra_features.php" method="post">
+<input type="hidden" name="action" value="link_simple_days_added">
+<input type="hidden" name="n" value="#%n%#">
+<tr><td nowrap align="center" colspan="4">Link is prepaid by #%d_validby_simple%#.</td></tr>
+<tr><td nowrap align="center" colspan="4">Add <select class="select10" name="days">#%days_simple_options%#</select> days <input type="submit" value="Submit" name="B1" class="button10">
+</td></tr></form>
+</table>
+</div>
+</div>
+
+</td>
+
+<td class="right_column">
+
+#%in2%#
+
+</td></tr></table>
+
+

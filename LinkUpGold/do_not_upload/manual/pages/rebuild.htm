@@ -1,0 +1,41 @@
+<html>
+
+<head>
+<title>Rebuild.php</title>
+<LINK href="styles.css" rel=StyleSheet>
+</head>
+
+
+<body>
+<p><span class="text13a_bold">Daily Rebuild</span></p>
+<p>Nearly all pages 
+of the whole system are generated on-the-fly 
+but your home page -&nbsp;index.php. Also some parts of other pages are not generated 
+on-the-fly but are&nbsp;saved to files. These parts are: _in1.txt, _in2.txt, 
+optionally other _inX.txt files if you use them. It's required to create these files once a day.  It works so 
+
+because these files contain static data which are valid&nbsp;for a long time 
+so it's useless to load them from database each time when someone reaches 
+your site.</p>
+<p>There are 3 different ways to run this job:<br><b>Automatically</b> 
+- Check field &quot;Run the regular jobs 
+automatically&quot; in your Configuration. This is a very easy way but it needs additional 
+system resources and it is not recommended.<br><b>By using Crontab (Linux) or Task Manager 
+(Windows)</b> - it's the best way but there is needed a little more setting. 
+You can read below how to set a Crontab job on your server. If you use 
+this way, never check the field &quot;Run 
+the daily  job 
+automatically&quot; in the Configuration.<br><b>Manually</b> - You can run this 
+job manually in the Administration. Note that if you run it in other time than after 
+midnight, it can damage the daily and monthly statistic.<br><br><b><u>Using Crontab</u><br><BR></b>If you didn't 
+use Crontab before, please go to <A 
+href="http://webmasterworkshop.com/guides/crontab_guide.shtml">http://webmasterworkshop.com/guides/crontab_guide.shtml</A>  
+to a simple info about it.</p>
+<P>If you set up in your Configuration that time on the server is different from 
+a real time, you must move also the Daily Job. For example if there is +2 hours 
+difference, you have to run the Daily Job after 2 am.</P>
+<p>Examples of possible Crontab commands are available in Administration =&gt; 
+Reset/Rebuild<br><br></p>
+</body>
+
+</html>

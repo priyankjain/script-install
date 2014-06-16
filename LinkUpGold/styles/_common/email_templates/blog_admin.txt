@@ -1,0 +1,11 @@
+Subject: Blog Submitted/Updated
+
+A blog has been submitted or updated. If you want review this blog, you have to go to #%adminfile%#
+Title: #%title%#
+Subtitle: #%description%#
+Category: #%categories%#
+Name: #%name%#
+Email: #%email%#
+Username: #%user%#
+Blog number: #%n%#
+#%user_defined%#

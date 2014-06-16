@@ -1,0 +1,4 @@
+<tr>
+<td nowrap align="left" style="vertical-align:top;">Keywords<br /><span class="text10">Enter maximum<br />of #%max_keywords%# keywords.<br />One per line.</td>
+<td align="left" valign="top"><textarea class="field10" style="width:500px;height:200px;" name="keywords" class="field10">#%field_value%#</textarea></td>
+</tr>

@@ -1,0 +1,69 @@
+
+#%head%#
+
+
+
+
+<div class="div_navigation">
+<a href="#%site_url%#/index.php">Home</a> >> <h1>Edit Your Blog</h1>
+</div>
+
+<table cellspacing="0" cellpadding="0" style="table-layout:fixed;">
+<tr>
+<td style="width:250px;height:1px;padding:0px;margin:0px;line-height:1px;" class="left_column"><img border="0" src="#%site_url%#/images/blank.gif" width="250" height="1"></td>
+<td width="100%" style="height:1px;padding:0px;margin:0px;line-height:1px;"><img border="0" src="#%site_url%#/images/blank.gif" width="50" height="1"></td>
+<td style="width:250px;height:1px;padding:0px;margin:0px;line-height:1px;" class="right_column"><img border="0" src="#%site_url%#/images/blank.gif" width="250" height="1"></td>
+</tr>
+<tr>
+<td class="left_column">
+
+#%in1%#
+
+
+</td>
+<td class="cell_middle">
+
+#%in3%#
+
+
+#%info%#
+
+<div class="common_div_main">
+<div class="common_div_title">Edit Your Blog</div>
+<div class="common_div_content">
+
+<form ENCTYPE="multipart/form-data" action="#%site_url%#/blog_edit.php" method="post" name="add">
+<input type="hidden" name="action" value="blog_edited">
+<input type="hidden" name="n" value="#%n%#">
+<table cellspacing="0" cellpadding="2" width="100%" border="0" class="inside_table">
+#%field_title%#
+#%field_description%#
+#%field_text%#
+#%field_map%#
+<tr>
+<td nowrap align="left" valign="top">Current Categories </td>
+<td align="left">#%current_categories%#</td>
+</tr>
+#%field_categories%#
+#%field_pictures%#
+#%field_user_defined%#
+#%field_keywords%#
+#%field_dates%#
+#%field_name%#
+#%field_email%#
+#%field_password%#
+<tr><td align="center" colspan=2><input type="submit" value="Submit" name="B1" class="button10"></td></tr>
+</table></form>
+
+</div>
+</div>
+
+</td>
+
+<td class="right_column">
+
+#%in2%#
+
+</td></tr></table>
+
+

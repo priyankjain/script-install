@@ -1,0 +1,18 @@
+<div style="display:block;margin-bottom:30px;" id="a_item_#%n%#">
+<table border="0" cellspacing="0" cellpadding="0" width="100%" class="table_item">
+<tr>
+<td class="table_item_top_cell" colspan="2" #%icons%#"><a href="#%item_details_url%#">#%title%#</a></td>
+</tr>
+<tr>
+<td>#%hide_pictures_begin%#<a href="#%item_details_url%#"><img border="0" src="#%image_1%#" alt="#%title_no_tag%#" style="float: left; margin: 0px 5px 0px 0px;"></a>#%hide_pictures_end%#
+#%description%#<br />
+<a href="#%item_details_url%#" title="Click to see details & rate it">Rating: #%rating%# #%rateicon%# (#%votes%# votes)</a>
+ &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;
+</td>
+
+</tr>
+</table></div>
+</div>
+
+
+

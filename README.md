@@ -1,0 +1,1 @@
+This is a script install for 2 easy scripts already uploaded to hostgator..

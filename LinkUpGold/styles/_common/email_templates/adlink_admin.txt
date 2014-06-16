@@ -1,0 +1,17 @@
+Subject: AdLink Created/Edited
+
+An AdLink has been #%action%#
+Number: #%n%#
+Title: #%title%#
+URL: #%url%#
+Text 1: #%text1%#
+Text 2: #%text2%#
+Text 3: #%text3%#
+Text 4: #%text4%#
+Text 5: #%text5%#
+Text 6: #%text6%#
+Text 7: #%text7%#
+Text 8: #%text8%#
+Text 9: #%text9%#
+Text 10: #%text10%#
+HTML: #%html%#

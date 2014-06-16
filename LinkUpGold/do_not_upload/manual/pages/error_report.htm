@@ -1,0 +1,236 @@
+<html>
+
+<head>
+<title>Comment.php</title>
+<LINK href="styles.css" rel=StyleSheet>
+</head>
+
+
+<body>
+<p><span class="text13a_bold">Error/abuse report - report.php</span><br /><br />Your 
+visitors can use this script to inform you about a dead link or a link that 
+abuses your directory by some way. A link that leads to this script is in templates 
+link_a.txt, link_details.html, link_advertising.txt, link_details_advertising.html. 
+It opens a small window with the report form in it.</p>
+<p>These error reports are stored in database and you can see them in Administration 
+=&gt; Error reports. 
+The system also can send you an email when a new error report has been submitted. 
+This option is in Administration =&gt; Main configuration. There is the field 
+&quot;Inform admin when an error report has been submitted&quot;.<br /><br />To show 
+the form to send this report  is used template<span class="template"> link_report.html</span>. All fields in 
+this form are optional.&nbsp;Used variables:<br /><br /></p>
+<table class="common_table" bordercolordark="white" bordercolorlight="black" border="1" cellpadding="5" cellspacing="0">  <tr>
+    <td nowrap>
+      <p>#%site_url%#<br /></p>
+    </td>
+    <td>
+      <p>URL of your site</p>
+    </td>
+  </tr>
+ 
+
+ 
+  <tr>
+    <td nowrap>
+      <p>#%url%#</p>
+    </td>
+    <td>
+      <p>URL of the link.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%title%#</p>
+    </td>
+    <td>
+      <p>Title of the link.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%n%#</p>
+    </td>
+    <td>
+      <p>Number&nbsp;of the link.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%info%#</p>
+    </td>
+    <td>
+      <p>If the visitor tried to send a report, but for some reason (not 
+      existing link, wrong email) it has been rejected, it shows the reason.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%comment%#</p>
+    </td>
+    <td>
+      <p>If the visitor tried to send a report, but for some reason (not 
+      existing link, wrong email) it has been rejected, 
+      it shows entered text of the message.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%name%#</p>
+    </td>
+    <td>
+      <p>If the visitor tried to send a report, but for some reason (not 
+      existing link, wrong email) it has been rejected, 
+      it shows entered name.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%email%#</p>
+    </td>
+    <td>
+      <p>If the visitor tried to send a report, but for some reason (not 
+      existing link, wrong email) it has been rejected, 
+      it shows entered email.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%field_captcha_test%#</p>
+    </td>
+    <td>
+      <p>It shows CAPTCHA image to test if there is a real live person (optional, 
+            can be disabled by admin).</p>
+    </td>
+  </tr>
+</table>
+<p><br />To show a &quot;Thank You&quot; page  is used template <span class="template">link_reported.html</span>. Used variables:<br /><br /></p>
+<table class="common_table" bordercolordark="white" bordercolorlight="black" border="1" cellpadding="5" cellspacing="0">  <tr>
+    <td nowrap>
+      <p>#%site_url%#<br /></p>
+    </td>
+    <td>
+      <p>URL of your site</p>
+    </td>
+  </tr>
+ 
+
+ 
+  <tr>
+    <td nowrap>
+      <p>#%url%#</p>
+    </td>
+    <td>
+      <p>URL of the link.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%title%#</p>
+    </td>
+    <td>
+      <p>Title of the link.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%comment%#</p>
+    </td>
+    <td>
+      <p>Text of the report.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%name%#</p>
+    </td>
+    <td>
+      <p>Name of the owner.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%email%#</p>
+    </td>
+    <td>
+      <p>Email&nbsp;of the owner.</p>
+    </td>
+  </tr>
+</table>
+<p><br />To send an email to admin is used template<span class="template"> report.txt</span>. All 
+email templates may be found in &quot;styles/_common/email_templates&quot; directory. 
+In 
+the first line of the template must be word 'Subject:' and then some subject 
+for the email. Then has to be one blank line and then text of the email.&nbsp;Used variables:</p>
+<table class="common_table" bordercolordark="white" bordercolorlight="black" border="1" cellpadding="5" cellspacing="0">
+<tr>
+    <td nowrap>
+      <p>#%site_url%#<br /></p>
+    </td>
+    <td>
+      <p>URL of your site</p>
+    </td>
+  </tr>
+ 
+
+ 
+  <tr>
+    <td nowrap>
+      <p>#%n%#</p>
+    </td>
+    <td>
+      <p>Number  of the link.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%comment%#</p>
+    </td>
+    <td>
+      <p>Text of the report.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%name%#</p>
+    </td>
+    <td>
+      <p>Name.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%email%#</p>
+    </td>
+    <td>
+      <p>Email.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%url%#</p>
+    </td>
+    <td>
+      <p>URL of the link.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%title%#</p>
+    </td>
+    <td>
+      <p>Title&nbsp;of the link.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%c_number%#</p>
+    </td>
+    <td>
+      <p>Comment number</p>
+    </td>
+  </tr>
+</table>
+<p><br /></p>
+</body>
+
+</html>

@@ -1,0 +1,110 @@
+<html>
+
+<head>
+<title>Tell_friend.php</title>
+<LINK href="styles.css" rel=StyleSheet>
+</head>
+
+
+<body>
+<p><span class="text13a_bold">Tell a friend feature - tell_friend.php</span><br /><br />This 
+script allows your visitors to send an email to a friend about your site or any link, article, blog, video or news item in it. By default there is link to it in the top menu 
+and also on the links, articles, blogs, videos and news detail pages. All these links open new smaller 
+window so your visitors can email a friend without leaving the page they currently 
+read. There are used templates tell_friend.html for the form and message_sent.html 
+for the &quot;email sent&quot; page. </p>
+<p>These variables can be used in  <span class="template">tell_friend.txt</span>:<br /></p>
+<table class="common_table" bordercolordark="white" bordercolorlight="black" border="1" cellpadding="5" cellspacing="0">  <tr>
+    <td nowrap>
+      <p>#%site_url%#<br /></p>
+    </td>
+    <td>
+      <p>URL of your site.</p>
+    </td>
+  </tr>
+ 
+
+ 
+<tr>
+    <td nowrap>
+      <p>#%info%#</p>
+    </td>
+    <td>
+      <p>If the visitor tried to send  a message 
+      to a friend, but for some reason (missing field or so) it was rejected, 
+      it shows the reason.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%url%#</p>
+    </td>
+    <td>
+      <p>URL of the resource which will be reported. 
+      It may be URL of your site, URL of the selected item details page.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%what%#<br />#%n%#</p>
+    </td>
+    <td>
+      <p>This is needed for the form to work (hidden 
+      field). Do not modify it.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%name%#</p>
+    </td>
+    <td>
+      <p>If the visitor tried to send a message but for some reason (missing field or so) it was rejected, 
+      it shows entered name.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%email%#</p>
+    </td>
+    <td>
+      <p>If the visitor  tried to send a message but for some reason (missing field or so) it was rejected, 
+       
+      it shows entered email.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%friend_email%#</p>
+    </td>
+    <td>
+      <p>If the visitor tried to send a message but for some reason (missing field or so) it was rejected, 
+      it shows entered email&nbsp;of the friend.</p>
+    </td>
+  </tr>
+</table>
+<p><br />Once the message has been sent, it shows a message about it in the 
+same window.<br /><br />To send the email is used template<span class="template"> tell_friend.txt</span>. Please note that the first line of 
+all email templates must begin with the word &quot;Subject: &quot; and below the line must be 
+one blank line.&nbsp;Used variables:<br /><br /></p>
+<table class="common_table" bordercolordark="white" bordercolorlight="black" border="1" cellpadding="5" cellspacing="0">    <tr>
+    <td nowrap>
+      <p>#%comment%#</p>
+    </td>
+    <td>
+      <p>Text of the email. This is the text taken 
+      from the form.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%name%#</p>
+    </td>
+    <td>
+      <p>Name of the owner.</p>
+    </td>
+  </tr>
+</table>
+<p><br /></p>
+</body>
+
+</html>

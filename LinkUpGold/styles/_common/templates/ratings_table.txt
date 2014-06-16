@@ -1,0 +1,44 @@
+
+<table cellpadding="0" cellspacing="0" border="1" width="100%" style="padding:0;">
+<tr>
+<td align="center" width="50%" rowspan="3" style="vertical-align:middle;">
+
+#%info%#
+
+<div id="rating_form" style="display:#%rating_form_display%#">
+<span class="text_bold">Rate it</span><br />Please rate it between 1 and 5 with 5 being top.
+<br><br><br><br>
+<img id="image_#%n%#_1" src="#%site_url%#/images/star.png" onmouseover="highlighted_star(#%n%#,1)" onmouseout="normal_star(#%n%#,1)" onclick="rate_it(#%n%#,1)">
+<img id="image_#%n%#_2" src="#%site_url%#/images/star.png" onmouseover="highlighted_star(#%n%#,2)" onmouseout="normal_star(#%n%#,2)" onclick="rate_it(#%n%#,2)">
+<img id="image_#%n%#_3" src="#%site_url%#/images/star.png" onmouseover="highlighted_star(#%n%#,3)" onmouseout="normal_star(#%n%#,3)" onclick="rate_it(#%n%#,3)">
+<img id="image_#%n%#_4" src="#%site_url%#/images/star.png" onmouseover="highlighted_star(#%n%#,4)" onmouseout="normal_star(#%n%#,4)" onclick="rate_it(#%n%#,4)">
+<img id="image_#%n%#_5" src="#%site_url%#/images/star.png" onmouseover="highlighted_star(#%n%#,5)" onmouseout="normal_star(#%n%#,5)" onclick="rate_it(#%n%#,5)">
+<form method="get" action="javascript:get(document.getElementById('rate_form'),'#%site_url%#/rate.php');" name="rate_form" id="rate_form">
+<input type="hidden" name="n" value="#%n%#">
+<input type="hidden" name="what" value="#%what%#">
+<input type="hidden" name="rated_now" value="1">
+<input name="rating" id="rating" type="hidden">
+</form>
+</div>
+
+
+</td>
+<td align="center" width="50%" style="vertical-align:middle;" colspan="5"><span class="text_bold">Current Rates</span><br><br>Average rating: #%rating%# #%rateicon%# (#%votes%# votes)</td>
+</tr>
+<tr>
+
+<td align="center" width="55" style="padding:0;height:170px;vertical-align:bottom;"><img alt="" src="#%site_url%#/images/rating.jpg" width="40" height="#%size1%#"></td>
+<td align="center" width="55" style="padding:0;height:170px;vertical-align:bottom;"><img alt="" src="#%site_url%#/images/rating.jpg" width="40" height="#%size2%#"></td>
+<td align="center" width="55" style="padding:0;height:170px;vertical-align:bottom;"><img alt="" src="#%site_url%#/images/rating.jpg" width="40" height="#%size3%#"></td>
+<td align="center" width="55" style="padding:0;height:170px;vertical-align:bottom;"><img alt="" src="#%site_url%#/images/rating.jpg" width="40" height="#%size4%#"></td>
+<td align="center" width="55" style="padding:0;height:170px;vertical-align:bottom;"><img alt="" src="#%site_url%#/images/rating.jpg" width="40" height="#%size5%#"></td>
+</tr>
+<tr>
+<td align="center" width="55" style="padding:0;height:40px;vertical-align:middle;">#%rates1%#</td>
+<td align="center" width="55" style="padding:0;height:40px;vertical-align:middle;">#%rates2%#</td>
+<td align="center" width="55" style="padding:0;height:40px;vertical-align:middle;">#%rates3%#</td>
+<td align="center" width="55" style="padding:0;height:40px;vertical-align:middle;">#%rates4%#</td>
+<td align="center" width="55" style="padding:0;height:40px;vertical-align:middle;">#%rates5%#</td>
+</tr>
+</table>
+

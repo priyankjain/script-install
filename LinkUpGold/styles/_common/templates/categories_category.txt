@@ -1,0 +1,4 @@
+<td align="left" valign="top" width="#%width%#%">
+<img alt="" src="#%folder_icon%#">&nbsp;<a href="#%url%#"><b>#%name%#</b></a> (#%items%#)
+<br />#%description%#
+</td>

@@ -1,0 +1,34 @@
+<html>
+
+<head>
+<title>News</title>
+
+<LINK href="styles.css" rel=StyleSheet>
+</head>
+
+
+<body>
+<p><span class="text13a_bold">Newsletters</span><br /></p>
+<p>Newsletters can be sent in admin area and you also can creare crontab commands 
+to send them. The command should look exactly like the command 
+which runs <a href="rebuild.htm">daily job</a>, only add this to the end of 
+the URL in the command:</p>
+<p><span class="fakelink">&amp;newsletter=NEWSLETTER_NUMBER&amp;days=7</span></p>
+<p>Instead of CATEGORY_NUMBER use real newsletter number (1-5), instead of 7 
+can be used any other value, it will include to the newsletter content which 
+has been added in the last X days (in this example in the last 7 days).</p>
+<p>The script use 2 templates 
+to send the newsletter:<br /><span class="template">newsletter.txt</span> 
+- this is the body of the email. In 
+this template may be used these variables:<br />#%name%# for name of the user<br />#%links%# 
+&nbsp;&nbsp;it will be replaced by links added in the last X days<br>#%articles%# 
+&nbsp;&nbsp;it will be replaced by links added in the last X days<br />#%unsubscribe%# 
+&nbsp;&nbsp;it will be replaced by a link where the user can unsubscribe</p>
+<p><span class="template">newsletter_item.txt</span> 
+- each item in the email will be based on this template. You can use these variables:<br />#%title%# 
+&nbsp;&nbsp;Title of the item (link, article, video, news item)<br />#%url%# &nbsp;URL of the link<br />#%description%# 
+&nbsp;&nbsp;Description of the item<br />#%created%# &nbsp;&nbsp;Date created<br /></p>
+<p>&nbsp;</p>
+</body>
+
+</html>

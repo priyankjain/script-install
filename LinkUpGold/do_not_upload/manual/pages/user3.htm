@@ -1,0 +1,323 @@
+<html>
+
+<head>
+<title>User.php</title>
+<LINK href="styles.css" rel=StyleSheet>
+</head>
+
+
+<body>
+<p><span class="text13a_bold">Registered users - Options in users area</span><br /><br />The 
+script which is used to show  users area and also to modify users data is 
+user.php. The login form is in template  <span class="template">user_login_form.txt</span> and is displayed at the top of all 
+pages.</p>
+<p>This script also offers a password reminder at <span class="fakelink">user.php?action=user_remind</span>. 
+There is a form to enter email. This form sends an email with the lost password 
+to this email address. The page is based on template <span class="template">user_remind.html</span>, 
+the email&nbsp;uses template <span class="template">user_user_remind.txt</span>.</p>
+Once an user logged inside users area, it shows a page which is based on template&nbsp;<span class="template">user_home.html</span>,. 
+This page explains all the options available for registered users. There are 
+available 
+these variables:<br />&nbsp;<table class="common_table" bordercolordark="white" bordercolorlight="black" border="1" cellpadding="5" cellspacing="0">
+<tr>
+    <td nowrap>
+      <p>#%in1%#<br />#%in2%#&nbsp;</p>
+    </td>
+    <td>
+      <p>Content of files _in1.txt .... . 
+            This may be used to insert some information to several or all pages. In 
+            these files may be also used some variables.
+            More info <a href="howitworks.htm">here</a>.</p>
+    </td>
+  </tr>  <tr>
+    <td nowrap>
+      <p>#%head%#<br /></p>
+    </td>
+    <td>
+      <p>Content of file _head2.txt. This may 
+            be used to insert some information to the begin of several or all&nbsp;pages. 
+            More info  
+            <a href="howitworks.htm">here</a>.</p>
+    </td>
+  </tr>
+ 
+<tr>
+    <td nowrap>
+      <p>#%site_url%#<br /></p>
+    </td>
+    <td>
+      <p>URL of your site</p>
+    </td>
+  </tr>
+ 
+</table>
+<p>All the options available for registered users are also in template _in1.txt, 
+near top. These options are displayed for registered users only. These options 
+are:</p>
+<ul type="disc">
+    <li><a href="#edit_your_data">Edit your data</a></li>
+    <li><a href="adlinks.htm">Create a new&nbsp;AdLink</a></li>
+    <li><a href="#create_new_link">Create a new link</a></li>
+    <li><a href="user3.htm#your_links_invoices">Your links</a></li>
+    <li><a href="user3.htm#your_links_invoices">Your orders</a></li>
+    <li><a href="#purchase_new_funds">Purchase new funds</a></li>
+    <li><a href="user3.htm#create_new_article">Create a new article</a></li>
+    <li><a href="user3.htm#your_articles">Your articles</a></li>
+    <li><a href="user3.htm#create_new_blog">Create a new blog</a></li>
+    <li><a href="user3.htm#your_blogs">Your blogs</a>&nbsp;</li>
+    <li><a href="#user_favorites">Your bookmarks</a></li>
+    <li><a href="#log_off">Log off</a></li>
+</ul>
+<p><b><u><a name="edit_your_data"></a>Edit your data</u></b></p>
+<p>An user edit form is available at <span class="fakelink">user.php?action=user_edit</span>. The page is based on template 
+<span class="template">user_edit.html</span>. This template contains&nbsp;these 
+variables:<br /></p>
+<table class="common_table" bordercolordark="white" bordercolorlight="black" border="1" cellpadding="5" cellspacing="0">
+<tr>
+    <td nowrap>
+      <p>#%in1%#<br />#%in2%#&nbsp;</p>
+    </td>
+    <td>
+      <p>Content of files _in1.txt .... . 
+            This may be used to insert some information to several or all pages. In 
+            these files may be also used some variables.
+            More info <a href="howitworks.htm">here</a>.</p>
+    </td>
+  </tr>  <tr>
+    <td nowrap>
+      <p>#%head%#<br /></p>
+    </td>
+    <td>
+      <p>Content of file _head2.txt. This may 
+            be used to insert some information to the begin of several or all&nbsp;pages. 
+            More info  
+            <a href="howitworks.htm">here</a>.</p>
+    </td>
+  </tr>
+ 
+<tr>
+    <td nowrap>
+      <p>#%site_url%#<br /></p>
+    </td>
+    <td>
+      <p>URL of your site</p>
+    </td>
+  </tr>
+ 
+
+ 
+<tr>
+    <td nowrap>
+      <p>#%info%#</p>
+    </td>
+    <td>
+      <p>This is only used after editing the user 
+      info and it informs the user if the info has been save or if any error 
+      has occurred.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%field_username%#</p>
+    </td>
+    <td>
+      <p>A field to modify Username. This part is based 
+            on template form_username.txt.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%field_password%#</p>
+    </td>
+    <td>
+      <p>A field to modify Password. This part is based 
+            on template form_password.txt.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%field_name%#</p>
+    </td>
+    <td>
+      <p>A field to modify Name. It can be 
+            visible/invisible, based on your configuration. This part is based 
+            on template form_field.txt.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%field_email%#</p>
+    </td>
+    <td>
+      <p>A field to modify Email. It can be 
+            visible/invisible, based on your configuration. This part is based 
+            on template form_field.txt.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%field_company%#</p>
+    </td>
+    <td>
+      <p>A field to modify Company. It can be 
+            visible/invisible, based on your configuration. This part is based 
+            on template form_field.txt.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%field_address1%#</p>
+    </td>
+    <td>
+      <p>A field to modify Address line 1. It can be 
+            visible/invisible, based on your configuration. This part is based 
+            on template form_field.txt.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%field_address2%#</p>
+    </td>
+    <td>
+      <p>A field to modify Address line 2. It can be 
+            visible/invisible, based on your configuration. This part is based 
+            on template form_field.txt.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%field_address3%#</p>
+    </td>
+    <td>
+      <p>A field to modify Address line 3. It can be 
+            visible/invisible, based on your configuration. This part is based 
+            on template form_field.txt.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%field_country%#</p>
+    </td>
+    <td>
+      <p>A field to modify Country. It can be 
+            visible/invisible, based on your configuration. This part is based 
+            on template form_field.txt.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%field_phone1%#</p>
+    </td>
+    <td>
+      <p>A field to modify Phone number 1. It can be 
+            visible/invisible, based on your configuration. This part is based 
+            on template form_field.txt.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%field_phone2%#</p>
+    </td>
+    <td>
+      <p>A field to modify Phone number 2. It can be 
+            visible/invisible, based on your configuration. This part is based 
+            on template form_field.txt.</p>
+    </td>
+  </tr>
+<tr>
+    <td nowrap>
+      <p>#%field_styles%#</p>
+    </td>
+    <td>
+      <p>List of site styles to select from. This part is based 
+            on template form_no_field.txt.</p>
+    </td>
+  </tr>    <tr>
+    <td nowrap>
+      <p>#%field_pictures%#</p>
+    </td>
+    <td>
+      <p>Image upload fields. These images are then published on the user details 
+            page.</p>
+    </td>
+  </tr>
+<tr>
+    <td nowrap>
+      <p>#%field_detail%#</p>
+    </td>
+    <td>
+      <p>A field to enter an article which is then visible on the public user 
+            page. </p>
+    </td>
+  </tr>  <tr>
+    <td nowrap>
+      <p>#%field_site_info%#</p>
+    </td>
+    <td>
+      <p>Fields to modify site URL and Site title. It can be 
+            visible/invisible, based on your configuration. This part is based 
+            on template form_field.txt.</p>
+    </td>
+  </tr>
+<tr>
+    <td nowrap>
+      <p>#%field_newsletters%#</p>
+    </td>
+    <td>
+      <p>List of available newsletters. You can configure newsletters in Administration 
+            =&gt; Main configuration. This part is based 
+            on template form_field.txt.</p>
+    </td>
+  </tr></table>
+<p><b><u><a name="create_new_link"></a>Create a new link</u></b></p>
+<p>This option is described <a href="link_submit.htm">here</a>.</p>
+<p><b><u><a name="your_links_invoices"></a>Your links</u></b></p>
+<p>This link shows a page which uses template <span class="template">links_for_owner_list.html</span>. 
+Each line in the list of links uses the template <span class="template">links_for_owner_list.txt</span>. It offers 
+    a link to each link details page, a link to link edit page, a link to a 
+    page with detailed statistic and if you allow users to delete their links, 
+    it also contains a &quot;delete&nbsp;link&quot; link.</p>
+<p><b><u><a name="your_links_invoices"></a>Your AdLinks</u></b></p>
+<p>This link shows a page which uses template <span class="template">user_adlinks.html</span>. 
+Each line in the list of AdLinks uses the template <span class="template">user_adlink.txt</span>. It offers 
+the option to view and edit the AdLinks and also the option to order new clicks. 
+More info about AdLinks can be found <a href="adlinks.htm">here</a>.</p>
+<p><b><u><a name="your_links_invoices"></a>Your orders</u></b></p>
+<p>This link shows a page which uses template <span class="template">user_orders.html</span>. 
+Each line in the list of orders uses the template <span class="template">user_order.txt</span>.</p>
+<p><u><b><a name="purchase_new_funds"></a>Purchase new funds</b></u></p>
+<p>This link lets users to add new funds to their account. These funds can be 
+then used to add clicks, impressions, days to advertising links and to add clicks 
+to an <a href="adlinks.htm">AdLink</a>. More info about the payment system is 
+<a href="payment_system.htm">here</a>.</p>
+<p><b><u><a name="create_new_article"></a>Create a new article</u></b></p>
+<p>This option is described <a href="article_submit.htm">here</a>.</p>
+<p><b><u><a name="your_articles"></a>Your articles</u></b></p>
+<p>This link shows a list of articles added by the user. The list  is based on template<span class="template"> 
+article_edit_list.html</span>. 
+This list contains links to article details page, link to edit form and if you 
+allow users to delete their articles, it also shows a&nbsp;&quot;delete article&quot; 
+link. Each of the lines is based on template <span class="template">article_edit_list.txt</span>.</p>
+<p><b><u><a name="create_new_blog"></a>Create a new blog</u></b></p>
+<p>This option is described <a href="blog_submit.htm">here</a>.</p>
+<p><b><u><a name="your_blogs"></a>Your blogs</u></b></p>
+<p>This link shows a list of articles added by the user. The list  is based on template<span class="template"> 
+blog_edit_list.html</span>. 
+This list contains links to blog details page, link to edit form and if you 
+allow users to delete their blogs, it also shows a&nbsp;&quot;delete blog&quot; 
+link. Each of the lines is based on template <span class="template">blog_edit_list.txt</span>.</p>
+<p><b><u><a name="user_favorites"></a>Your bookmarks</u></b></p>
+<p>This link shows links, articles and articles added that have been added to 
+the user favorites list. The option to add items to this list is in categories, 
+search results and link/article detail pages. The list of favorites inside users 
+area contains title of each of these items linked to the item details page&nbsp;and 
+the option to remove it from this list. The list uses template <span class="template">user_favorites.html</span>.</p>
+<p><b><u><a name="log_off"></a>Log off</u></b></p>
+<p> This option is available at <span class="fakelink">user.php?action=user_log_off</span>. An 
+user who clicked to this link is logged off and a page which is based on template 
+ <span class="template">user_logoff.html</span> is displayed.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</body>
+
+</html>

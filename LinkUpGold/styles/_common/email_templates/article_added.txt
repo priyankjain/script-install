@@ -1,0 +1,12 @@
+Subject: Your Article
+
+Thank you for your article submission.
+Title: #%title%#
+Subtitle: #%description%#
+Category: #%categories%#
+URL of category: #%categories_urls%#
+Name: #%name%#
+Username: #%user%#
+Article number: #%n%#
+#%user_defined%#
+Detail page URL: #%detail_url%#

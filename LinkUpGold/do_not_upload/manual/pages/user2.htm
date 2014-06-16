@@ -1,0 +1,393 @@
+<html>
+
+<head>
+<title>User.php</title>
+<LINK href="styles.css" rel=StyleSheet>
+</head>
+
+
+<body>
+<p><span class="text13a_bold">Registered users - Registration</span><br /><br />The 
+script which is used for users registration and also to modify users data is 
+user.php. The signup form is displayed if you call the script without any variables, 
+as <span class="fakelink">user.php.</span> 
+It shows a form which  is based on  template <span class="template">user_join.html</span>. 
+Used variables:<br /></p>
+<table class="common_table" bordercolordark="white" bordercolorlight="black" border="1" cellpadding="5" cellspacing="0">
+<tr>
+    <td nowrap>
+      <p>#%in1%#<br />#%in2%#&nbsp;</p>
+    </td>
+    <td>
+      <p>Content of files _in1.txt .... . 
+            This may be used to insert some information to several or all pages. In 
+            these files may be also used some variables.
+            More info <a href="howitworks.htm">here</a>.</p>
+    </td>
+  </tr>  <tr>
+    <td nowrap>
+      <p>#%head%#<br /></p>
+    </td>
+    <td>
+      <p>Content of file _head2.txt. This may 
+            be used to insert some information to the begin of several or all&nbsp;pages. 
+            More info  
+            <a href="howitworks.htm">here</a>.</p>
+    </td>
+  </tr>
+ 
+<tr>
+    <td nowrap>
+      <p>#%site_url%#<br /></p>
+    </td>
+    <td>
+      <p>URL of your site</p>
+    </td>
+  </tr>
+ 
+  <tr>
+    <td nowrap>
+      <p>#%field_username%#</p>
+    </td>
+    <td>
+      <p>A field to enter Username. This part is based 
+            on template form_username.txt.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%field_password%#</p>
+    </td>
+    <td>
+      <p>A field to enter Password. This part is based 
+            on template form_password.txt.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%field_name%#</p>
+    </td>
+    <td>
+      <p>A field to enter Name. It can be 
+            visible/invisible, based on your configuration. This part is based 
+            on template form_field.txt.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%field_email%#</p>
+    </td>
+    <td>
+      <p>A field to enter Email. It can be 
+            visible/invisible, based on your configuration. This part is based 
+            on template form_field.txt.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%field_company%#</p>
+    </td>
+    <td>
+      <p>A field to enter Company. It can be 
+            visible/invisible, based on your configuration. This part is based 
+            on template form_field.txt.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%field_address1%#</p>
+    </td>
+    <td>
+      <p>A field to enter Address line 1. It can be 
+            visible/invisible, based on your configuration. This part is based 
+            on template form_field.txt.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%field_address2%#</p>
+    </td>
+    <td>
+      <p>A field to enter Address line 2. It can be 
+            visible/invisible, based on your configuration. This part is based 
+            on template form_field.txt.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%field_address3%#</p>
+    </td>
+    <td>
+      <p>A field to enter Address line 3. It can be 
+            visible/invisible, based on your configuration. This part is based 
+            on template form_field.txt.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%field_country%#</p>
+    </td>
+    <td>
+      <p>A field to enter Country. It can be 
+            visible/invisible, based on your configuration. This part is based 
+            on template form_field.txt.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%field_phone1%#</p>
+    </td>
+    <td>
+      <p>A field to enter Phone number 1. It can be 
+            visible/invisible, based on your configuration. This part is based 
+            on template form_field.txt.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%field_phone2%#</p>
+    </td>
+    <td>
+      <p>A field to enter Phone number 2. It can be 
+            visible/invisible, based on your configuration. This part is based 
+            on template form_field.txt.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%field_pictures%#</p>
+    </td>
+    <td>
+      <p>Image upload fields. These images are then published on the user details 
+            page.</p>
+    </td>
+  </tr>
+<tr>
+    <td nowrap>
+      <p>#%field_styles%#</p>
+    </td>
+    <td>
+      <p>List of site styles to select from. This part is based 
+            on template form_no_field.txt.</p>
+    </td>
+  </tr>  <tr>
+    <td nowrap>
+      <p>#%field_detail%#</p>
+    </td>
+    <td>
+      <p>A field to enter an article which is then visible on the public user 
+            page. </p>
+    </td>
+  </tr>  <tr>
+    <td nowrap>
+      <p>#%field_site_info%#</p>
+    </td>
+    <td>
+      <p>Fields to enter site URL and Site title. It can be 
+            visible/invisible, based on your configuration. This part is based 
+            on template form_field.txt.</p>
+    </td>
+  </tr>
+<tr>
+    <td nowrap>
+      <p>#%field_newsletters%#</p>
+    </td>
+    <td>
+      <p>List of available newsletters. You can configure newsletters in Administration 
+            =&gt; Main configuration. This part is based 
+            on template form_field.txt.</p>
+    </td>
+  </tr>  <tr>
+    <td nowrap>
+      <p>#%field_captcha_test%#</p>
+    </td>
+    <td>
+      <p>CAPTCHA image test. It can be 
+            visible/invisible, based on your configuration. This part is based 
+            on template form_captcha_test.txt. This is not visible if the form 
+            is used by a registered user.</p>
+    </td>
+  </tr>
+</table>
+<br />After a successful registration it shows a confirmation page. This page is based on template <span class="template">user_joined.html</span>, 
+where are used these variables:<br />&nbsp;<table class="common_table" bordercolordark="white" bordercolorlight="black" border="1" cellpadding="5" cellspacing="0">
+<tr>
+    <td nowrap>
+      <p>#%in1%#<br />#%in2%#&nbsp;</p>
+    </td>
+    <td>
+      <p>Content of files _in1.txt .... . 
+            This may be used to insert some information to several or all pages. In 
+            these files may be also used some variables.
+            More info <a href="howitworks.htm">here</a>.</p>
+    </td>
+  </tr>  <tr>
+    <td nowrap>
+      <p>#%head%#<br /></p>
+    </td>
+    <td>
+      <p>Content of file _head2.txt. This may 
+            be used to insert some information to the begin of several or all&nbsp;pages. 
+            More info  
+            <a href="howitworks.htm">here</a>.</p>
+    </td>
+  </tr>
+ 
+<tr>
+    <td nowrap>
+      <p>#%site_url%#<br /></p>
+    </td>
+    <td>
+      <p>URL of your site.</p>
+    </td>
+  </tr>
+ 
+<tr>
+    <td nowrap>
+      <p>#%username%#</p>
+    </td>
+    <td>
+      <p>Username.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%password%#</p>
+    </td>
+    <td>
+      <p>Password.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%name%#</p>
+    </td>
+    <td>
+      <p>Name.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%email%#</p>
+    </td>
+    <td>
+      <p>Email.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%newsletters%#<br /></p>
+    </td>
+    <td>
+      <p>List of joined newsletters.</p>
+    </td>
+  </tr>
+</table>
+<p>The script automatically sends the new 
+user an email with an ownerization code. The new user must click on the link which 
+is included in 
+this email to confirm that he/she is really the person who created the account. Unconfirmed users are 
+deleted once a day.<br />The confirmation email is based 
+on template <span class="template">user_confirm.txt</span>. Please note that the first line of 
+all email templates must begin with the word Subject:  and below the line must 
+be one blank line. This template contains&nbsp;this 
+variable:<br /></p>
+<table class="common_table" bordercolordark="white" bordercolorlight="black" border="1" cellpadding="5" cellspacing="0">
+  <tr>
+    <td nowrap>
+      <p>#%confirm_url%#</p>
+    </td>
+    <td>
+      <p>The confirmation URL.</p>
+    </td>
+  </tr>
+</table>
+<p>When the new user clicks on the link in 
+this email, he/she gets a page which is based on template <span class="template">user_confirmed.html</span>. 
+This page confirms that the account has been successfully confirmed and there 
+is also a button to continue to users area. If you selected that you should 
+receive an email when a new user joined, you now receive an email which is based 
+on email template <span class="template">user_joined_edited_admin.txt</span>.</p>
+<p>&nbsp;</p>
+<p><b><u>Public info about an user</u></b></p>
+<p>This function uses the template <span class="template">user_details.html</span>. This template is used when the script is called 
+as <span class="fakelink">user.php?action=info&amp;user=USERNAME_OF_SOME_USER</span> 
+and it shows public info of the user. These variables are used:<br /></p>
+<table class="common_table" bordercolordark="white" bordercolorlight="black" border="1" cellpadding="5" cellspacing="0">  <tr>
+    <td nowrap>
+      <p>#%in1%#<br />#%in2%#&nbsp;</p>
+    </td>
+    <td>
+      <p>Content of files _in1.txt .... . 
+            This may be used to insert some information to several or all pages. In 
+            these files may be also used some variables.
+            More info <a href="howitworks.htm">here</a>.</p>
+    </td>
+  </tr>  <tr>
+    <td nowrap>
+      <p>#%head%#<br /></p>
+    </td>
+    <td>
+      <p>Content of file _head2.txt. This may 
+            be used to insert some information to the begin of several or all&nbsp;pages. 
+            More info  
+            <a href="howitworks.htm">here</a>.</p>
+    </td>
+  </tr>
+ 
+<tr>
+    <td nowrap>
+      <p>#%site_url%#<br /></p>
+    </td>
+    <td>
+      <p>URL of your site</p>
+    </td>
+  </tr>
+ 
+
+ 
+<tr>
+    <td nowrap>
+      <p>#%username%#</p>
+    </td>
+    <td>
+      <p>Username</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%name%#</p>
+    </td>
+    <td>
+      <p>Name if it is public</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%email%#</p>
+    </td>
+    <td>
+      <p>Email if it is public</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%url%#</p>
+    </td>
+    <td>
+      <p>URL of his/her site</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%site_title%#</p>
+    </td>
+    <td>
+      <p>Title of his/her site</p>
+    </td>
+  </tr>
+</table>
+<p><br />&nbsp;&nbsp;</p>
+</body>
+
+</html>

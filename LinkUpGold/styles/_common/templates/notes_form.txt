@@ -1,0 +1,24 @@
+
+#%info%#
+
+<div id="private_notes_wait#%what%##%n%#" name="private_notes_wait#%what%##%n%#"></div>
+
+<form method="post" id="private_notes_form#%what%##%n%#" name="private_notes_form#%what%##%n%#" action="javascript:parse_ajax_request(document.getElementById('private_notes_form#%what%##%n%#'),'#%site_url%#/notes_edit.php','notes_edit_box#%what%##%n%#');">
+<input type="hidden" name="action" value="private_notes_edited">
+<input type="hidden" name="what" value="#%what%#">
+<input type="hidden" name="n" value="#%n%#">
+
+<table border="0" width="100%" cellpadding="0" cellspacing="0" class="table_20px_padding">
+<tr><td align="left"><span class="text_bold">Your Private Notes</span></td></tr>
+<tr>
+<td align="left"><textarea class="field10" style="width:500px;height:200px;" name="notes">#%notes%#</textarea></td>
+</tr>
+<tr>
+ <td align="left"><input type="submit" value="Save changes" name="B1" class="button10" onclick="show_waiting('private_notes_wait#%what%##%n%#');">&nbsp;<input type="reset" value="Cancel" class="button10"></td>
+</tr>
+</table>
+
+</form>
+
+
+

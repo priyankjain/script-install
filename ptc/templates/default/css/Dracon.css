@@ -1,0 +1,22 @@
+/* Dracon CAPTCHA 2.1 CSS - Test Form */
+
+body { background:#fff url(../gfx/body_tile.jpg); }
+.label { font:normal 14px calibri; color:#fff; padding-top:12px; text-align:left; } 
+.main_table { background:url(../gfx/main_tile.png); width:500px; height:210px; border:1px solid #000; } 
+.button_bg { background:url(../gfx/button_tile.png); width:500px; height:38px; border:1px solid #000; border-top:0; padding:10px 0 10px 0; }
+.title_bg { background:url(../gfx/title_tile.png) repeat-x; height:52px; width:500px; padding-top:10px; border:1px solid black; border-bottom:0;}
+.input_field { margin:0 0 10px 0; font:bold 16px calibri; color:blue; width:200px; }
+.input_text { background:#fff url(../gfx/text-bg.png) repeat-x 0 0; border:1px dashed #000; padding:5px; }
+.input_area { color:#990000; }
+.input_captcha { margin:0 0 10px 0; font:bold 16px calibri; color:#fff; width:80px; background:#990000; border:1px solid #000; padding:5px; text-align:center; text-transform:uppercase; }
+.sec_code { color:#fff; font-size:10px; font-family:tahoma; text-align:center; }
+.counter { color:#fff; background:#000; font-size:18px; font-family:verdana; border:1px solid #ccc; height:30px; width:70px; padding-top:5px }
+.final_txt { color:#ccc; font-size:11px; font-family:tahoma; }
+.hidden { display:none; }   
+.absolute { position:absolute; }
+
+#loader { margin:80px 0 0 235px; }
+#counter { margin:80px 0 0 210px; }
+#captcha { margin:50px 0 0 175px; }
+#captcha_nfo1 { margin:0; color:#999; }
+#captcha_nfo2 { margin:0; }

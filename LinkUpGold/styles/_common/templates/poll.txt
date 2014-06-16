@@ -1,0 +1,11 @@
+<div class="div_left_right_small_topcell"><img alt="" src="#%site_url%#/images/icon_poll.png" style="margin-bottom:-3px;">&nbsp;&nbsp;Our Poll</div>
+<div class="div_left_right_small_inside">
+<p><b>#%question%#</b></p>
+<p><a onclick="javascript:makeRequest('#%site_url%#/poll.php','#%vote_argument_1%#','poll'); show_hide_div(0,document.getElementById('poll_show'));" href="#poll">#%graph_1%#</a></p>
+<p><a onclick="javascript:makeRequest('#%site_url%#/poll.php','#%vote_argument_2%#','poll'); show_hide_div(0,document.getElementById('poll_show'));" href="#poll">#%graph_2%#</a></p>
+<p><a onclick="javascript:makeRequest('#%site_url%#/poll.php','#%vote_argument_3%#','poll'); show_hide_div(0,document.getElementById('poll_show'));" href="#poll">#%graph_3%#</a></p>
+<p style="display:#%display4%#"><a onclick="javascript:makeRequest('#%site_url%#/poll.php','#%vote_argument_4%#','poll'); show_hide_div(0,document.getElementById('poll_show'));" href="#poll">#%graph_4%#</a></p>
+<p style="display:#%display5%#"><a onclick="javascript:makeRequest('#%site_url%#/poll.php','#%vote_argument_5%#','poll'); show_hide_div(0,document.getElementById('poll_show'));" href="#poll">#%graph_5%#</a></p>
+<p><b>Total votes: #%votes%#</b></p>
+</div>
+

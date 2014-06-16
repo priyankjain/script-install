@@ -1,0 +1,22 @@
+Subject: Newsletter
+
+Dear #%name%#,
+
+Here is a list of new links and articles in our Search Engine.
+
+#%links%#
+
+#%blogs%#
+
+#%videos%#
+
+#%articles%#
+
+#%news%#
+
+Regards
+
+Webmaster
+
+To unsubscribe or to modify your profile please go to #%unsubscribe%#
+

@@ -1,0 +1,4 @@
+<tr>
+<td nowrap align="left" style="vertical-align:top;">#%item_name%# </td>
+<td align="left"><textarea class="field10" style="width:500px;height:200px;" name="#%field_name%#">#%field_value%#</textarea></td>
+</tr>

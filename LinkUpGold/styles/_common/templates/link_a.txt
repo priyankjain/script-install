@@ -1,0 +1,131 @@
+<div style="display:block;margin-bottom:10px;" id="l_item_#%n%#">
+<table border="0" cellspacing="0" cellpadding="0" width="100%" class="table_item">
+<tr>
+<td class="table_item_top_cell" colspan="2" #%icons%#><a href="javascript:show_hide_div_id(0,'l_item_#%n%#');show_hide_div_id(1,'l_item_details_#%n%#');">#%title%#</a></td>
+</tr>
+<tr>
+<td>#%hide_pictures_begin%#<a href="javascript:show_hide_div_id(0,'l_item_#%n%#');show_hide_div_id(1,'l_item_details_#%n%#');"><img border="0" src="#%image_1%#" alt="#%title_no_tag%#" style="float: left; margin: 0px 5px 0px 0px;"></a>#%hide_pictures_end%#
+#%description%#<br /><a href="#%item_details_url%#" title="Click to see details & rate it">Rating: #%rating%# #%rateicon%# (#%votes%# votes)</a>
+ &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;
+</td>
+
+<td class="table_item_right_cell">
+<p><img border="0" src="#%site_url%#/images/icon_details_show.png"><a href="javascript:show_hide_div_id(0,'l_item_#%n%#');show_hide_div_id(1,'l_item_details_#%n%#');">Details</a></p>
+<p><img border="0" src="#%site_url%#/images/icon_visit_site.png"><a target="blank" href="#%url%#" OnClick="track_image_#%n%#.src='#%site_url%#/track_click.php?link=#%n%#';">Visit site</a></p>
+<p><img border="0" src="#%site_url%#/images/pdf_small.gif"><a href="#%site_url%#/pdf.php?what=l&amp;n=#%n%#" target="_blank">PDF</a></p>
+#%hide_for_no_user_begin%#
+<p><img border="0" src="#%site_url%#/images/icon_favorites.gif">#%add_delete_favorites%#</p>
+#%hide_for_no_user_end%#
+#%edit_link%#
+</td>
+
+</tr>
+</table>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<div style="display:none;margin-bottom:10px;" id="l_item_details_#%n%#">
+<table border="0" cellspacing="0" cellpadding="0" width="100%" class="table_item">
+<tr>
+<td class="table_item_top_cell" colspan="2" #%icons%#><a href="#%item_details_url%#">#%title%#</a></td>
+</tr>
+
+<tr><td>
+
+<div style="width:100%; style="float: left; padding-top:10px;"><img border="0" src="#%site_url%#/images/icon_details.gif" style="float: left; margin: 0px 5px 0px 2px;"><a href="#%item_details_url%#"><b>Click here for all details, rating, and other features</b></a></div>
+
+<div style="width:100%; float: left; padding-top:10px;"><b>#%description%#</b></div>
+
+#%hide_pictures_begin%#<div style="width:100%; float: left; padding-top:10px;"><a href="#%item_details_url%#"><img border="0" src="#%image_1_big%#" alt="#%title_no_tag%#" style="float: left; margin: 0px 5px 0px 0px;"></a></div>#%hide_pictures_end%#
+
+<div style="width:100%; float: left; padding-top:10px;">#%detail%#</div>
+
+<div style="width:100%; float: left; padding-top:10px;"><a href="#%item_details_url%#" title="Click to see details & rate it">Rating: #%rating%# #%rateicon%# (#%votes%# votes)</a></div>
+
+#%hide_usit_begin%#<div style="width:100%;float: left; padding-top:10px;">#%user_defined%#</div>#%hide_usit_end%#
+
+<div style="width:100%; float: left; padding-top:10px;">
+Created: #%created%# #%hide_updated_begin%# - Updated: #%updated%##%hide_updated_end%#<br />
+Clicks this month: #%hits_m%# - Clicks in this month: #%clicks_in_m%# - Clicks total: #%hits%# - Clicks in total: #%clicks_in%#<br />
+</div>
+
+#%hide_tags_begin%#<div style="width:100%;float: left; padding-top:10px;">Tags: #%tags%#</div>#%hide_tags_end%#
+
+
+
+<div style="width:100%;float: left; padding-top:10px;">
+<a name="a_comments_show#%n%#"></a>
+<div id="comments_show_boxl#%n%#" style="display:none">
+</div>
+
+<a name="a_enter_comment#%n%#"></a>
+<div id="enter_comment_boxl#%n%#" style="display:none">
+#%enter_comment_box%#
+</div>
+
+<a name="a_tell_friend#%n%#"></a>
+<div id="tell_friend_boxl#%n%#" style="display:none">
+#%tell_friend_box%#
+</div>
+
+<a name="a_report#%n%#"></a>
+<div id="report_box#%n%#" style="display:none">
+#%report_box%#
+</div>
+
+#%hide_for_no_user_begin%#
+<a name="a_notes_show#%n%#"></a>
+<div id="notes_show_boxl#%n%#" align="left" style="display:#%notes_style_display%#">
+Your Notes: #%notes%#
+</div>
+<a name="a_notes_edit#%n%#"></a>
+<div id="notes_edit_boxl#%n%#" style="display:none">
+#%notes_edit_box%#
+</div>
+#%hide_for_no_user_end%#
+<table cellspacing="0" cellpadding="5" width="100%" border="0">
+<tr style="display: none;" id="row#%n%#"><td nowrap align="center">
+<iframe frameborder="0" width="100%" id="iframe#%n%#" style="border-width:1px; border-color:black; border-style:solid;"></iframe>
+</td></tr>
+<tr style="display: none;" id="mini_row#%n%#"><td nowrap align="center">
+<iframe frameborder="0" width="100%" id="mini_iframe#%n%#" style="border-width:1px; border-color:black; border-style:solid;"></iframe>
+</td></tr>
+</table>
+<img alt="" id="track_image_#%n%#" src="#%site_url%#/images/blank.gif" border="0" width="0" height="0">
+
+</div>
+
+
+
+</td>
+
+<td class="table_item_right_cell">
+<p><img border="0" src="#%site_url%#/images/icon_visit_site.png"><a target="blank" href="#%url%#" OnClick="track_image_#%n%#.src='#%site_url%#/track_click.php?link=#%n%#';"><b>Visit site</b></a></p>
+<p><img border="0" src="#%site_url%#/images/icon_details_hide.png"><a href="javascript:show_hide_div_id(0,'l_item_details_#%n%#');show_hide_div_id(1,'l_item_#%n%#');"><b>Hide details</b></a></p>
+<p><img border="0" src="#%site_url%#/images/icon_tell_friend.gif"><a href="#a_tell_friend" onclick="check_show_hide_div('tell_friend_boxl#%n%#')">Tell a friend</a></p>
+<p><img border="0" src="#%site_url%#/images/pdf_small.gif"><a href="#%site_url%#/pdf.php?what=l&amp;n=#%n%#" target="_blank">PDF</a></p>
+<p><img border="0" src="#%site_url%#/images/icon_comments.gif"><a href="#a_comments_show" onclick="javascript:parse_ajax_request(document.getElementById('comments_show_forml#%n%#'),'#%site_url%#/comments.php?what=l&n=#%n%#','comments_show_boxl#%n%#'); check_show_hide_div('comments_show_boxl#%n%#'); show_hide_div_id(0,'enter_comment_boxl#%n%#');">Comments: #%comments%#</a></p>
+<p><img border="0" src="#%site_url%#/images/icon_comment_add.gif"><a href="#a_enter_comment" onclick="javascript:parse_ajax_request(document.getElementById('comments_show_forml#%n%#'),'#%site_url%#/comments.php?what=x','comments_show_boxl#%n%#'); show_hide_div_id(0,'comments_show_boxl#%n%#'); check_show_hide_div('enter_comment_boxl#%n%#');">Enter comment</a></p>
+<p><img border="0" src="#%site_url%#/images/icon_report.gif"><a href="#a_report" onclick="check_show_hide_div('report_box#%n%#')">Report error</a></p>
+#%hide_for_no_user_begin%#
+<p><img border="0" src="#%site_url%#/images/icon_favorites.gif">#%add_delete_favorites%#</p>
+<p><img border="0" src="#%site_url%#/images/icon_notes.gif"><a href="#a_notes_edit" onclick="check_show_hide_div('notes_edit_boxl#%n%#'); show_hide_div_id(0,'notes_show_boxl#%n%#');">Edit private notes</a></p>
+#%hide_for_no_user_end%#
+<p><img border="0" src="#%site_url%#/images/icon_link_in_frame.png"><a href="#%site_url%#/link_in_frame.php?link=#%n%#&amp;c=#%category%#">Link in a frame</a></p>
+<p><img border="0" src="#%site_url%#/images/icon_preview.gif"><a id="name#%n%#" href="javascript:mini_preview(#%n%#,'#%url%#')" onMouseOver="window.status='Click here to see a preview';return true" onMouseOut="window.status=' ';return true">Preview</a></p>
+</td>
+
+</tr>
+</table>
+</div>
+
+

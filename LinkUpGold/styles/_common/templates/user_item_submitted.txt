@@ -1,0 +1,4 @@
+<tr>
+<td nowrap align="left" valign="top">#%name%# </td>
+<td align="left">#%value%#</td>
+</tr>

@@ -1,0 +1,7 @@
+Subject: Your Link
+
+Title: #%title%#
+URL: #%url%#
+Description: #%description%#
+Link number: #%n%#
+Detail page URL: #%detail_url%#

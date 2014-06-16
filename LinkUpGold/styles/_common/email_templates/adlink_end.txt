@@ -1,0 +1,7 @@
+Subject: Your AdLink
+
+Your AdLink in our search engine reached its last click. You can purchase additional clicks at #%site_url%#/user.php?action=login.
+
+AdLink details are below.
+Title: #%title%#
+Number: #%n%#

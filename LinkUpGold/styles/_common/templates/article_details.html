@@ -1,0 +1,157 @@
+#%head%#
+
+
+
+
+<div class="div_navigation">
+<a href="#%site_url%#/index.php">Home</a> >> <a onMouseover="window.status='Previous page'; return true" onMouseout="window.status=' '; return true" href="javascript: history.go(-1)">Previous Page</a> >> Article: <h1>#%title%#</h1>
+</div>
+
+<table cellspacing="0" cellpadding="0" style="table-layout:fixed;">
+<tr>
+<td style="width:250px;height:1px;padding:0px;margin:0px;line-height:1px;" class="left_column"><img border="0" src="#%site_url%#/images/blank.gif" width="250" height="1"></td>
+<td width="100%" style="height:1px;padding:0px;margin:0px;line-height:1px;"><img border="0" src="#%site_url%#/images/blank.gif" width="50" height="1"></td>
+<td style="width:250px;height:1px;padding:0px;margin:0px;line-height:1px;" class="right_column"><img border="0" src="#%site_url%#/images/blank.gif" width="250" height="1"></td>
+</tr>
+<tr>
+<td class="left_column">
+
+#%in1%#
+
+
+</td>
+<td class="cell_middle">
+
+#%in3%#
+
+<a name="item_top"></a>
+
+<div class="common_div_main">
+<div class="common_div_title">#%title%#</div>
+<div class="common_div_content"><table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr><td>
+
+<a name="details_menu"></a>
+<div class="item_detail_menu">
+<ul>
+<li><a href="javascript:show_submenu('1');" id="details_li_1" class="details_li_highlight">Details</a></li>
+<li><a href="javascript:show_submenu('2');" id="details_li_2">Rating</a></li>
+<li><a href="javascript:show_submenu('5');" id="details_li_5">Comments</a></li>
+<li><a href="javascript:show_submenu('6');" id="details_li_6">Info&nbsp;&&nbsp;Links</a></li>
+<li><a href="javascript:show_submenu('7');" id="details_li_7">Tell friend</a></li>
+#%hide_owner_begin%#<li><a href="javascript:show_submenu('9');" id="details_li_9">Owner</a></li>#%hide_owner_end%#
+#%hide_contact_form_begin%#<li><a href="javascript:show_submenu('10');" id="details_li_10">Contact</a></li>#%hide_contact_form_end%#
+#%hide_for_no_user_begin%#<li><a href="javascript:show_submenu('11');" id="details_li_11">Private</a></li>#%hide_for_no_user_end%#
+</ul>
+</div>
+
+<DIV class="common_div_content1">
+
+<div id="div_details_1" style="display:block;">
+<table border="0" width="100%" cellpadding="0" cellspacing="0" class="table_20px_padding">
+<tr><td align="left" valign="top" colspan="5"><b>#%description%#</b><br /></td></tr>
+<tr><td align="left" valign="top" colspan="5">#%text%#<br />#%pages_list%#</td></tr>
+#%hide_usit_begin%#<tr><td align="left" valign="top" colspan="5">#%user_defined%#</td></tr>#%hide_usit_end%#
+#%hide_tags_begin%#<tr><td align="left" valign="top" colspan="5"><span class="text_bold">Tags:</span> #%tags%#</td></tr>#%hide_tags_end%#
+<tr>
+<td align="left" valign="top" width="50%"><img border="0" src="#%site_url%#/images/pdf.gif">&nbsp;<a href="#%site_url%#/pdf.php?what=a&amp;n=#%n%#" target="_blank">PDF</a></td>
+<td align="left" valign="top" width="50%"><img border="0" src="#%site_url%#/images/icon_print.png">&nbsp;<a target="_blank" href="#%site_url%#/article.php?action=print&n=#%n%#">Print this article</a></td>
+</tr>
+<tr><td nowrap align="left" width="100%" colspan="5">
+Rating: #%rating%# #%rateicon%# (#%votes%# votes) <a href="javascript:show_submenu('2');">Rate this article</a>
+</td></tr>
+<tr><td align="left" valign="top" colspan="5">Bookmark and share this article:  &nbsp; #%share_it%#</td></tr>
+</table>
+#%pictures_gallery%#
+<div style="margin-top:20px;display:#%div_display_map%#">
+<iframe marginwidth="0" marginheight="0" hspace="0" vspace="0" frameborder="0" scrolling="no" style="width:100%; height:570px; border:0px;" frameborder="0" src="#%site_url%#/map.php?what=a&n=#%n%#"></iframe>
+</div>
+</div>
+
+<div id="div_details_2" style="display:none;">
+<span name="rate_results" id="rate_results"></span>
+<span name="ratings_table" id="ratings_table"><script type="text/javascript" language="javascript" src="#%site_url%#/rate.php?what=a&amp;n=#%n%#"></script></span>
+</div>
+
+<div id="div_details_5" style="display:none;">
+<div id="comments_show_boxa#%n%#">
+#%show_comments%#
+</div>
+<div id="enter_comment_boxa#%n%#" style="display:none;">
+#%enter_comment_box%#
+<div style="padding-bottom:30px;text-align:center;"><a href="#a_comments_show" onclick="javascript:parse_ajax_request(document.getElementById('comments_show_forma#%n%#'),'#%site_url%#/comments.php?what=a&n=#%n%#','comments_show_boxa#%n%#'); check_show_hide_div('comments_show_boxa#%n%#'); show_hide_div_id(0,'enter_comment_boxa#%n%#');">Show comments</a></div>
+</div>
+</div>
+
+<div id="div_details_6" style="display:none;">
+<table border="0" width="100%" cellpadding="0" cellspacing="0" class="table_20px_padding">
+<tr><td align="left">
+<span class="text_bold">Info</span><br />
+Created: #%created%# :: #%hide_updated_begin%#Updated: #%updated%# :: #%hide_updated_end%# :: Rating: #%rating%# #%rateicon%# (#%votes%# votes)<br />
+Readers this month: #%hits_m%# :: Readers total: #%hits%#<br />
+</td></tr>
+#%hide_more_items_begin%#
+<tr><td align="left">
+<span class="text_bold">More Articles of The Same Owner&nbsp;</span><br />
+#%more_items%#<br />
+</td></tr>
+#%hide_more_items_end%#
+#%hide_next_previous_begin%#
+<tr><td align="left">
+<span class="text_bold">More Articles&nbsp;</span><br />
+#%hide_next_cat_begin%##%next_category%#<br />#%hide_next_cat_end%#
+#%hide_previous_cat_begin%##%previous_category%#<br />#%hide_previous_cat_end%#
+#%hide_next_begin%##%next%#<br />#%hide_next_end%#
+#%hide_previous_begin%##%previous%#<br />#%hide_previous_end%#
+</td></tr>
+#%hide_next_previous_end%#
+</table>
+</div>
+
+<div id="div_details_7" style="display:none;">
+<div id="tell_friend_boxa#%n%#">
+#%tell_friend_box%#
+</div>
+</div>
+
+<div id="div_details_9" style="display:none;">
+<table border="0" width="100%" cellpadding="0" cellspacing="0" class="table_20px_padding">
+<tr><td align="left">Nick: <span class="text_bold">#%owner_nick%#</span> <a href="#%owner_link%#">User details</a></td></tr>
+<tr><td align="left">#%owner_image%#</td></tr>
+<tr><td align="left">Website: <span class="text_bold">#%owner_website%#</span></td></tr>
+#%hide_more_items1_begin%#
+<tr><td align="left">
+<span class="text_bold">More Articles of #%owner_nick%#&nbsp;</span><br />
+#%more_items%#<br />
+</td></tr>
+#%hide_more_items1_end%#
+</table>
+</div>
+
+<div id="div_details_10" style="display:none;">
+<div id="contact_boxa#%n%#">
+#%contact_box%#
+</div>
+</div>
+
+<div id="div_details_11" style="display:none;">
+<div id="notes_edit_boxa#%n%#">
+#%notes_edit_box%#
+</div>
+<br>#%add_delete_favorites%#
+</div>
+
+</td></tr></table>
+</div>
+</div>
+
+#%edit_link%#
+
+</td>
+
+<td class="right_column">
+
+#%in2%#
+
+</td></tr></table>
+

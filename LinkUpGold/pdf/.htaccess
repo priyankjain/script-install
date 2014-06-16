@@ -1,0 +1,7 @@
+AuthName "BANNED"
+AuthType Basic
+AuthUserFile /dev/null
+AuthGroupFile /dev/null
+
+require valid-user
+

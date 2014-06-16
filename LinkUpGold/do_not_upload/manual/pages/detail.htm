@@ -1,0 +1,410 @@
+<html>
+
+<head>
+<title>Link.php</title>
+<LINK href="styles.css" rel=StyleSheet>
+</head>
+
+
+<body>
+<p><span class="text13a_bold">Link details page - link.php</span><br /><br />This 
+script is used to show detailed info&nbsp;about a single link. This script has to be called as <span class="fakelink">link.php?n=LINK_NUMBER</span> 
+where LINK_NUMBER is number of the&nbsp;required link. To show the page is used 
+template<span class="template"> link_details.html</span> by default, however you can create any number 
+of your own templates and in the setting of each category set up different templates 
+for different categories. Names of your own&nbsp;templates must look like: link_details*.html 
+where the * will be any English letters, numbers and/or this character: _. The 
+maximum allowed number of characters in names of your own templates is 40, incl. 
+dot and extension. If you will create your own templates, make sure the default 
+template link_details.html always exists, otherwise you get an error. <br>Sponsored 
+links always use the template <span class="template">link_details_advertising.html</span>.<br>Used variables:<br /><br /></p>
+<table class="common_table" bordercolordark="white" bordercolorlight="black" border="1" cellpadding="5" cellspacing="0">  <tr>
+    <td nowrap>
+      <p>#%in1%#<br />#%in2%#&nbsp;</p>
+    </td>
+    <td>
+      <p>Content of files _in1.txt .... . 
+            This may be used to insert some information to several or all pages. In 
+            these files may be also used some variables.
+            More info <a href="howitworks.htm">here</a>.</p>
+    </td>
+  </tr>  <tr>
+    <td nowrap>
+      <p>#%head%#<br /></p>
+    </td>
+    <td>
+      <p>Content of file _head2.txt. This may 
+            be used to insert some information to the begin of several or all&nbsp;pages. 
+            More info  
+            <a href="howitworks.htm">here</a>.</p>
+    </td>
+  </tr>
+ 
+<tr>
+    <td nowrap>
+      <p>#%site_url%#<br /></p>
+    </td>
+    <td>
+      <p>URL of your site</p>
+    </td>
+  </tr>
+ 
+
+ 
+  <tr>
+    <td nowrap>
+      <p>#%n%#</p>
+    </td>
+    <td>
+      <p>Number&nbsp;of the link.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%title%#</p>
+    </td>
+    <td>
+      <p>Title of the link.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%description%#</p>
+    </td>
+    <td>
+      <p>Description of the link.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%thumbnail%#</p>
+    </td>
+    <td>
+      <p>Thumbnail of the link URL.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%tags%#</p>
+    </td>
+    <td>
+      <p>Keywords of the link&nbsp;and category name where is listed this link. 
+            Each of these tags contain a link to search results for it.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%detail%#</p>
+    </td>
+    <td>
+      <p>Detailed description  of the link.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%user_defined%#<br /></p>
+    </td>
+    <td>
+      <p> User Defined Items. Each line 
+            of this variable is based on template user_item_listing.txt.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%user_item_28%#<br /></p>
+    </td>
+    <td>
+      <p> If you, for some reasons, don't want 
+            to display all available User Defined Items, use this variable to 
+            display each individual item. This is only an example, replace the 
+            number 28 by real number of the item you want to display. These 
+            numbers can be found in Configuration =&gt; User Defined&nbsp;Items.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%user_item_name_28%#<br /></p>
+    </td>
+    <td>
+      <p> Use this variable to 
+            display name (label) of an individual user defined item.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%user_item_value_28%#<br /></p>
+    </td>
+    <td>
+      <p> Use this variable to 
+            display value&nbsp;of an individual user defined item.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%created%#<br /></p>
+    </td>
+    <td>
+      <p>Date created.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%updated%#</p>
+    </td>
+    <td>
+      <p>Date updated.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%rating%#</p>
+    </td>
+    <td>
+      <p>Current rating of the link.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%rateicon%#</p>
+    </td>
+    <td>
+      <p>Relevant icon of the actual rating. These 
+      icons has to be stored in directory 'images' and their names must be 
+      '1.gif' for rating 0.5, '2.gif' for rating 1, ...... '10.gif' for rating 
+      '5'. If you will use&nbsp;other file formats (jpg or png) for these images, 
+      you have to set it in your Configuration (in the Administration).</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%votes%#</p>
+    </td>
+    <td>
+      <p>Number of votes for the link.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%hits_m%#</p>
+    </td>
+    <td>
+      <p>Number of visitors&nbsp;clicked on the 
+      link since the last monthly reset.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%clicks_in_m%#</p>
+    </td>
+    <td>
+      <p>Number of incoming hits from this link 
+      since the last monthly reset. If you want to count these incoming hits, 
+      you have to tell the webmasters who submit their links that they have 
+      to send hits to <span class="fakelink">click.php?n=LINK_NUMBER</span> 
+      where LINK_NUMBER will be actual number of the link.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%hits%#</p>
+    </td>
+    <td>
+      <p>Total number of visitors&nbsp;clicked 
+      on the link.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%clicks_in%#</p>
+    </td>
+    <td>
+      <p>Total number of incoming hits from this 
+      link. If you want to count these incoming hits, you have to tell the webmasters 
+      who submit their links that they have to send hits to <span class="fakelink">click.php?n=LINK_NUMBER</span> 
+      where LINK_NUMBER will be actual number of the link.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%categories%#</p>
+    </td>
+    <td>
+      <p>List of categories where is listed selected link.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%categories_incl%#</p>
+    </td>
+    <td>
+      <p>List of categories where is listed selected link, this list contains full path of each category incl. 
+            all parent categories.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%pictures_gallery%#</p>
+    </td>
+    <td>
+      <p>If the link has images, this variable&nbsp;displays&nbsp;previews of 
+            all of them. </p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%map%#</p>
+    </td>
+    <td>
+      <p>If the link has an included map, it shows it. </p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%rss_content%#</p>
+    </td>
+    <td>
+      <p>If the link has a RSS URL to show news from the listed site, it shows 
+            these news. </p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%comments%#</p>
+    </td>
+    <td>
+      <p>Number of comments received by the link.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%show_comments%#</p>
+    </td>
+    <td>
+      <p>Comments for the selected link. Each comment is based on template <span class="template">comment.txt</span>.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%enter_comment_box%#</p>
+    </td>
+    <td>
+      <p>A form to enter a comment. It uses the template <span class="template">comment_form.txt</span>.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%more_items%#</p>
+    </td>
+    <td>
+      <p>List to other links entered by the same person (email address).</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%next_category%#<br>#%previous_category%#<br>#%next%#<br>#%previous%#<br></p>
+    </td>
+    <td>
+      <p>Links to next/previous links and next/previous links in the same category.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%icons%#</p>
+    </td>
+    <td>
+      <p>If the link is New, Popular, Updated 
+      or&nbsp;Editor Pick it shows the relevant icon(s).</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%tell_friend_box%#</p>
+    </td>
+    <td>
+      <p>A form to email a friend about this link. It uses the template <span class="template">tell_friend.txt</span>.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%report_box%#</p>
+    </td>
+    <td>
+      <p>A form to inform admin about an error. It uses the template <span class="template">report.txt</span>.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%notes_edit_box%#</p>
+    </td>
+    <td>
+      <p>A form to enter private notes (available for registered users only).&nbsp;It 
+            uses the template <span class="template">notes_form.txt</span>.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%notes%#</p>
+    </td>
+    <td>
+      <p>Entered private notes (available for registered users only).</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%contact_box%#</p>
+    </td>
+    <td>
+      <p>A form to contact the link owner.&nbsp;It 
+            uses the template <span class="template">contact_form.txt</span>.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%currency%# #%price%#</p>
+    </td>
+    <td>
+      <p>Currency and price for each click. This is applicable for advertising 
+            links with dynamic prices. </p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%add_delete_favorites%#</p>
+    </td>
+    <td>
+      <p>The option to add or remove the link from user's favorites (available 
+            for registered users only).</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%edit_link%#</p>
+    </td>
+    <td>
+      <p>A link to a link edit page. This is available for admins only. </p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%link%#</p>
+    </td>
+    <td>
+If the link has a URL, it shows its title linked to this URL. If it doesn't 
+            have a URL, it shows link title only.
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%hide_something_begin%#<br>#%hide_something_end%#&nbsp;</p>
+    </td>
+    <td>
+      <p>There are multiple variables which look like this example. These variables 
+            are used to hide content which is not applicable for the current 
+            category or state. You should not edit these variables.</p>
+    </td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+</body>
+
+</html>

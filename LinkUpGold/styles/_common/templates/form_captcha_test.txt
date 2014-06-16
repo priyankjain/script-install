@@ -1,0 +1,8 @@
+<tr>
+<td nowrap align="left">Your code </td>
+<td align="left" valign="bottom"><img alt="" src="#%site_url%#/image_control.php?action=get_image&x=#%captcha_code%#"></td>
+</tr>
+<tr>
+<td nowrap align="left">Enter the code </td>
+<td align="left" valign="bottom"><input class="field10" style="width:200px;" name="image_control"><br /></td>
+</tr>

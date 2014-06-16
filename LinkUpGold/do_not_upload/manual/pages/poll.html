@@ -1,0 +1,26 @@
+<html>
+
+<head>
+<title>Poll</title>
+
+<LINK href="styles.css" rel=StyleSheet>
+</head>
+
+
+<body>
+<p><span class="text13a_bold">Integrated poll - poll.php</span><br /><br />This 
+script is used to create a simple poll which is integrated in the directory. 
+By default it's in template _in1.txt but you can place the code to any other 
+template. The code to display the poll looks like this:</p>
+<pre>&lt;a name=&quot;poll&quot;&gt;&lt;/a&gt;<br>&lt;span name=&quot;poll_results&quot; id=&quot;poll_results&quot;&gt;&lt;/span&gt;<br>&lt;span name=&quot;poll_show&quot; id=&quot;poll_show&quot;&gt;&lt;script type=&quot;text/javascript&quot; language=&quot;javascript&quot; src=&quot;#%site_url%#/poll.php?n=POLL_NUMBER&quot;&gt;&lt;/script&gt;&lt;/span&gt;</pre>
+<p>The 
+poll may be created or modified in the Administration. You can create an unlimited 
+number of polls, also unlimited number of polls may be active at the same time. Each poll may have maximum of 5 answers. Visitor who votes in your poll 
+gets a cookie which is active for 30 days. If the same visitor try to vote in 
+these 30 days in the same poll again, the click will be not counted.<br /><br />To show 
+the table with a poll are used templates <span class="template">poll.txt</span> and <span class="template"> 
+poll_results.txt</span>.</p>
+<p>&nbsp;</p>
+</body>
+
+</html>

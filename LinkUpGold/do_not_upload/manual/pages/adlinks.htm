@@ -1,0 +1,374 @@
+<html>
+
+<head>
+<title>advertiser.php</title>
+
+<LINK href="styles.css" rel=StyleSheet>
+</head>
+
+
+<body>
+<p><span class="text13a_bold">AdLinks</span><br /><br />AdLinks are small ads 
+with a few lines of text that are in the right column of&nbsp;categories of 
+links and search results. There can be 1-10 text lines, these are automatically 
+formatted by using template <span class="template">adlink_template.txt </span>(your users enter plain text only) 
+or 
+<span class="template">adlink_template_html.txt</span> (if you allow users to 
+enter plain HTML AdLinks).&nbsp;All these 
+AdLinks are placed to template <span class="template">adlinks.txt</span>.</p>
+<p>Users don't pay for impressions but only for clicks. They can choose the 
+price they want to pay for each click, more expensive links are higher. You 
+need to set the minimum and maximum allowed price - there are fields for it 
+in Configuration.</p>
+<p>The option to create a new AdLink is in the menu inside users area. The URL 
+is <span class="fakelink">adlinks.php?action=adlink_create</span>. It uses template <span class="template">adlink_create.html</span>, 
+these variables can be used:</p>
+<table class="common_table" bordercolordark="white" bordercolorlight="black" border="1" cellpadding="5" cellspacing="0">
+<tr>
+    <td nowrap>
+      <p>#%in1%#<br />#%in2%#&nbsp;</p>
+    </td>
+    <td>
+      <p>Content of files _in1.txt .... . 
+            This may be used to insert some information to several or all pages. In 
+            these files may be also used some variables.
+            More info <a href="howitworks.htm">here</a>.</p>
+    </td>
+  </tr>  <tr>
+    <td nowrap>
+      <p>#%head%#<br /></p>
+    </td>
+    <td>
+      <p>Content of file _head2.txt. This may 
+            be used to insert some information to the begin of several or all&nbsp;pages. 
+            More info  
+            <a href="howitworks.htm">here</a>.</p>
+    </td>
+  </tr>
+ 
+<tr>
+    <td nowrap>
+      <p>#%site_url%#<br /></p>
+    </td>
+    <td>
+      <p>URL of your site.</p>
+    </td>
+  </tr>
+ 
+<tr>
+    <td nowrap>
+      <p>#%form%#<br /></p>
+    </td>
+    <td>
+      <p>The form to create a new AdLink. This form is based on template adlink_create_edit_form.txt 
+            (see below).</p>
+    </td>
+  </tr>
+ 
+</table>
+<p>The AdLink create form is based on template <span class="template">adlink_create_edit_form.txt</span>. 
+There are available the following variables:</p>
+<table class="common_table" bordercolordark="white" bordercolorlight="black" border="1" cellpadding="5" cellspacing="0">
+<tr>
+    <td nowrap>
+      <p>#%site_url%#<br /></p>
+    </td>
+    <td>
+      <p>URL of your site.</p>
+    </td>
+  </tr>
+ 
+<tr>
+    <td nowrap>
+      <p>#%action%#<br />#%n%#</p>
+    </td>
+    <td>
+      <p>Hidden form fields. Don't edit these values.</p>
+    </td>
+  </tr>
+ 
+<tr>
+    <td nowrap>
+      <p>#%field_categories%#<br /></p>
+    </td>
+    <td>
+      <p>A field to select Categories. This part 
+            is based on template form_no_field.txt.</p>
+    </td>
+  </tr>
+ 
+<tr>
+    <td nowrap>
+      <p>#%field_keywords%#<br /></p>
+    </td>
+    <td>
+      <p>A field to enter keywords.  This part is based 
+            on template form_field.txt.</p>
+    </td>
+  </tr>
+ 
+<tr>
+    <td nowrap>
+      <p>#%field_title%#<br /></p>
+    </td>
+    <td>
+      <p>A field to enter Title. This part is based 
+            on template form_field.txt.</p>
+    </td>
+  </tr>
+ 
+<tr>
+    <td nowrap>
+      <p>#%field_url%#<br /></p>
+    </td>
+    <td>
+      <p>A field to enter link URL. This part is based 
+            on template form_field.txt.</p>
+    </td>
+  </tr>
+ 
+<tr>
+    <td nowrap>
+      <p>#%field_text1%#<br>.....<br />#%field_text10%#&nbsp;</p>
+    </td>
+    <td>
+      <p>Fields to enter 1-10 text lines. You can set the number of fields. Each 
+            of these fields  is based 
+            on template form_field.txt.</p>
+    </td>
+  </tr>
+ 
+<tr>
+    <td nowrap>
+      <p>#%field_html%#<br /></p>
+    </td>
+    <td>
+      <p>A field to enter link complete HTML code of the AdLink. It can be visible 
+            or invisible, depending on your configuration. This part is based 
+            on template form_detail_html.tx.</p>
+    </td>
+  </tr>
+ 
+<tr>
+    <td nowrap>
+      <p>#%field_enabled%#<br /></p>
+    </td>
+    <td>
+      <p>Checkbox to enable or disable selected AdLink. This part is based 
+            on template form_no_field.txt.</p>
+    </td>
+  </tr>
+ 
+</table>
+<p>Once an AdLink has been created, it can optionally (if you selected so) send 
+an email to admin. This email uses the email template <span class="template">adlink_admin.txt</span>.<br>Then 
+it shows a page which uses template adlink_edit.html. This template is also 
+used for those users who want to edit their existing AdLinks or add new clicks 
+to some of them. More info below.</p>
+<p><b><u>Existing AdLinks</u></b></p>
+<p>Existing AdLinks are available for registered users in the menu in users 
+area, there is the link &quot;Your links &amp; invoices&quot;. URL of the page 
+is <span class="fakelink">link_edit.php?action=links_list</span>. This page uses template 
+<span class="template">links_for_owner_list.html</span>.&nbsp;The second table 
+on this page shows all existing AdLinks. Existing AdLinks are displayed by the 
+variable #%adlinks%#, each line in this list is based on template <span class="template">links_for_owner_list_adlink.txt</span>. 
+This template contains the following variables:</p>
+<table class="common_table" bordercolordark="white" bordercolorlight="black" border="1" cellpadding="5" cellspacing="0">
+<tr>
+    <td nowrap>
+      <p>#%site_url%#<br /></p>
+    </td>
+    <td>
+      <p>URL of your site.</p>
+    </td>
+  </tr>
+ 
+<tr>
+    <td nowrap>
+      <p>#%n%#</p>
+    </td>
+    <td>
+      <p>Number of an AdLink</p>
+    </td>
+  </tr>
+ 
+<tr>
+    <td nowrap>
+      <p>#%enabled%#<br>#%approved%#</p>
+    </td>
+    <td>
+      <p>The info if the AdLink is enabled by owner and approved by admin.</p>
+    </td>
+  </tr>
+ 
+<tr>
+    <td nowrap>
+      <p>#%c_total%#</p>
+    </td>
+    <td>
+      <p>Total number of ordered clicks.</p>
+    </td>
+  </tr>
+ 
+<tr>
+    <td nowrap>
+      <p>#%c_now%#</p>
+    </td>
+    <td>
+      <p>Total number of unused clicks.</p>
+    </td>
+  </tr>
+ 
+<tr>
+    <td nowrap>
+      <p>#%preview%#</p>
+    </td>
+    <td>
+      <p>AdLink preview.</p>
+    </td>
+  </tr>
+ 
+<tr>
+    <td nowrap>
+      <p>#%hide_delete_begin%#<br>#%hide_delete_end%#&nbsp;</p>
+    </td>
+    <td>
+      <p>If you don't allow your users to delete their AdLinks, these variables 
+            hides the option to delete it.</p>
+    </td>
+  </tr>
+ 
+</table>
+<p>Each line in the table above contains a link to edit a selected AdLink. The 
+URL of the edit page is <span class="fakelink">adlinks.php?action=adlink_edit&amp;n=ADLINK_NUMBER</span>. There 
+is also the option to manage clicks of the selected AdLink. This page uses template 
+<span class="template">adlink_edit.html</span>. There are available these variables:</p>
+<table class="common_table" bordercolordark="white" bordercolorlight="black" border="1" cellpadding="5" cellspacing="0">
+<tr>
+    <td nowrap>
+      <p>#%in1%#<br />#%in2%#&nbsp;</p>
+    </td>
+    <td>
+      <p>Content of files _in1.txt .... . 
+            This may be used to insert some information to several or all pages. In 
+            these files may be also used some variables.
+            More info <a href="howitworks.htm">here</a>.</p>
+    </td>
+  </tr>  <tr>
+    <td nowrap>
+      <p>#%head%#<br /></p>
+    </td>
+    <td>
+      <p>Content of file _head2.txt. This may 
+            be used to insert some information to the begin of several or all&nbsp;pages. 
+            More info  
+            <a href="howitworks.htm">here</a>.</p>
+    </td>
+  </tr>
+ 
+<tr>
+    <td nowrap>
+      <p>#%site_url%#<br /></p>
+    </td>
+    <td>
+      <p>URL of your site.</p>
+    </td>
+  </tr>
+ 
+<tr>
+    <td nowrap>
+      <p>#%preview%#</p>
+    </td>
+    <td>
+      <p>AdLink preview.</p>
+    </td>
+  </tr>
+ 
+<tr>
+    <td nowrap>
+      <p>#%form%#</p>
+    </td>
+    <td>
+      <p>AdLink edit form. This form uses template adlink_create_edit_form.txt 
+            (see above).</p>
+    </td>
+  </tr>
+ 
+<tr>
+    <td nowrap>
+      <p>#%c_now%#</p>
+    </td>
+    <td>
+      <p>Total number of unused clicks.</p>
+    </td>
+  </tr>
+ 
+<tr>
+    <td nowrap>
+      <p>#%currency%#</p>
+    </td>
+    <td>
+      <p>Currency used for all payments in your system.</p>
+    </td>
+  </tr>
+ 
+<tr>
+    <td nowrap>
+      <p>#%price_min%#<br>#%price_max%#</p>
+    </td>
+    <td>
+      <p>Allowed price range. These limits are editable in configuration of 
+            public forms.</p>
+    </td>
+  </tr>
+ 
+<tr>
+    <td nowrap>
+      <p>#%funds_balance%#</p>
+    </td>
+    <td>
+      <p>Balance of funds (money) on users account. These funds can be used 
+            to order new clicks for the selected AdLink. </p>
+    </td>
+  </tr>
+ 
+<tr>
+    <td nowrap>
+      <p>#%price%#</p>
+    </td>
+    <td>
+      <p>Currently valid price per click. This price is editable by AdLink owner. 
+            The edit field is available only if there is not any clicks balance 
+            available.</p>
+    </td>
+  </tr>
+ 
+<tr>
+    <td nowrap>
+      <p>#%hide_delete_begin%#<br>#%hide_delete_end%#&nbsp;</p>
+    </td>
+    <td>
+      <p>If you don't allow your users to delete their AdLinks, these variables 
+            hides the option to delete it.</p>
+    </td>
+  </tr>
+ 
+</table>
+<p>In the form above is also the option to add new clicks to the selected AdLink. 
+There are two options:</p>
+<ul type="disc">
+    <li>Users can use the funds (money) they purchased earlier by using a package. 
+    In this case they use the first field below &quot;Add Clicks by Using Funds on Your Account&quot;. 
+    They have to enter the number of clicks to add and a&nbsp;price for each 
+    click (if it hasn't been entered earlier). The clicks are instantly added 
+    to the selected AdLink.</li>
+    <li>Users can purchase new clicks by using a credit card or Paypal. In this 
+    case they use the second field &quot;Add Clicks &amp; Pay by PayPal or A Credit Card&quot;. 
+    &nbsp;They have to enter the number of clicks to add and a&nbsp;price for 
+    each click (if it hasn't been entered earlier). &nbsp;An article about the 
+    payment process is <a href="payment_system.htm">here</a>.</li>
+</ul>
+<p>&nbsp;</p>
+</body>
+
+</html>

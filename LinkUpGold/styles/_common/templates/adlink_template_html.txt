@@ -1,0 +1,9 @@
+<tr><td width="100%">
+<table border="0" cellspacing="0" cellpadding="2" width="100%" class="table_adlink">
+<tr><td>
+#%html%#<br />
+#%hide_price_begin%#Price: #%currency%##%price%##%hide_price_end%#
+</td></tr>
+</table>
+</td></tr>
+<tr><td width="100%"><img alt="" id="track_image_adlink#%n%#" src="#%site_url%#/images/blank.gif" border="0" width="0" height="3"></td></tr>

@@ -1,0 +1,6 @@
+<tr>
+<td align="left" valign="top" colspan="2">#%description%# </td>
+</tr>
+<tr>
+<td align="left" valign="top" colspan="2"><div class="html_editor">#%html_editor%#</div></td>
+</tr>

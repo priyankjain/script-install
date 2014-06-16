@@ -1,0 +1,17 @@
+<tr>
+<td align="left">Link ##%n%#</td>
+<td align="left">#%title%#</td>
+<td align="center">Created: #%created%#</td>
+<td align="center"><a href="#%item_details_url%#">View</a></td>
+<td align="center"><a href="#%site_url%#/link_edit.php?action=link_edit&amp;n=#%n%#">Edit</a></td>
+#%hide_for_no_user_begin%#
+<td align="center"><a href="#%site_url%#/link_edit.php?action=link_statistic&amp;n=#%n%#">Statistic</a></td>
+<td align="center"><a href="#%site_url%#/link_extra_features.php?action=link_adv_home&amp;n=#%n%#">Extra options</a></td>
+#%hide_for_no_user_end%#
+#%hide_send_password_begin%#
+<td align="center"><a href="#%site_url%#/link_edit.php?action=send_password&amp;n=#%n%#">Send password</a></td>
+#%hide_send_password_end%#
+#%hide_delete_begin%#
+<td align="center"><a href="javascript: go_to_delete('Are you sure?','#%site_url%#/link_edit.php?action=link_delete&amp;n=#%n%#')">Delete</a></td>
+#%hide_delete_end%#
+</tr>

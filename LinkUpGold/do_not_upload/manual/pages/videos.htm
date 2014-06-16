@@ -1,0 +1,502 @@
+<html>
+
+<head>
+<title>Videos</title>
+
+<LINK href="styles.css" rel=StyleSheet>
+</head>
+
+
+<body>
+<p><span class="text13a_bold">Category of videos - videos.php</span><br /><br />This script is used to&nbsp;display pages of&nbsp;all categories of 
+videos.<br /><br />To show one 
+category you will need to call the script as <span class="fakelink">videos.php?n=CATEGORY_NUMBER</span>. To show all normal categories is used template <span class="template">category.html</span> 
+by default, however you can create any number of your own templates and in the 
+setting of each category set up different templates for different categories. 
+Names of your own&nbsp;templates must look like: category*.html where the * 
+will be any English letters, numbers and/or this character: _. The maximum 
+allowed number of characters in names of your own templates is 40, incl. dot and 
+extension. If you will create your own templates, make sure the default template 
+category.html always exists or you receive an error. Available variables:<br /><br /></p>
+<table class="common_table" bordercolordark="white" bordercolorlight="black" border="1" cellpadding="5" cellspacing="0">  <tr>
+    <td nowrap>
+      <p>#%in1%#<br />#%in2%#&nbsp;</p>
+    </td>
+    <td>
+      <p>Content of files _in1.txt .... . 
+            This may be used to insert some information to several or all pages. In 
+            these files may be also used some variables.
+            More info <a href="howitworks.htm">here</a>.</p>
+    </td>
+  </tr>  <tr>
+    <td nowrap>
+      <p>#%head%#<br /></p>
+    </td>
+    <td>
+      <p>Content of file _head2.txt. This may 
+            be used to insert some information to the begin of several or all&nbsp;pages. 
+            More info  
+            <a href="howitworks.htm">here</a>.</p>
+    </td>
+  </tr>
+ 
+<tr>
+    <td nowrap>
+      <p>#%site_url%#<br /></p>
+    </td>
+    <td>
+      <p>URL of your site</p>
+    </td>
+  </tr>
+ 
+
+ 
+<tr>
+    <td nowrap>
+      <p>#%name%#</p>
+    </td>
+    <td>
+      <p>Name of the current category.</p>
+    </td>
+  </tr>
+<tr>
+    <td nowrap>
+      <p>#%description%#</p>
+    </td>
+    <td>
+      <p>Description  of the current category.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%n%#</p>
+    </td>
+    <td>
+      <p>Number of the current category.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%arrow%#</p>
+    </td>
+    <td>
+      <p>It creates an &quot;arrow&quot; so visitors can 
+      see where they are. The arrow looks like: <a href="index.php">Home</a> 
+      &gt; <a href="links.php?category=2">First Level&nbsp;Category</a> &gt; 
+      <a href="links.php?category=14">Parent Category</a> &gt; </p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%ad1%#<br />#%ad2%#<br />#%ad3%#&nbsp;</p>
+    </td>
+    <td>
+      <p>Ads defined for the selected category.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%image%#</p>
+    </td>
+    <td>
+      <p>Image&nbsp;defined for the&nbsp;category. 
+      You can set different image&nbsp;for each category in your Administration.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%pages%#</p>
+    </td>
+    <td>
+      <p>Form or links which let your users skip to next 
+            page(s) of the same category or sort videos by another way. This form 
+            is based on template <span class="template">pages_form.txt</span> or <span class="template">pages_list.txt</span>, 
+            based on your configuration.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%user_defined%#<br /></p>
+    </td>
+    <td>
+      <p> User Defined Items. Each line 
+            of this variable is based on template user_item_listing.txt.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%user_item_28%#<br /></p>
+    </td>
+    <td>
+      <p> If you, for some reasons, don't want 
+            to display all available User Defined Items, use this variable to 
+            display each individual item. Content of this variable is based 
+            on template user_item_listing.txt.<br />This is only an example, replace the 
+            number 28 by real number of the item you want to display. These 
+            numbers can be found in Configuration =&gt; User Defined&nbsp;Items.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%user_item_name_28%#<br /></p>
+    </td>
+    <td>
+      <p> Use this variable to 
+            display name (label) of an individual user defined item.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%user_item_value_28%#<br /></p>
+    </td>
+    <td>
+      <p> Use this variable to 
+            display value&nbsp;of an individual user defined item.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%subcategories%#</p>
+    </td>
+    <td>
+      <p>If the current category has subcategories, 
+      it shows a table with links to&nbsp;these subcategories and numbers of videos 
+      in each subcategory. The table is based on template <span class="template">categories.txt</span>, 
+            each subcategory in this table is based on template <span class="template">categories_category.txt</span>.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%items%#</p>
+    </td>
+    <td>
+      <p>List of videos in the current category. Each video&nbsp;is 
+      based on template video_a.txt - more info below.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%similar%#</p>
+    </td>
+    <td>
+      <p>If the current category has defined some 
+      similar&nbsp;categories, it shows  a&nbsp;list of&nbsp;these similar 
+      categories.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%rss_content%#</p>
+    </td>
+    <td>
+      <p>RSS content defined for the current category. You can enter a RSS URL 
+            for each category in the category edit form in Administration.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%add_delete_favorites%#</p>
+    </td>
+    <td>
+      <p>The option to add or remove the category to/from user's favorites (available 
+            for registered users only).</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%notes%#</p>
+    </td>
+    <td>
+      <p>It shows private notes for the selected category (available 
+            for registered users only).</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%notes_edit_box%#</p>
+    </td>
+    <td>
+      <p>A form to edit private notes for the selected category (available 
+            for registered users only). This form is based on template<span class="template"> notes_form.txt</span>.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%edit_link%#</p>
+    </td>
+    <td>
+      <p>A link to a category edit page. This is available for admins only. </p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%adlinks%#</p>
+    </td>
+    <td>
+      <p>It shows AdLinks defined for the selected category. Registered users 
+            can order AdLinks in users area. You can define the prices and look 
+            and feel of AdLinks in Administration. </p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%hide_something_begin%#<br>#%hide_something_end%#&nbsp;</p>
+    </td>
+    <td>
+      <p>There are multiple variables which look like this example. These variables 
+            are used to hide content which is not applicable for the current 
+            category or state. You should not edit these variables.</p>
+    </td>
+  </tr>
+</table>
+<p><br>Each 
+video is based on template <span class="template">video_a.txt </span>by 
+default, however you can create any number of your own templates and in the 
+setting of each category set up different templates for different categories. 
+Names of your own&nbsp;templates must look like: video_a*.txt where the 
+* will be any English letters, numbers and/or this character: _. The maximum 
+allowed number of characters in names of your own templates is 40, incl. dot 
+and extension. If you will create your own templates, make sure the default 
+template video_a.txt still  exists or you receive an error. These variables can be used:</p>
+<table class="common_table" bordercolordark="white" bordercolorlight="black" border="1" cellpadding="5" cellspacing="0">
+  <tr>
+    <td nowrap>
+      <p>#%n%#</p>
+    </td>
+    <td>
+      <p>Video number.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%title%#</p>
+    </td>
+    <td>
+      <p>Title of the video.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%description%#</p>
+    </td>
+    <td>
+      <p>Description of the video.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%user_defined%#<br /></p>
+    </td>
+    <td>
+      <p> User Defined Items. Each line 
+            of this variable is based on template <span class="template">user_item_listing.txt</span>.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%user_item_28%#<br /></p>
+    </td>
+    <td>
+      <p> If you, for some reasons, don't want 
+            to display all available User Defined Items, use this variable to 
+            display each individual item. Content of this variable is based 
+            on template user_item_listing.txt.<br />This is only an example, replace the 
+            number 28 by real number of the item you want to display. These 
+            numbers can be found in Configuration =&gt; User Defined&nbsp;Items.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%user_item_name_28%#<br /></p>
+    </td>
+    <td>
+      <p> Use this variable to 
+            display name (label) of an individual user defined item.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%user_item_value_28%#<br /></p>
+    </td>
+    <td>
+      <p> Use this variable to 
+            display value&nbsp;of an individual user defined item.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%notes%#</p>
+    </td>
+    <td>
+      <p>Private notes related to this video. This is available for registered 
+            users only. </p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%icons%#</p>
+    </td>
+    <td>
+      <p>If the video is New, Popular, Updated 
+      or&nbsp;Editor Pick it shows the relevant icon(s).</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%tags%#</p>
+    </td>
+    <td>
+      <p>Keywords of the video&nbsp;and category name where is listed this video. 
+            Each of these tags contain a link to search results for it.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%item_details_url%#</p>
+    </td>
+    <td>
+      <p>URL of the page with video details.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%comments%#</p>
+    </td>
+    <td>
+      <p>Number of comments received by the video.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%add_delete_favorites%#</p>
+    </td>
+    <td>
+      <p>The option to add or remove the video from user's favorites (available 
+            for registered users only).</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%image_1%#</p>
+    </td>
+    <td>
+      <p>If the video has  images, this variable&nbsp;shows the first of them. </p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%edit_link%#</p>
+    </td>
+    <td>
+      <p>A link to a video edit page. This is available for admins only. </p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%created%#<br /></p>
+    </td>
+    <td>
+      <p>Date created.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%updated%#</p>
+    </td>
+    <td>
+      <p>Date updated.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%rating%#</p>
+    </td>
+    <td>
+      <p>Current rating of the  video.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%rateicon%#</p>
+    </td>
+    <td>
+      <p>Relevant icon of the actual rating. These 
+      icons has to be stored in directory 'images' and their names must be 
+      '1.gif' for rating 0.5, '2.gif' for rating 1, ...... '10.gif' for rating 
+      '5'. If you will use&nbsp;other file formats (jpg or png) for these images, 
+      you have to set it in your Configuration (in the Administration).</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%votes%#</p>
+    </td>
+    <td>
+      <p>Number of votes for the video.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%hits%#</p>
+    </td>
+    <td>
+      <p>Number of readers if the video.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%hits_m%#</p>
+    </td>
+    <td>
+      <p>Number of readers if the video the current month.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%hide_something_begin%#<br>#%hide_something_end%#&nbsp;</p>
+    </td>
+    <td>
+      <p>There are multiple variables which look like this example. These variables 
+            are used to hide content which is not applicable for the current 
+            category or state. You should not edit these variables.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%enter_comment_box%#</p>
+    </td>
+    <td>
+      <p>A form to enter a comment. It uses the template <span class="template">comment_form.txt</span>.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%tell_friend_box%#</p>
+    </td>
+    <td>
+      <p>A form to email a friend about this video. It uses the template <span class="template">tell_friend.txt</span>.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%notes_edit_box%#</p>
+    </td>
+    <td>
+      <p>A form to enter private notes (available for registered users only).&nbsp;It 
+            uses the template <span class="template">notes_form.txt</span>.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%notes%#</p>
+    </td>
+    <td>
+      <p>Entered private notes (available for registered users only).</p>
+    </td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</body>
+
+</html>

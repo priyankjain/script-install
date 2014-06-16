@@ -1,0 +1,331 @@
+<html>
+
+<head>
+<title>Articles</title>
+
+<LINK href="styles.css" rel=StyleSheet>
+</head>
+
+
+<body>
+<p><span class="text13a_bold">Article details page - article.php</span><br /><br />This 
+script is used to show detailed info&nbsp;about a single article. This script has to be called as <span class="fakelink">article.php?n=article_NUMBER</span> 
+where article_NUMBER is number of the selected article. To show 
+this page is used template <span class="template">article_details.html</span> by default, however you can create any number 
+of your own templates and in setting of each category set up different templates 
+for different categories. Names of your own&nbsp;templates must look like: 'article_details*.html' 
+where the * will be any English letters, numbers and/or this character: _. The 
+maximum allowed number of characters in names of your own templates is 40, incl. 
+dot and extension. If you will create your own templates, make sure the default 
+template article_details.html always exists,&nbsp;or you receive an error. Available variables:</p>
+<table class="common_table" bordercolordark="white" bordercolorlight="black" border="1" cellpadding="5" cellspacing="0">  <tr>
+    <td nowrap>
+      <p>#%in1%#<br />#%in2%#&nbsp;</p>
+    </td>
+    <td>
+      <p>Content of files _in1.txt .... . 
+            This may be used to insert some information to several or all pages. In 
+            these files may be also used some variables.
+            More info <a href="howitworks.htm">here</a>.</p>
+    </td>
+  </tr>  <tr>
+    <td nowrap>
+      <p>#%head%#<br /></p>
+    </td>
+    <td>
+      <p>Content of file _head2.txt. This may 
+            be used to insert some information to the begin of several or all&nbsp;pages. 
+            More info  
+            <a href="howitworks.htm">here</a>.</p>
+    </td>
+  </tr>
+ 
+<tr>
+    <td nowrap>
+      <p>#%site_url%#<br /></p>
+    </td>
+    <td>
+      <p>URL of your site</p>
+    </td>
+  </tr>
+ 
+
+ 
+  <tr>
+    <td nowrap>
+      <p>#%n%#</p>
+    </td>
+    <td>
+      <p>Number&nbsp;of the article.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%title%#</p>
+    </td>
+    <td>
+      <p>Title of the article.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%description%#</p>
+    </td>
+    <td>
+      <p>Subtitle of the article.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%text%#</p>
+    </td>
+    <td>
+      <p>Text of the article.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%tags%#</p>
+    </td>
+    <td>
+      <p>Keywords of the article&nbsp;and category name where is listed this article. 
+            Each of these tags contain a link to search results for it.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%pages_list%#</p>
+    </td>
+    <td>
+      <p>If the article has multiple 
+            pages, it shows a list of them.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%user_defined%#<br /></p>
+    </td>
+    <td>
+      <p> User Defined Items. Each line 
+            of this variable is based on template user_item_listing.txt.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%user_item_28%#<br /></p>
+    </td>
+    <td>
+      <p> If you, for some reasons, don't want 
+            to display all available User Defined Items, use this variable to 
+            display each individual item. This is only an example, replace the 
+            number 28 by real number of the item you want to display. These 
+            numbers can be found in Configuration =&gt; User Defined&nbsp;Items.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%user_item_name_28%#<br /></p>
+    </td>
+    <td>
+      <p> Use this variable to 
+            display name (label) of an individual user defined item.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%user_item_value_28%#<br /></p>
+    </td>
+    <td>
+      <p> Use this variable to 
+            display value&nbsp;of an individual user defined item.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%created%#<br /></p>
+    </td>
+    <td>
+      <p>Date created.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%updated%#</p>
+    </td>
+    <td>
+      <p>Date updated.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%rating%#</p>
+    </td>
+    <td>
+      <p>Current rating of the article.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%rateicon%#</p>
+    </td>
+    <td>
+      <p>Relevant icon of the actual rating. These 
+      icons has to be stored in directory 'images' and their names must be 
+      '1.gif' for rating 0.5, '2.gif' for rating 1, ...... '10.gif' for rating 
+      '5'. If you will use&nbsp;other file formats (jpg or png) for these images, 
+      you have to set it in your Configuration (in the Administration).</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%votes%#</p>
+    </td>
+    <td>
+      <p>Number of votes for the article.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%hits%#</p>
+    </td>
+    <td>
+      <p>Number of readers if the article.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%hits_m%#</p>
+    </td>
+    <td>
+      <p>Number of readers if the article the current month.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%pictures_gallery%#</p>
+    </td>
+    <td>
+      <p>If the article has images, this variable&nbsp;displays&nbsp;previews of 
+            all of them. </p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%map%#</p>
+    </td>
+    <td>
+      <p>If the article has an included map, it shows it. </p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%comments%#</p>
+    </td>
+    <td>
+      <p>Number of comments received by the article.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%show_comments%#</p>
+    </td>
+    <td>
+      <p>Comments for the selected article. Each comment is based on template <span class="template">comment.txt</span>.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%more_items%#</p>
+    </td>
+    <td>
+      <p>List to other articles entered by the same person (email address).</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%next_category%#<br>#%previous_category%#<br>#%next%#<br>#%previous%#<br></p>
+    </td>
+    <td>
+      <p>Links to next/previous articles and next/previous articles in the same 
+            category.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%icons%#</p>
+    </td>
+    <td>
+      <p>If the article is New, Popular, Updated 
+      or&nbsp;Editor Pick it shows the relevant icon(s).</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%tell_friend_box%#</p>
+    </td>
+    <td>
+      <p>A form to email a friend about this article. It uses the template <span class="template">tell_friend.txt</span>.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%notes_edit_box%#</p>
+    </td>
+    <td>
+      <p>A form to enter private notes (available for registered users only).&nbsp;It 
+            uses the template <span class="template">notes_form.txt</span>.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%notes%#</p>
+    </td>
+    <td>
+      <p>Entered private notes (available for registered users only).</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%contact_box%#</p>
+    </td>
+    <td>
+      <p>A form to contact the link owner.&nbsp;It 
+            uses the template <span class="template">contact_form.txt</span>.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%add_delete_favorites%#</p>
+    </td>
+    <td>
+      <p>The option to add or remove the article from user's favorites (available 
+            for registered users only).</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%edit_link%#</p>
+    </td>
+    <td>
+      <p>A link to an article edit page. This is available for admins only. </p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%hide_something_begin%#<br>#%hide_something_end%#&nbsp;</p>
+    </td>
+    <td>
+      <p>There are multiple variables which look like this example. These variables 
+            are used to hide content which is not applicable for the current 
+            category or state. You should not edit these variables.</p>
+    </td>
+  </tr>
+</table>
+<p>This script is also used to create a special page for article printing. 
+Call it as <span class="fakelink">article.php?action=print&amp;n=article_NUMBER</span>. 
+The page for printing is based on template <span class="template">article_print.html</span>. 
+There are not included the common header and footer as for other pages.</p>
+<p>&nbsp;</p>
+</body>
+
+</html>

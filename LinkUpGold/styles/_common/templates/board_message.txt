@@ -1,0 +1,7 @@
+<tr><td width="100%" align="left">
+
+#%text%#<br />
+Comment by #%name%# &nbsp; &nbsp; 
+Date: #%date%#
+</td></tr>
+

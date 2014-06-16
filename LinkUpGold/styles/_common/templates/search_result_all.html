@@ -1,0 +1,111 @@
+
+#%head%#
+
+
+
+
+<div class="div_navigation">
+<a href="#%site_url%#/index.php">Home</a> >> <h1>Search Result</h1>
+</div>
+
+<table cellspacing="0" cellpadding="0" style="table-layout:fixed;">
+<tr>
+<td style="width:250px;height:1px;padding:0px;margin:0px;line-height:1px;" class="left_column"><img border="0" src="#%site_url%#/images/blank.gif" width="250" height="1"></td>
+<td width="100%" style="height:1px;padding:0px;margin:0px;line-height:1px;"><img border="0" src="#%site_url%#/images/blank.gif" width="50" height="1"></td>
+<td style="width:250px;height:1px;padding:0px;margin:0px;line-height:1px;" class="right_column"><img border="0" src="#%site_url%#/images/blank.gif" width="250" height="1"></td>
+</tr>
+<tr>
+<td class="left_column">
+
+#%in1%#
+
+
+</td>
+<td class="cell_middle">
+
+#%in3%#
+
+
+<div class="common_div_main">
+<div class="common_div_title">Search Results</div>
+<div class="common_div_content"><table border="0" width="100%" cellpadding="0" cellspacing="0">
+<tr><td>
+<table border=0 cellpadding=0 cellspacing="0" width="100%" >
+<tr><td align="left">&nbsp;&nbsp;Searched for: #%searched%#</td></tr>
+</table>
+#%result_categories%#
+</td></tr></table></div>
+</div>
+
+
+#%hide_links_begin%#
+<div class="common_div_main">
+<div class="common_div_title">Links</div>
+<div class="common_div_content"><table border="0" width="100%" cellpadding="0" cellspacing="0"><tr><td>
+<table cellspacing="0" cellpadding="0" border=0 width="100%">#%l_items%#</table>
+<table border=0 cellpadding=0 cellspacing="0" width="100%">
+<tr><td align="right" height="22"><a href="#%site_url%#/search.php?action=links_simple&phrase=#%phrase%#&nolog=1&search_kind=#%search_kind%#">Show all results in links</a>&nbsp;</td></tr>
+</table>
+</td></tr></table></div>
+</div>
+#%hide_links_end%#
+
+#%hide_blogs_begin%#
+<div class="common_div_main">
+<div class="common_div_title">Blogs</div>
+<div class="common_div_content"><table border="0" width="100%" cellpadding="0" cellspacing="0"><tr><td>
+<table cellspacing="0" cellpadding="0" border=0 width="100%">#%b_items%#</table>
+<table border=0 cellpadding=0 cellspacing="0" width="100%">
+<tr><td align="right" height="22"><a href="#%site_url%#/search.php?action=blogs_simple&phrase=#%phrase%#&nolog=1&search_kind=#%search_kind%#">Show all results in blogs</a>&nbsp;</td></tr>
+</table>
+</td></tr></table></div>
+</div>
+#%hide_blogs_end%#
+
+#%hide_articles_begin%#
+<div class="common_div_main">
+<div class="common_div_title">Articles</div>
+<div class="common_div_content"><table border="0" width="100%" cellpadding="0" cellspacing="0"><tr><td>
+<table cellspacing="0" cellpadding="0" border=0 width="100%">#%a_items%#</table>
+<table border=0 cellpadding=0 cellspacing="0" width="100%">
+<tr><td align="right" height="22"><a href="#%site_url%#/search.php?action=articles_simple&phrase=#%phrase%#&nolog=1&search_kind=#%search_kind%#">Show all results in articles</a>&nbsp;</td></tr>
+</table>
+</td></tr></table></div>
+</div>
+#%hide_articles_end%#
+
+#%hide_videos_begin%#
+<div class="common_div_main">
+<div class="common_div_title">Videos</div>
+<div class="common_div_content"><table border="0" width="100%" cellpadding="0" cellspacing="0"><tr><td>
+<table cellspacing="0" cellpadding="0" border=0 width="100%">#%v_items%#</table>
+<table border=0 cellpadding=0 cellspacing="0" width="100%">
+<tr><td align="right" height="22"><a href="#%site_url%#/search.php?action=videos_simple&phrase=#%phrase%#&nolog=1&search_kind=#%search_kind%#">Show all results in videos</a>&nbsp;</td></tr>
+</table>
+</td></tr></table></div>
+</div>
+#%hide_videos_end%#
+
+#%hide_news_begin%#
+<div class="common_div_main">
+<div class="common_div_title">News</div>
+<div class="common_div_content"><table border="0" width="100%" cellpadding="0" cellspacing="0"><tr><td>
+<table cellspacing="0" cellpadding="0" border=0 width="100%">#%n_items%#</table>
+<table border=0 cellpadding=0 cellspacing="0" width="100%">
+<tr><td align="right" height="22"><a href="#%site_url%#/search.php?action=news_simple&phrase=#%phrase%#&nolog=1&search_kind=#%search_kind%#">Show all results in news</a>&nbsp;</td></tr>
+</table>
+</td></tr></table></div>
+</div>
+#%hide_news_end%#
+
+</td>
+
+<td class="right_column">
+
+#%adlinks%#
+
+#%in2%#
+
+</td></tr></table>
+
+

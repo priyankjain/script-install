@@ -1,0 +1,27 @@
+<div style="display:block;margin-bottom:30px;" id="v_item_#%n%#">
+<table border="0" cellspacing="0" cellpadding="0" width="100%" class="table_item">
+<tr>
+<td class="table_item_top_cell" colspan="2" #%icons%#><a href="#%item_details_url%#">#%title%#</a></td>
+</tr>
+</tr>
+<tr>
+<td>#%hide_pictures_begin%#<a href="#%item_details_url%#"><img border="0" src="#%image_1%#" alt="#%title_no_tag%#" style="float: left; margin: 0px 5px 0px 0px;" onmouseover="show_hide_div(1,document.getElementById('item_info_popup_#%n%#'))"></a>#%hide_pictures_end%#
+#%description%#<br />
+<a href="#%item_details_url%#" title="Click to see details & rate it">Rating: #%rating%# (#%votes%# votes)</a>
+ &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;
+</td>
+
+<td class="table_item_right_cell">
+<p><img border="0" src="#%site_url%#/images/icon_details_show.png"><a href="#%item_details_url%#">Watch it</a></p>
+<p><img border="0" src="#%site_url%#/images/pdf_small.gif"><a href="#%site_url%#/pdf.php?what=v&amp;n=#%n%#" target="_blank">PDF</a></p>
+#%hide_for_no_user_begin%#
+<p><img border="0" src="#%site_url%#/images/icon_favorites.gif">#%add_delete_favorites%#</p>
+#%hide_for_no_user_end%#
+#%edit_link%#
+</td>
+
+</tr>
+</table>
+</div>
+
+

@@ -1,0 +1,14 @@
+Subject: Your Link
+
+Thank you for your link submission. Your link has been approved and is visible on our pages.
+Title: #%title%#
+URL: #%url%#
+Recip URL: #%recip%#
+Description: #%description%#
+Category: #%categories%#
+URL of category: #%categories_urls%#
+Name: #%name%#
+Email: #%email%#
+Password: #%password%#
+Link number: #%n%#
+Detail page URL: #%detail_url%#

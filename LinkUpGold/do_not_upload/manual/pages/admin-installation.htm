@@ -1,0 +1,57 @@
+<html>
+
+<head>
+<title>Installation</title>
+<LINK href="styles.css" rel=StyleSheet>
+</head>
+
+
+<body>
+<p><span class="text13a_bold">Installation</span></p>
+<p>1) Extract the zip which contains Link Up Gold. It 
+creates a folder, feel free to rename it. </p>
+<p>2) Upload all files on your server into the correct directories. Upload all the files but images in ASCII mode. <u>Do not upload folder 
+&quot;do_not_upload&quot;.</u><br /><br />3) <b>Set permissions</b> for directories and files.<br>This 
+step is needed on some servers only. You can skip it and follow with step #4. 
+If you will receive a permission error, follow also this step #3.<br /></p>
+<ul type="disc">
+    <li>These 
+files and directories need permission <b>777</b>:<br>- data directory<br />- messages directory 
+(it's inside &quot;styles/_common&quot; directory)<br />- 
+email_templates directory (it's inside &quot;styles/_common&quot; directory)<br>- 
+templates directory (it's inside &quot;styles/_common&quot; directory and also 
+    inside some other subdirectories of the styles directory)<br />- images/articles directory<br />- images/categories directory<br />- images/links directory<br />- images/news directory<br />- images/users directory<br />- images/videos directory<br>- images/blogs directory<br>- 
+    uploads/qrcodes folder<br />- 
+    files sitemap.txt, sitemap.html and sitemap.xml in main directory</li>
+    <li>These files need permission 
+<b>666</b>:<br />- file &quot;data_forms.php&quot; in data directory<br />- all files in the &quot;messages&quot; directory 
+
+(it's inside &quot;styles/_common&quot; directory)<br />- 
+all files in &quot;email_templates&quot; directory 
+(it's inside &quot;styles/_common&quot; directory)<br />- 
+all files in &quot;templates&quot; directories (it's inside &quot;styles/_common&quot; directory 
+    and also inside some other subdirectories of the styles directory)</li>
+    <li>These directories need permission <b>755</b> (it usually doesn't need 
+    any change, servers usually set it automatically):<br />- directory where your 
+    scripts and other directories reside<br />- 
+administration directory<br />- images directory</li>
+</ul>
+<p>4) Point your browser to your domain to file <span class="fakelink">setup.php</span>. Now fill 
+in all required fields and click to the Install  button. You should see that the 
+script creates tables and files for Link Up Gold. </p>
+<p>5) Once the script has been successfully installed, go to administration 
+and follow these steps:</p>
+<ul type="disc">
+    <li>Remove setup.php from your server.</li>
+    <li>Main configuration - enter values to all fields. Save the form.</li>
+    <li>Reset/rebuild - run Daily Job. It builds all pages. If you receive an&nbsp;error 
+    during this step, there is some missing value in Configuration.</li>
+    <li>Add a few categories to test if all works well. To 
+    make these items visible on the home page and in the left and right columns 
+    of all pages, run the Daily Job again.</li>
+    <li>Set the script up to run Daily Job. Read more about this issue <a href="rebuild.htm">here</a>.</li>
+    <li>You also can customize templates. More info here <a href="howitworks.htm">here</a>.<br /><br /><br />&nbsp;</li>
+</ul>
+</body>
+
+</html>

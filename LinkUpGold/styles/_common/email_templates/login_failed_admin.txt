@@ -1,0 +1,8 @@
+Subject: Link Up Gold Login Failed
+
+Someone tried to log in Link Up Gold with incorrect login data.
+This person attempted to enter #%who%# area
+Entered username: #%username%#
+Entered password: #%password%#
+IP address: #%ip%#
+Date and time: #%date_time%#

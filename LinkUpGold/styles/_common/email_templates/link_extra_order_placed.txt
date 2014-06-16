@@ -1,0 +1,8 @@
+Subject: Order placed
+
+Order number: #%order_n%#
+Username: #%username%#
+User number: #%usernumber%#
+Email: #%email%#
+#%item_info%#
+Price: #%price%#

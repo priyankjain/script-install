@@ -1,0 +1,71 @@
+
+#%head%#
+
+
+
+
+<div class="div_navigation">
+<a href="#%site_url%#/index.php">Home</a> >> <h1>Edit Your Blog</h1>
+</div>
+
+<table cellspacing="0" cellpadding="0" style="table-layout:fixed;">
+<tr>
+<td style="width:250px;height:1px;padding:0px;margin:0px;line-height:1px;" class="left_column"><img border="0" src="#%site_url%#/images/blank.gif" width="250" height="1"></td>
+<td width="100%" style="height:1px;padding:0px;margin:0px;line-height:1px;"><img border="0" src="#%site_url%#/images/blank.gif" width="50" height="1"></td>
+<td style="width:250px;height:1px;padding:0px;margin:0px;line-height:1px;" class="right_column"><img border="0" src="#%site_url%#/images/blank.gif" width="250" height="1"></td>
+</tr>
+<tr>
+<td class="left_column">
+
+#%in1%#
+
+
+</td>
+<td class="cell_middle">
+
+#%in3%#
+
+#%info%#
+
+<div class="common_div_main">
+<div class="common_div_title">Edit Your Blog</div>
+<div class="common_div_content"><table border="0" cellpadding="5" cellspacing="0">
+<tr><td align="center">
+
+Please enter number of the blog and your password.
+<table cellspacing="0" cellpadding="2" width="200" border="0">
+<form action="#%site_url%#/blog_edit.php" method="get">
+<input type="hidden" name="action" value="blog_edit">
+<tr>
+<td nowrap align="left">Number: </td>
+<td nowrap align="left"><input maxlength="15" size="15" name="n" class="field10" value="#%n%#"></td>
+</tr>
+<tr>
+<td nowrap align="left">Password: </td>
+<td nowrap align="left"><input maxlength="15" size="15"  name="password" class="field10"></td>
+</tr>
+<tr><td align="center" colspan="2"><input type="submit" value="Submit" name="B1" class="button10"></td></tr>
+</form>
+</table>
+
+</td></tr>
+
+<form action="#%site_url%#/blog_edit.php" method="get">
+<input type="hidden" name="action" value="blogs_list">
+<tr><td colspan=2 align="center">Or enter your email address to show list of your blogs.</td></tr>
+<tr><td colspan=3 align="center"><input maxlength="150"  name="email" class="field10" style="width:600px"></td></tr>
+<tr><td colspan=2 align="center"><input type="submit" value="Show my blogs" name="B1" class="button10"></td></tr>
+</form>
+
+</table></div>
+</div>
+
+</td>
+
+<td class="right_column">
+
+#%in2%#
+
+</td></tr></table>
+
+

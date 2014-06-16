@@ -1,0 +1,110 @@
+<html>
+
+<head>
+<title>Message Board</title>
+<LINK href="styles.css" rel=StyleSheet>
+</head>
+
+
+<body>
+<p><span class="text13a_bold">Message board - board.php</span><br /><br />This 
+script creates a simple message board. Your visitors can add their own messages 
+which will be available on your pages.</p>
+<p>To show the Board is used template 
+<span class="template">board.html</span>. These variables may be used here:<br /></p>
+<table class="common_table" bordercolordark="white" bordercolorlight="black" border="1" cellpadding="5" cellspacing="0">
+<tr>
+    <td nowrap>
+      <p>#%in1%#<br />#%in2%#&nbsp;</p>
+    </td>
+    <td>
+      <p>Content of files _in1.txt .... . 
+            This may be used to insert some information to several or all pages. In 
+            these files may be also used some variables.
+            More info <a href="howitworks.htm">here</a>.</p>
+    </td>
+  </tr>  <tr>
+    <td nowrap>
+      <p>#%head%#<br /></p>
+    </td>
+    <td>
+      <p>Content of file _head2.txt. This may 
+            be used to insert some information to the begin of several or all&nbsp;pages. 
+            More info  
+            <a href="howitworks.htm">here</a>.</p>
+    </td>
+  </tr>
+ 
+<tr>
+    <td nowrap>
+      <p>#%site_url%#<br /></p>
+    </td>
+    <td>
+      <p>URL of your site</p>
+    </td>
+  </tr>
+ 
+
+ 
+<tr>
+    <td nowrap>
+      <p>#%info%#</p>
+    </td>
+    <td>
+      <p>If the visitor just added a message to 
+      the Board, this shows an info that the massage has been added.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%messages%#</p>
+    </td>
+    <td>
+      <p>All the messages in the Board</p>
+    </td>
+  </tr>
+</table>
+<p>To show each message is used 
+template <span class="template">board_message.txt</span>. Here you can use these variables:<br /></p>
+<table class="common_table" bordercolordark="white" bordercolorlight="black" border="1" cellpadding="5" cellspacing="0">
+  <tr>
+    <td nowrap>
+      <p>#%text%#</p>
+    </td>
+    <td>
+      <p>Message text</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%link%#</p>
+    </td>
+    <td>
+      <p>It's a link to send an email to the owner 
+      if it was added by an unregistered user. If the message was added by a 
+      registered user, it's a&nbsp;link to page with info regarding this user.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%name%#</p>
+    </td>
+    <td>
+      <p>Name of owner of the message</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%date%#</p>
+    </td>
+    <td>
+      <p>Date when the message has been added</p>
+    </td>
+  </tr>
+</table>
+<p>Below the message board is available a link which opens a form to add a message. 
+This form uses the template <span class="template">board_add_message.txt</span>.</p>
+<p>&nbsp;</p>
+</body>
+
+</html>

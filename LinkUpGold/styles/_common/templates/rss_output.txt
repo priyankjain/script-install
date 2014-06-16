@@ -1,0 +1,7 @@
+<item>
+	<title>#%title%#</title>
+	<link>#%url%#</link>
+	<description>#%description%#</description>
+	<author>#%name%#</author>
+	<pubDate>#%created%# GMT</pubDate>
+</item>

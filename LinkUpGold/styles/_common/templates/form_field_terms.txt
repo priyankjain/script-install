@@ -1,0 +1,3 @@
+<tr>
+<td nowrap align="left" valign="top" colspan="2">I agree to <a href="#%site_url%#/page.php?page=terms" target="_blank">Terms and Conditions</a>&nbsp;<input type="checkbox" name="terms" value="1"></td>
+</tr>

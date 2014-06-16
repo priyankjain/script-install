@@ -1,0 +1,121 @@
+
+#%head%#
+
+
+
+
+<div class="div_navigation">
+<a href="#%site_url%#/index.php">Home</a> >> #%arrow%#<h1>#%name%#</h1>
+</div>
+
+<table cellspacing="0" cellpadding="0" border=0 style="table-layout:fixed;">
+<tr>
+<td style="width:250px;height:1px;padding:0px;margin:0px;line-height:1px;" class="left_column"><img border="0" src="#%site_url%#/images/blank.gif" width="250" height="1"></td>
+<td width="100%" style="height:1px;padding:0px;margin:0px;line-height:1px;"><img border="0" src="#%site_url%#/images/blank.gif" width="50" height="1"></td>
+<td style="width:250px;height:1px;padding:0px;margin:0px;line-height:1px;" class="right_column"><img border="0" src="#%site_url%#/images/blank.gif" width="250" height="1"></td>
+</tr>
+<tr>
+<td class="left_column">
+
+#%in1%#
+
+
+</td>
+<td class="cell_middle">
+<a name="content_top"></a>
+
+#%in3%#
+
+#%ad1%#
+
+<div class="common_div_main">
+<div class="common_div_title">#%title%#</div>
+<div class="common_div_content"><table border=0 cellpadding=0 cellspacing="0" width="100%" class="inside_table">
+#%hide_description_begin%#<tr><td align="left" height="18">#%description%#</td></tr>#%hide_description_end%#
+<tr><td align="left" height="18">#%items_in_category%# <b>#%total%#</b></td></tr>
+#%hide_image_begin%#<tr><td align="left">#%image%#</td></tr>#%hide_image_end%#
+#%hide_user_defined_begin%#<tr><td align="left">#%user_defined%#</td></tr>#%hide_user_defined_end%#
+#%hide_submit_here_begin%#<tr><td align="left" height="18"><a href="#%item_submit_url%#">#%item_submit_text%#</a></td></tr>#%hide_submit_here_end%#
+#%edit_link%#
+<tr><td align="left"><div id="pages_div_box" class="pagination">#%pages%#</div></td></tr>
+<tr><td align="left" valign="top" colspan="5">Bookmark and share this category:  &nbsp; #%share_it%#</td></tr>
+</table></div>
+</div>
+
+#%hide_subcategories_begin%#
+<div class="common_div_main">
+<div class="common_div_title">Subcategories</div>
+<div class="common_div_content"><table border="0" width="100%" cellpadding="0" cellspacing="0" class="inside_table">
+#%subcategories%#
+</table></div>
+</div>
+#%hide_subcategories_end%#
+
+<div class="common_div_main" style="display:#%div_display_map%#">
+<div class="common_div_title">Map</div>
+<div class="common_div_content">
+<iframe marginwidth="0" marginheight="0" hspace="0" vspace="0" frameborder="0" scrolling="no" style="width:100%; height:570px; border:0px;" frameborder="0" src="#%site_url%#/map.php?cat=#%n%#"></iframe>
+</div>
+</div>
+
+#%hide_for_no_user_begin%#
+<div class="common_div_main">
+<div class="common_div_title">Features Available for Registered Users</div>
+<div class="common_div_content"><table border="0" width="100%" cellpadding="0" cellspacing="0">
+<tr><td align="left">#%add_delete_favorites%#</td></tr>
+<tr><td align="left"><a href="#c_notes_edit" onclick="check_show_hide_div('notes_edit_boxc#%n%#'); show_hide_div_id(0,'notes_show_boxc#%n%#');">Edit private notes for this category</a></td></tr>
+#%hide_notes_begin%#<tr><td align="left" id="notes_show_boxc#%n%#" style="display:#%notes_style_display%#"><span class="text_bold">Your private notes:</span> #%notes%#</td></tr>#%hide_notes_end%#
+</table>
+<div id="notes_edit_boxc#%n%#" style="display:none" align="left">
+#%notes_edit_box%#
+</div>
+</div>
+</div>
+#%hide_for_no_user_end%#
+
+<div class="common_div_main">
+<div class="common_div_title">#%items_title%#</div>
+<div class="common_div_content" id="content_div_box"><table border="0" width="100%" cellpadding="0" cellspacing="0">#%items%#</table></div>
+</div>
+
+<div id="pages_div_box1" class="pagination">#%pages1%#</div>
+
+#%hide_rss_content_begin%#
+<div class="common_div_main">
+<div class="common_div_title">Related News</div>
+<div class="common_div_content"><table border="0" width="100%" cellpadding="5" cellspacing="0">
+#%rss_content%#
+</table></div>
+</div>
+#%hide_rss_content_end%#
+
+#%hide_similar_begin%#
+<div class="common_div_main">
+<div class="common_div_title">Similar Categories</div>
+<div class="common_div_content"><table border="0" cellspacing="0" cellpadding="5" width="100%">
+#%similar%#
+</table></div>
+</div>
+#%hide_similar_end%#
+
+<div style="display:#%div_display_suggest%#;">
+<a name="suggest_category"></a>
+<div style="display:block;" id="suggest_category_link"><a href="#suggest_category" onclick="check_show_hide_div('suggest_category_link');check_show_hide_div('suggest_category_box');">Suggest a subcategory</a></div>
+<div class="common_div_main" style="display:none;" id="suggest_category_box">
+#%category_suggest_box%#
+</div>
+</div>
+
+#%ad2%#
+
+</td>
+
+<td class="right_column">
+
+#%adlinks%#
+
+#%in2%#
+
+</td></tr></table>
+
+

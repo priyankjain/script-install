@@ -1,0 +1,274 @@
+<html>
+
+<head>
+<title>How it works</title>
+<LINK href="styles.css" rel=StyleSheet>
+</head>
+
+
+<body>
+<p><span class="text13a_bold">How it works</span><br /><br />Most of the public 
+pages is generated on-the-fly, the data 
+ is always fresh.  Only your home page (index.php) and some parts of other pages are saved 
+to static files, these files need to be created once a day. <a href="rebuild.htm">Click 
+here</a> to read a detailed info.<br /></p>
+<p><b><u>Styles</u></b></p>
+<p>There 
+are several styles available by default, each style has its own subdirectory in directory 
+&quot;styles&quot;. Each of these subdirectories contains a styles.css 
+file where are defined all colors and fonts for  that style. Each style also 
+contains  images, these are used for backgrounds of tables and pages. You 
+can freely edit the styles.css files as well as images, you also 
+can edit templates of each style or create your own style(s).</p>
+<p>If you have a template and don't know how to use it in Link Up Gold, we can 
+create a new style for you by using your own template.<br /><br /><b><u>Templates</u></b></p>
+<p>All public 
+pages are based on templates - these are normal HTML&nbsp;or text files  
+editable in your favorite HTML or text editor. If possible, we recommend to use 
+a plain text editor (Notepad, Crimson Editor, NoteTab, First Page 2000, HTML-Kit 
+and so on)&nbsp;because WYSIWYG editors (like FrontPage, DreamWeaver etc.) often 
+add unwanted tags or remove necessary items, this may cause an error. However if you&nbsp;use a WYSIWYG editor, make sure that&nbsp;your 
+editor don't modify hidden fields of forms. Also note that the original templates 
+are not complete HTML pages - the header and footer are included automatically 
+by scripts (take a look&nbsp;below for more info) so if your editor adds 
+header and footer tags (&lt;html&gt;&lt;header&gt; .... &lt;/body&gt;&lt;/html&gt;) 
+to your templates, the finished pages will have these tags two times.<br /><br />Most of  the 
+templates contain 
+special 
+tags which look like #%someword%#. Scripts replace these tags with some values (like 
+Link Title, Description,  numbers of clicks etc.). Templates can be found 
+in directory styles/STYLE_NAME/templates. Styles which don't have 
+their own templates or have only a few of them&nbsp;use &quot;common&quot; 
+templates, these are stored in folder _common. In other words, 
+when the script needs to create a page, it searches for the required template 
+in the folder of the style which is just selected. If the required template 
+is missing in this folder, it grabs it in folder _common.<br />Templates 
+with <span class="template">html</span> extension are always used to create complete 
+HTML pages. Templates with <span class="template">txt</span> extension are used for fragments 
+of HTML pages (for example for a single link which should be repeated multiple 
+times on a  page).<br /><br /><b><u>HTML 
+Templates</u></b><br /></p>
+<p>At the top of each public page there is automatically 
+added content of the template<span class="template"> _head1.txt</span>. 
+At the end of each public page is automatically added content of file<span class="template"> _footer.txt</span>. 
+You can use these files 
+to add some content to each public page. It may save you a lot of time when you 
+will need to change something on all pages. By default, the&nbsp;_head1.txt 
+is used to insert the first tags of each page.<br />In the &quot;templates&quot; directory is also one&nbsp;file which may be optionally inserted into each public page 
+- <span class="template">_head2.txt</span>. This file is by default used to show the header table 
+and menu which is shared by all pages. It means that if you want to&nbsp;add your logo 
+or something else to each page, this is the file to edit. Content of this file 
+is not inserted automatically. It can be used in html templates. Use variable 
+#%head%# 
+to display this content.</p>
+<p>There are also files whose 
+content may be inserted into any public page to any place you want.&nbsp;Names 
+of these files look like <span class="template">_inX.txt</span> where X is a 
+numeric value. You can change the amount of these files in configuration. The 
+default value is 2. If you need more, create new files in the templates directory 
+and enter the maximum allowed number of them in configuration. Since it may 
+cause too high server load to use many of these files, we recommend to never 
+use more than 10-15. If you want to insert a content of one of these files to any 
+of your pages,  write #%inX%# to any template HTML to the 
+place where should be displayed this content. For example the variable #%in2%# 
+shows the content of file _in2.txt. By default are these files used only  for the tables on the left and  right side of 
+each page and for the search box at the top.  
+In all these files _inX.txt may be&nbsp;used some&nbsp;variables which are automatically replaced with their 
+values. These variables are:<br /></p>
+<table class="common_table" bordercolordark="white" bordercolorlight="black" border="1" cellpadding="5" cellspacing="0">
+  <tr>
+    <td nowrap>
+      <p>#%site_url%#</p>
+    </td>
+    <td>
+      <p>URL of the directory</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%l_first_cats%#</p>
+    </td>
+    <td>
+      <p>List of links to all first level categories 
+            of links. Each line of this list is based on template _in_one_category.txt.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%a_first_cats%#</p>
+    </td>
+    <td>
+      <p>List of links to all first level categories 
+            of articles. Each line of this list is based on template _in_one_category.txt.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%v_first_cats%#</p>
+    </td>
+    <td>
+      <p>List of links to all first level categories 
+            of videos. Each line of this list is based on template _in_one_category.txt.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%n_first_cats%#</p>
+    </td>
+    <td>
+      <p>List of links to all first level categories 
+            of news. Each line of this list is based on template _in_one_category.txt.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%b_first_cats%#</p>
+    </td>
+    <td>
+      <p>List of links to all first level categories 
+            of blogs. Each line of this list is based on template _in_one_category.txt.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%top_tags%#</p>
+    </td>
+    <td>
+      <p>The most popular keywords in links, articles, blogs, news and videos.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%l_toprated%#</p>
+    </td>
+    <td>
+      <p>Top rated links - number of links in this list is editable in configuration. 
+            Each line of this list is based on template _in_one_item.txt.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%l_popular%#</p>
+    </td>
+    <td>
+      <p>Most popular links (with the highest 
+            number of hits&nbsp;since the last monthly reset) - number of items in this list is editable 
+            in configuration. Each line of this list is based on template _in_one_item.txt.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%a_toprated%#</p>
+    </td>
+    <td>
+      <p>Top rated articles&nbsp;- number of items in this list is editable 
+            in configuration. Each line of this list is based on template _in_one_item.txt.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%a_popular%#</p>
+    </td>
+    <td>
+      <p>Popular articles&nbsp;- number of items in this list is editable 
+            in configuration. Each line of this list is based on template _in_one_item.txt.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%v_popular%#</p>
+    </td>
+    <td>
+      <p>Most popular videos  (with the highest 
+            number of reads&nbsp;since the last monthly reset) - number of items in this list is editable 
+            in configuration. Each line of this list is based on template _in_one_item.txt.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%v_toprated%#</p>
+    </td>
+    <td>
+      <p>Top rated videos&nbsp;- number of items in this list is editable 
+            in configuration. Each line of this list is based on template _in_one_item.txt.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%n_popular%#</p>
+    </td>
+    <td>
+      <p>Most popular news - number of items in this list is editable 
+            in configuration. Each line of this list is based on template _in_one_item.txt..</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%n_toprated%#</p>
+    </td>
+    <td>
+      <p>Top rated news  - number of items in this list is editable 
+            in configuration. Each line of this list is based on template _in_one_item.txt.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%b_popular%#</p>
+    </td>
+    <td>
+      <p>Most popular blogs  - number of items in this list is editable 
+            in configuration. Each line of this list is based on template _in_one_item.txt.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%b_toprated%#</p>
+    </td>
+    <td>
+      <p>Top rated blogs  - number of items in this list is editable 
+            in configuration. Each line of this list is based on template _in_one_item.txt.</p>
+    </td>
+  </tr>
+</table>
+<br />There are also some special variables which 
+look like #_variable_#. Please don't edit these variables, these are usually 
+used to show or hide a content of a page, depending on the current configuration 
+and needs. These variables are needed for the system to work.<p><u><b>Email 
+templates</b></u><br />All email templates may 
+be found in <b>styles/_common/email_templates</b> 
+directory. If you need different email 
+templates for individual styles (for example to create&nbsp;a multi-language directory), 
+copy the directory email_templates to&nbsp;directory of the&nbsp;style(s) where you want to 
+use it. The system is the same as for templates for pages - the script searches 
+for a template in directory of the selected style, if the required template 
+does not exist, it grabs it from the _common directory. Note that 
+different styles are not applicable to all email templates. The script can apply 
+different styles to those email templates which are used to send emails from 
+public pages (like link_added.txt, tell_friend.txt), it applies the currently 
+selected style. Different styles are not supported for email templates sent 
+by admin (for example link_approved.txt, newsletter.txt) because there is not 
+a style selected in the time when the email is sent.<br /> 
+The first line of each email template must always begin with the word &quot;Subject: &quot; and below this line 
+must be one blank line, then is a text of the email.<br />In configuration, there 
+is the option to choose to send all emails in HTML or plain text format. You 
+also can send only selected emails in HTML format. To do it, enter &quot;HTML_EMAIL&quot; 
+(without quotes) at the end of subject line of the selected template.<br /><br /></p>
+<p><b><u>Messages</u></b><br />Messages generated by scripts are used when the 
+system needs to show some info to visitors. It may be for example 
+error messages in the link submit form in the case that the entered data was 
+rejected etc. The system is the same as for templates - you can have different 
+messages for each style. By default, messages for style &quot;_common&quot; 
+are used for all styles.</p>
+<p><b><u>CSS Styles</u></b></p>
+<p>Each of the color styles contains a styles.css file in its subfolder in styles 
+directory. In this file are editable all colors, fonts and all other features 
+of the color style. There also can be enabled/disabled the left and right columns. 
+For example the left column is defined by using this code:</p>
+<p><span class="fakelink">.left_column {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;display:block;<br>}</span></p>
+<p>You can edit it like this to hide the left column:</p>
+<p><span class="fakelink">.left_column {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;display:none;<br>}</span></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</body>
+
+</html>

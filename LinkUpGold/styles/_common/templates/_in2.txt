@@ -1,0 +1,132 @@
+<div class="div_left_right_main">
+
+
+<div class="div_left_right_small">
+<div class="div_left_right_small_topcell"><img alt="" src="#%site_url%#/images/icon_top_tags.gif" style="margin-bottom:-3px;">&nbsp;&nbsp;Top Tags</div>
+<div class="div_left_right_small_inside" style="padding:5px;">
+#%top_tags%#
+</div>
+</div>
+
+#_hide_home_begin_#
+#%begin_l%#
+<div class="div_left_right_small">
+<div class="div_left_right_small_topcell"><img alt="" src="#%site_url%#/images/icon_links.png" style="margin-bottom:-3px;">&nbsp;&nbsp;Top Rated Links</div>
+<div class="div_left_right_small_inside">
+#%l_toprated%#
+</div>
+</div>
+
+<div class="div_left_right_small">
+<div class="div_left_right_small_topcell"><img alt="" src="#%site_url%#/images/icon_links.png" style="margin-bottom:-3px;">&nbsp;&nbsp;Popular Links</div>
+<div class="div_left_right_small_inside">
+#%l_popular%#
+</div>
+</div>
+#%end_l%#
+
+#%begin_v%#
+<div class="div_left_right_small">
+<div class="div_left_right_small_topcell"><img alt="" src="#%site_url%#/images/icon_videos.png" style="margin-bottom:-3px;">&nbsp;&nbsp;Top Rated Videos</div>
+<div class="div_left_right_small_inside">
+#%v_toprated%#
+</div>
+</div>
+
+<div class="div_left_right_small">
+<div class="div_left_right_small_topcell"><img alt="" src="#%site_url%#/images/icon_videos.png" style="margin-bottom:-3px;">&nbsp;&nbsp;Popular Videos</div>
+<div class="div_left_right_small_inside">
+#%v_popular%#
+</div>
+</div>
+#%end_v%#
+
+#%begin_b%#
+<div class="div_left_right_small">
+<div class="div_left_right_small_topcell"><img alt="" src="#%site_url%#/images/icon_blogs.png" style="margin-bottom:-3px;">&nbsp;&nbsp;Top Rated Blogs</div>
+<div class="div_left_right_small_inside">
+#%b_toprated%#
+</div>
+</div>
+
+<div class="div_left_right_small">
+<div class="div_left_right_small_topcell"><img alt="" src="#%site_url%#/images/icon_blogs.png" style="margin-bottom:-3px;">&nbsp;&nbsp;Popular Blogs</div>
+<div class="div_left_right_small_inside">
+#%b_popular%#
+</div>
+</div>
+#%end_b%#
+
+#%begin_n%#
+<div class="div_left_right_small">
+<div class="div_left_right_small_topcell"><img alt="" src="#%site_url%#/images/icon_news.png" style="margin-bottom:-3px;">&nbsp;&nbsp;Top Rated News</div>
+<div class="div_left_right_small_inside">
+#%n_toprated%#
+</div>
+</div>
+
+<div class="div_left_right_small">
+<div class="div_left_right_small_topcell"><img alt="" src="#%site_url%#/images/icon_news.png" style="margin-bottom:-3px;">&nbsp;&nbsp;Popular News</div>
+<div class="div_left_right_small_inside">
+#%n_popular%#
+</div>
+</div>
+#%end_n%#
+
+#%begin_a%#
+<div class="div_left_right_small">
+<div class="div_left_right_small_topcell"><img alt="" src="#%site_url%#/images/icon_articles.png" style="margin-bottom:-3px;">&nbsp;&nbsp;Top Rated Articles</div>
+<div class="div_left_right_small_inside">
+#%a_toprated%#
+</div>
+</div>
+
+<div class="div_left_right_small">
+<div class="div_left_right_small_topcell"><img alt="" src="#%site_url%#/images/icon_articles.png" style="margin-bottom:-3px;">&nbsp;&nbsp;Popular Articles</div>
+<div class="div_left_right_small_inside">
+#%a_popular%#
+</div>
+</div>
+#%end_a%#
+#_hide_home_end_#
+
+<div class="div_left_right_small">
+<div class="div_left_right_small_topcell"><img alt="" src="#%site_url%#/images/icon_news.png" style="margin-bottom:-3px;">&nbsp;&nbsp;In The News</div>
+<div class="div_left_right_small_inside" style="padding:5px;margin-top:-20px;overflow:hidden;">
+<!--
+// Created with a Google AJAX Search Wizard
+// http://code.google.com/apis/ajaxsearch/wizards.html
+-->
+<div id="newsBar-bar">
+<span>Loading...</span>
+</div>
+<script src="http://www.google.com/uds/api?file=uds.js&v=1.0&source=uds-nbw"
+type="text/javascript"></script>
+<!-- News Bar Code and Stylesheet -->
+<script type="text/javascript">
+window._uds_nbw_donotrepair = true;
+</script>
+<script src="http://www.google.com/uds/solutions/newsbar/gsnewsbar.js?mode=new"
+type="text/javascript"></script>
+<style type="text/css">
+@import url("http://www.google.com/uds/solutions/newsbar/gsnewsbar.css");
+</style>
+<script type="text/javascript">
+function LoadNewsBar() {
+var newsBar;
+var options = {
+largeResultSet : false,
+title : "&nbsp;",
+horizontal : false,
+autoExecuteList : {
+executeList : [#_current_words_#]
+}
+}
+newsBar = new GSnewsBar(document.getElementById("newsBar-bar"), options);
+}
+GSearch.setOnLoadCallback(LoadNewsBar);
+</script>
+</div>
+</div>
+
+</div>

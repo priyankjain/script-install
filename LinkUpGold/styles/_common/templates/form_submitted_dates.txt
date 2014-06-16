@@ -1,0 +1,4 @@
+<tr>
+<td nowrap align="left">Valid </td>
+<td nowrap align="left">From #%date_1%# To #%date_2%#</td>
+</tr>

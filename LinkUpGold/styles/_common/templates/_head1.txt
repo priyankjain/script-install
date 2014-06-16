@@ -1,0 +1,20 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=#%charset%#">
+<title>#%meta_title%#</title>
+<meta name="description" content="#%meta_description%#">
+<meta name="keywords" content="#%meta_keywords%#">
+<script type="text/javascript">
+var site_url = "#%site_url%#";
+image1 = new Image();
+image1.src = "#%site_url%#/images/waiting.gif";
+</script>
+<script type="text/javascript" src="#%site_url%#/files/javascripts.js"></script>
+<LINK href="#%site_url%#/files/shared.css" rel=StyleSheet>
+<LINK href="#%site_url%#/styles/#%css_style%#/styles.css" rel="StyleSheet">
+#%head_pagination%#
+</head>
+<body>
+<a name="page_top"></a>
+<div align="center">

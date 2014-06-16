@@ -1,0 +1,25 @@
+
+#%info%#
+
+<div id="claim_listing_wait" name="claim_listing_wait"></div>
+
+<form method="post" id="claim_listing_form" name="claim_listing_form" action="javascript:parse_ajax_request(document.getElementById('claim_listing_form'),'#%site_url%#/contact.php','claim_listing_box');">
+<input type="hidden" name="action" value="claim_listing">
+<input type="hidden" name="what" value="#%what%#">
+<input type="hidden" name="n" value="#%n%#">
+
+<table border="0" width="100%" cellpadding="0" cellspacing="0" class="table_20px_padding">
+<tr><td align="left"><span class="text_bold">Claim this listing</span></td></tr>
+<tr><td align="left">To claim this listing please enter your message to this field to contact us.</td></tr>
+<tr>
+<td align="left"><textarea class="field10" style="width:500px;height:200px;" name="message"></textarea></td>
+</tr>
+<tr>
+ <td align="left"><input type="submit" value="Send" name="B1" class="button10" onclick="show_waiting('claim_listing_wait');"></td>
+</tr>
+</table>
+
+</form>
+
+
+

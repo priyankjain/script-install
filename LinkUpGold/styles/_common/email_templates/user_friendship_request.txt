@@ -1,0 +1,4 @@
+Subject: Friendship Request
+
+User #%nick%# dsent you a friendship with you.
+You can see this user at #%user_url%#.

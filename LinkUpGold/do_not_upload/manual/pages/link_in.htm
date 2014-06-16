@@ -1,0 +1,146 @@
+<html>
+
+<head>
+<title>Link In</title>
+
+<LINK href="styles.css" rel=StyleSheet>
+</head>
+
+
+<body>
+<p><span class="text13a_bold">Links in frame - link_in_frame.php</span><br /><br />This 
+script is used to open a selected link in a frame. Your visitors can see 
+the a&nbsp;link or browse between all links in your directory without leaving your site. You can use it instead of&nbsp;the link URL&nbsp;in the templates 
+which are used to show a link (link_a.txt, link_advertising.txt, link_details.html) by replacing #%url%# with &quot;link_in_frame.php?link=#%n%#&quot;. You also can use that as 
+an alternative for your visitors (this way&nbsp;used in the original templates).<br />The 
+URL to call this script is<span class="fakelink"> link_in_frame.php?link=LINK_NUMBER</span> 
+      where LINK_NUMBER is number of the required link.<br /><br />To show the main frame&nbsp;is 
+used template <span class="template">link_in_frame.html</span>, these variables are used:<br /><br /></p>
+<table class="common_table" bordercolordark="white" bordercolorlight="black" border="1" cellpadding="5" cellspacing="0">  <tr>
+    <td nowrap>
+      <p>#%site_url%#<br /></p>
+    </td>
+    <td>
+      <p>URL of your site.</p>
+    </td>
+  </tr>
+ 
+  <tr>
+    <td nowrap>
+      <p>#%n%#</p>
+    </td>
+    <td>
+      <p>Number&nbsp;of the link.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%title%#</p>
+    </td>
+    <td>
+      <p>Title of the link.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%c%#</p>
+    </td>
+    <td>
+      <p>Category number.</p>
+    </td>
+  </tr>
+</table>
+<p>To show the top frame is used template <span class="template">link_in_frame_top.html</span>. 
+Used variables:<br /></p>
+<table class="common_table" bordercolordark="white" bordercolorlight="black" border="1" cellpadding="5" cellspacing="0">    <tr>
+    <td nowrap>
+      <p>#%site_url%#<br /></p>
+    </td>
+    <td>
+      <p>URL of your site</p>
+    </td>
+  </tr>
+ 
+<tr>
+    <td nowrap>
+      <p>#%n%#</p>
+    </td>
+    <td>
+      <p>Number&nbsp;of the link.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%title%#</p>
+    </td>
+    <td>
+      <p>Title of the link.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%url%#</p>
+    </td>
+    <td>
+      <p>URL of the  link.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%item_details_url%#</p>
+    </td>
+    <td>
+      <p>URL of the  link details page.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%category_url%#</p>
+    </td>
+    <td>
+      <p>URL of the category where the link 
+      comes from.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%category_name%#</p>
+    </td>
+    <td>
+      <p>Name of the category where the link comes 
+            from.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%c%#</p>
+    </td>
+    <td>
+      <p>Number of the category where the link comes 
+            from.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%previous%#<br>#%next%#<br>#%previous_category%#<br>#%next_category%#&nbsp;</p>
+    </td>
+    <td>
+      <p>Links to previous/next links in your directory and to previous/next 
+            links in the same category.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%hide_something_begin%#<br>#%hide_something_end%#&nbsp;</p>
+    </td>
+    <td>
+      <p>There are multiple variables which look like this example. These variables 
+            are used to hide content which is not applicable for the current 
+            link. You should not edit these variables.</p>
+    </td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+</body>
+
+</html>

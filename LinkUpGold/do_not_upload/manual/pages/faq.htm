@@ -1,0 +1,58 @@
+<html>
+
+<head>
+<title>FAQ</title>
+
+<LINK href="styles.css" rel=StyleSheet>
+</head>
+
+
+<body>
+<p><span class="text13a_bold">Frequently Asked Questions</span><br /><br /><u>I 
+have just installed Link Up Gold and added some categories but these are not 
+visible on my home page ...</u><br />The home 
+page is&nbsp;not generated on-the-fly but is stored in a file. This way is used 
+in order to save system resources, it would be too difficult for your&nbsp;server 
+to generate it each time when someone reaches your site. Run &quot;Daily 
+Job&quot; (Administration =&gt; Reset/rebuild) to make the changes (new categories) 
+visible on the home page. Also make sure to set the system to run this job&nbsp;regularly 
+once a day. More info <a href="rebuild.htm">here</a>.<br /><br /><u>When 
+I try to run Daily Job, I receive a MySQL error, how can I fix it?</u><br />You 
+didn't set all variables. Go to Administration =&gt; Main Configuration and enter 
+values to all fields.<br />&nbsp;<br /><u>How 
+do I move Link Up Gold to another server?</u><br />1) 
+Create a database backup by the backup function in Administration of Link Up Gold 
+or by using PHPMyAdmin, in this case set to backup data only, not structure of tables.<br />2) 
+Install Link Up Gold to the new server, follow instructions for 
+<a href="admin-installation.htm">installation</a>.<br />3) 
+Set all variables and make sure that all works properly.<br />4) Use PHPMyAdmin 
+to restore the data.<br />5) Run function &quot;Recount all links and articles&quot; in Link Up Gold 
+ Administration =&gt; Reset/rebuild.<br /><br /><u>How do I move Link Up Gold to another directory on 
+the same server?</u><br />1) Move your files, make sure that permissions for all files 
+are set properly on the new place.<br />2) Download file &quot;data.php&quot; 
+(it's in &quot;data&quot; directory) and open it with a text editor.<br />3) Find 
+these lines:
+<br />$s[phppath] = '/full/path/to/your/directory';<br />$s[site_url] = 'http://www.youdomain.com/directory';
+<br>Change the values to 
+the new server path and new URL.<br />4) Upload this file to your server, then 
+go to Administration =&gt; Reset/rebuild, run Daily Job, then  make sure that all works fine.<br /><br /><u>I 
+want to create a multi-language directory, visitors can choose a&nbsp;language 
+by their needs.</u><br />You can use the styles 
+feature for this job. Let's say you want to create a directory in English and 
+Spanish with default language English.<br />- Copy the directory &quot;_common&quot; 
+two times. Name the first copy &quot;English&quot; and the second copy &quot;Spanish&quot;.<br />- Translate all templates and messages 
+in the directory &quot;Spanish&quot; to Spanish. You can use functions &quot;Messages&quot; 
+and &quot;Templates&quot; in Administration for it.<br />- Copy styles.css file from 
+some style and place it to both the new folders (English and Spanish).<br />- 
+Go to configuration and choose that the default style should be English.<br /> - 
+Now run &quot;Daily Job&quot;, 
+it applies the changes you made.<br />Notes:<br />- Links, articles and other content will 
+be in one 
+language only.<br />- In configuration set as &quot;charset which will be used&quot; 
+a charset which can display properly all languages you use. In most cases but 
+not always it would be  UTF-8..<br />- Some email templates are always 
+taken from directory &quot;_common&quot;. <a href="howitworks.htm">Click 
+here</a> for more info.<p>&nbsp;</p>
+</body>
+
+</html>

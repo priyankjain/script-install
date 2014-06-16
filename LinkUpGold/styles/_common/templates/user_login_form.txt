@@ -1,0 +1,24 @@
+#%info%#
+
+<form method="post" id="user_login_form" action="javascript:parse_ajax_request(document.getElementById('user_login_form'),'#%site_url%#/user.php','user_login_form');">
+<input type="hidden" name="action" value="logged_in">
+<table cellspacing="0" cellpadding="2" width="100%">
+<tr>
+<td align="left" style="vertical-align:bottom;">Username <br /><input class="field10" maxLength="15" style="width:110px" name="username" value="#%username%#"></td>
+<td align="left" style="vertical-align:bottom;">Password <br /><input class="field10" type="password" maxLength="15" style="width:110px" name="password" value="#%password%#"></td>
+<td align="right" style="vertical-align:bottom;"><input type="submit" value="Submit" name="B1" class="button10" style="height:28px;"></td>
+</tr>
+<tr style="display:#%display_captcha_tr%#;">
+<td align="left" style="vertical-align:bottom;">Your code <br /><img alt="" src="#%site_url%#/image_control.php?action=get_image&x=#%captcha_code%#"></td>
+<td align="left" style="vertical-align:bottom;">Enter the code <br /><input maxlength="10" style="width:110px" name="image_control" class="field10"></td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td align="left" valign="bottom"><a href="#%site_url%#/user.php?action=user_remind">Password reminder</a></td>
+<td align="right" colspan="2" valign="bottom"><input type="checkbox" value="1" name="remember_me"> Keep me logged in</td>
+</tr>
+<tr>
+<td align="left" valign="bottom" colspan="3"><script src="#%site_url%#/facebook.php"></script></td>
+</tr>
+</table>
+</form>

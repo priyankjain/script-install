@@ -1,0 +1,7 @@
+Subject: User post a new message to wall
+
+User ##%user_n%#, name #%name%# created the following post.
+#%title%#
+#%text%#
+
+IP: #%ip%#

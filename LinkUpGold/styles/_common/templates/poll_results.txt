@@ -1,0 +1,11 @@
+<div class="div_left_right_small_topcell"><img alt="" src="#%site_url%#/images/icon_poll.png" style="margin-bottom:-3px;">&nbsp;&nbsp;Our Poll</div>
+<div class="div_left_right_small_inside">#%info%#
+<p><b>#%question%#</b></p>
+<p>#%graph_1%#</p>
+<p>#%graph_2%#</p>
+<p>#%graph_3%#</p>
+<p style="display:#%display4%#">#%graph_4%#</p>
+<p style="display:#%display5%#">#%graph_5%#</p>
+<p><b>Total votes: #%votes%#</b></p>
+</div>
+

@@ -1,0 +1,10 @@
+Subject: Your Article
+
+Thank you for your link submission. Your article has been approved and is visible on our pages.
+Title: #%title%#
+Subtitle: #%description%#
+Category: #%categories%#
+URL of category: #%categories_urls%#
+Name: #%name%#
+Article number: #%n%#
+Detail page URL: #%detail_url%#

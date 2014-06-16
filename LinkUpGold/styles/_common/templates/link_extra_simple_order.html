@@ -1,0 +1,75 @@
+
+#%head%#
+
+
+
+
+<div class="div_navigation">
+<a href="#%site_url%#/index.php">Home</a> >> <a href="#%site_url%#/user.php?action=user_home">User home page</a> >> <h1>Summary of Your Order</h1>
+</div>
+
+
+<table cellspacing="0" cellpadding="0" style="table-layout:fixed;">
+<tr>
+<td style="width:250px;height:1px;padding:0px;margin:0px;line-height:1px;" class="left_column"><img border="0" src="#%site_url%#/images/blank.gif" width="250" height="1"></td>
+<td width="100%" style="height:1px;padding:0px;margin:0px;line-height:1px;"><img border="0" src="#%site_url%#/images/blank.gif" width="50" height="1"></td>
+<td style="width:250px;height:1px;padding:0px;margin:0px;line-height:1px;" class="right_column"><img border="0" src="#%site_url%#/images/blank.gif" width="250" height="1"></td>
+</tr>
+<tr>
+<td class="left_column">
+
+#%in1%#
+
+
+</td>
+<td class="cell_middle">
+
+#%in3%#
+
+#%info%#
+
+<div class="common_div_main">
+<div class="common_div_title">Summary of Your Order</div>
+<div class="common_div_content"><table border="0" cellpadding="5" cellspacing="0">
+<tr><td align="center">
+
+<form action="#%site_url%#/link_extra_features.php" method="post">
+<input type="hidden" name="action" value="link_simple_days_reviewed">
+<input type="hidden" name="n" value="#%n%#">
+<input type="hidden" name="days" value="#%days%#">
+<table cellspacing="0" cellpadding="2" width="400" border="0">
+#%hidden_fields%#
+<tr>
+<td align="left" valign="top" nowrap>Link number </td>
+<td align="left" valign="top" nowrap>#%n%#</td>
+</tr>
+<tr>
+<td align="left" valign="top" nowrap>Title </td>
+<td align="left" valign="top" nowrap>#%title%#</td>
+</tr>
+<tr>
+<td align="left" valign="top" nowrap>Number of days</td>
+<td align="left" valign="top" nowrap>#%days%# days</td>
+</tr>
+<tr>
+<td align="left" valign="top" nowrap>Amount to pay</td>
+<td align="left" valign="top" nowrap>#%currency%##%price%#</td>
+</tr>
+<tr><td align="center" colspan=2><input type="submit" value="Continue" name="B1" class="button10"></td></tr>
+</table></form>
+
+</td></tr></table></div>
+</div>
+
+
+#%prices_table%#
+
+</td>
+
+<td class="right_column">
+
+#%in2%#
+
+</td></tr></table>
+
+

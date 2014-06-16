@@ -1,0 +1,90 @@
+
+#%head%#
+
+
+
+
+<div class="div_navigation">
+<a href="#%site_url%#/index.php">Home</a> >> <a href="#%site_url%#/user.php?action=user_home">User home page</a> >> <h1>Edit Your AdLink</h1>
+</div>
+
+<table cellspacing="0" cellpadding="0" style="table-layout:fixed;">
+<tr>
+<td style="width:250px;height:1px;padding:0px;margin:0px;line-height:1px;" class="left_column"><img border="0" src="#%site_url%#/images/blank.gif" width="250" height="1"></td>
+<td width="100%" style="height:1px;padding:0px;margin:0px;line-height:1px;"><img border="0" src="#%site_url%#/images/blank.gif" width="50" height="1"></td>
+<td style="width:250px;height:1px;padding:0px;margin:0px;line-height:1px;" class="right_column"><img border="0" src="#%site_url%#/images/blank.gif" width="250" height="1"></td>
+</tr>
+<tr>
+<td class="left_column">
+
+#%in1%#
+
+
+</td>
+<td class="cell_middle">
+
+#%in3%#
+
+
+#%info%#
+
+<table border="0" cellspacing="0" cellpadding="0" width="180">
+#%preview%#
+</table>
+<br />
+
+<div class="common_div_main">
+<div class="common_div_title">Edit Your AdLink</div>
+<div class="common_div_content">
+#%form%#
+</div>
+</div>
+
+
+<div class="common_div_main">
+<div class="common_div_title">Clicks</div>
+<div class="common_div_content">
+
+
+<table cellspacing="0" cellpadding="2" width="480" border="0" class="inside_table">
+#%hide_minmax_price_begin%#
+<tr>
+<td nowrap align="center" colspan="3">This AdLink currently has available #%c_now%# clicks. You can use this form to add clicks to it.</td>
+</tr>
+<tr>
+<td nowrap align="left">Price for 1 click </td>
+<td nowrap align="left">Minimal price: #%currency%##%price_min%#</td>
+<td nowrap align="left">Maximal price: #%currency%##%price_max%#</td>
+</tr>
+#%hide_minmax_price_end%#
+<tr><td nowrap align="center" colspan="4"><b>Add Clicks by Using Funds on Your Account</b></td></tr>
+<tr><td nowrap align="center" colspan="4">Your current account balance: #%currency%##%funds_balance%#. <a href="#%site_url%#/link_extra_features.php?action=funds_add">Purchase new funds</a></td></tr>
+<form action="#%site_url%#/adlinks.php" method="post" name="link">
+<input type="hidden" name="action" value="adlink_clicks_added">
+<input type="hidden" name="option" value="use_funds">
+<input type="hidden" name="n" value="#%n%#">
+<tr><td nowrap align="center" colspan="4">
+Add <input maxlength="7" size="7" name="clicks" class="field10"> clicks for #%currency%#<input maxlength="7" size="7" name="price" value="#%price%#" class="field10"#%price_disabled%#> each&nbsp;<input type="submit" value="Submit" name="B1" class="button10">
+</td></tr></form>
+<tr><td nowrap align="center" colspan="4"><b>Add Clicks & Pay by PayPal or A Credit Card</b></td></tr>
+<form action="#%site_url%#/adlinks.php" method="post" name="link">
+<input type="hidden" name="action" value="adlink_clicks_added">
+<input type="hidden" name="option" value="pay_now">
+<input type="hidden" name="n" value="#%n%#">
+<tr><td nowrap align="center" colspan="4">
+Add <input maxlength="7" size="7" name="clicks" class="field10"> clicks for #%currency%#<input maxlength="7" size="7" name="price" value="#%price%#" class="field10"#%price_disabled%#> each&nbsp;<input type="submit" value="Submit" name="B1" class="button10">
+</td></tr></form>
+</table>
+
+</div>
+</div>
+
+</td>
+
+<td class="right_column">
+
+#%in2%#
+
+</td></tr></table>
+
+

@@ -1,0 +1,13 @@
+<tr>
+<td align="left" nowrap>#%n%#</td>
+<td align="center" nowrap>#%enabled%#</td>
+<td align="center" nowrap>#%approved%#</td>
+<td align="center" nowrap>#%c_total%#</td>
+<td align="center" nowrap>#%c_now%#</td>
+<td align="center" nowrap>
+<table border="0" cellspacing="0" cellpadding="0" width="180">#%preview%#</table></td>
+<td align="center" nowrap><a href="#%site_url%#/adlinks.php?action=adlink_edit&amp;n=#%n%#">Edit it & Add clicks</a></td>
+#%hide_delete_begin%#
+<td align="center"><a href="javascript: go_to_delete('Are you sure?','#%site_url%#/adlinks.php?action=adlink_delete&amp;n=#%n%#')">Delete</a></td>
+#%hide_delete_end%#
+</tr>

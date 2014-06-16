@@ -1,0 +1,10 @@
+Subject: Error Report Submitted
+
+An error report has been submitted to your search engine. If you want review this report, you have to go to #%site_url%#/administration/
+Link number: #%n%#
+Comment: #%comment%#
+Email: #%email%#
+IP: #%ip%#
+Report number: #%c_number%#
+Link URL: #%url%#
+Link title: #%title%#

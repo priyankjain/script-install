@@ -1,0 +1,9 @@
+Subject: User #%action%#
+
+Username: #%username%#
+Password: #%password%#
+Email: #%email%#
+Name: #%name%#
+Address: #%address%#
+Phones: #%phones%#
+Number: #%n%#

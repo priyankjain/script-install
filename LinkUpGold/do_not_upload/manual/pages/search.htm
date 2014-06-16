@@ -1,0 +1,442 @@
+<html>
+
+<head>
+<title>Search.php</title>
+<LINK href="styles.css" rel=StyleSheet>
+</head>
+
+
+<body>
+<p><span class="text13a_bold">Searching on public pages - search.php</span><br /><br />This 
+script is used to search for links, articles, blogs, videos and news. There are two 
+forms&nbsp;to start searching:</p>
+<ul type="disc">
+    <li>Simple search form - it's used to search for links, articles, blogs, 
+    news and videos. This 
+    form is in template _head2.txt (it's at the top of all pages)&nbsp;and index.html 
+    (it's on the front page)</li>
+    <li>Advanced search form (see below).</li>
+</ul>
+<p>The simple and advanced search forms searches in Link/Article/Video/News 
+item Title, Description/Subtitle, 
+Detailed Description/Text, Link URL, Keywords. The 
+advanced search form allows you to create a field to&nbsp;search also in a particular 
+user field and even in a range of numeric values. The code for each of your 
+user fields is available in Administration =&gt; User defined items. Click on 
+the name of the field you want to include to the advanced search form. There 
+is the edit form and below it is a table with available codes that can be used 
+to search in the selected user field, these codes can be used in the advanced 
+search form&nbsp;in template search.html.</p>
+<p><b><u>Advanced Search 
+Forms</u></b><br /><br /> Your visitors can enter 
+1 - 3 phrases to search for and they also can select which category should be 
+searched in. At least the first&nbsp;search phrase is required. To show the search 
+forms is used template <span class="template">search.html</span> which uses these variables:<br /></p>
+<table class="common_table" bordercolordark="white" bordercolorlight="black" border="1" cellpadding="5" cellspacing="0">
+<tr>
+    <td nowrap>
+      <p>#%in1%#<br />#%in2%#&nbsp;</p>
+    </td>
+    <td>
+      <p>Content of files _in1.txt .... . 
+            This may be used to insert some information to several or all pages. In 
+            these files may be also used some variables.
+            More info <a href="howitworks.htm">here</a>.</p>
+    </td>
+  </tr>  <tr>
+    <td nowrap>
+      <p>#%head%#<br /></p>
+    </td>
+    <td>
+      <p>Content of file _head2.txt. This may 
+            be used to insert some information to the begin of several or all&nbsp;pages. 
+            More info  
+            <a href="howitworks.htm">here</a>.</p>
+    </td>
+  </tr>
+ 
+<tr>
+    <td nowrap>
+      <p>#%site_url%#<br /></p>
+    </td>
+    <td>
+      <p>URL of your site</p>
+    </td>
+  </tr>
+ 
+
+ 
+<tr>
+    <td nowrap>
+      <p>#%info%#<br /></p>
+    </td>
+    <td>
+      <p>If the searching returned no one link nor article, it displays this 
+            info.</p>
+    </td>
+  </tr>
+ 
+<tr>
+    <td nowrap>
+      <p>#%l_all_cats%#</p>
+    </td>
+    <td>
+      <p>A tree of all categories of links to select from.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%l_first_cats%#</p>
+    </td>
+    <td>
+      <p>Select box with all first level categories 
+            of links.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%sort_options_l%#</p>
+    </td>
+    <td>
+      <p>Select box where your visitors can select 
+            how the links in search result&nbsp;will be sorted</p>
+    </td>
+  </tr>
+<tr>
+    <td nowrap>
+      <p>#%a_all_cats%#</p>
+    </td>
+    <td>
+      <p>A tree of all categories of articles 
+            to select from.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%a_first_cats%#</p>
+    </td>
+    <td>
+      <p>Select box with all first level categories 
+            of articles.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%sort_options_a%#</p>
+    </td>
+    <td>
+      <p>Select box where your visitors can select 
+            how the articles&nbsp;in search result&nbsp;will be sorted</p>
+    </td>
+  </tr>
+<tr>
+    <td nowrap>
+      <p>#%v_all_cats%#</p>
+    </td>
+    <td>
+      <p>A tree of all categories of videos 
+            to select from.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%v_first_cats%#</p>
+    </td>
+    <td>
+      <p>Select box with all first level categories 
+            of videos.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%sort_options_v%#</p>
+    </td>
+    <td>
+      <p>Select box where your visitors can select 
+            how the videos&nbsp;in search result&nbsp;will be sorted</p>
+    </td>
+  </tr>
+<tr>
+    <td nowrap>
+      <p>#%n_all_cats%#</p>
+    </td>
+    <td>
+      <p>A tree of all categories of news 
+            to select from.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%n_first_cats%#</p>
+    </td>
+    <td>
+      <p>Select box with all first level categories 
+            of news.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%sort_options_n%#</p>
+    </td>
+    <td>
+      <p>Select box where your visitors can select 
+            how the news&nbsp;in search result&nbsp;will be sorted</p>
+    </td>
+  </tr>
+<tr>
+    <td nowrap>
+      <p>#%b_all_cats%#</p>
+    </td>
+    <td>
+      <p>A tree of all categories of blogs 
+            to select from.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%b_first_cats%#</p>
+    </td>
+    <td>
+      <p>Select box with all first level categories 
+            of blogs.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%sort_options_b%#</p>
+    </td>
+    <td>
+      <p>Select box where your visitors can select 
+            how the blogs&nbsp;in search result&nbsp;will be sorted</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%top_tags%#</p>
+    </td>
+    <td>
+      <p>The most popular keywords in links, articles, news and videos.</p>
+    </td>
+  </tr>
+</table>
+<br />
+<br /><u><b>Search 
+Results</b></u><br /><br />To show search results is when&nbsp;searching in 
+the advanced search form or when searching for only links or only articles or 
+only videos or only news in the simple search form is used template <span class="template">search_result.html</span>. 
+These variables are used:<br /><table class="common_table" bordercolordark="white" bordercolorlight="black" border="1" cellpadding="5" cellspacing="0">
+<tr>
+    <td nowrap>
+      <p>#%in1%#<br />#%in2%#&nbsp;</p>
+    </td>
+    <td>
+      <p>Content of files _in1.txt .... . 
+            This may be used to insert some information to several or all pages. In 
+            these files may be also used some variables.
+            More info <a href="howitworks.htm">here</a>.</p>
+    </td>
+  </tr>  <tr>
+    <td nowrap>
+      <p>#%head%#<br /></p>
+    </td>
+    <td>
+      <p>Content of file _head2.txt. This may 
+            be used to insert some information to the begin of several or all&nbsp;pages. 
+            More info  
+            <a href="howitworks.htm">here</a>.</p>
+    </td>
+  </tr>
+ 
+<tr>
+    <td nowrap>
+      <p>#%site_url%#<br /></p>
+    </td>
+    <td>
+      <p>URL of your site</p>
+    </td>
+  </tr>
+ 
+
+ 
+<tr>
+    <td nowrap>
+      <p>#%searched%#</p>
+    </td>
+    <td>
+      <p>Searched phrase(s).</p>
+    </td>
+  </tr>
+<tr>
+    <td nowrap>
+      <p>#%result_categories%#</p>
+    </td>
+    <td>
+      <p>It displays categories whose titles, descriptions or user defined items 
+            contain the searched phrases.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%items%#</p>
+    </td>
+    <td>
+      <p>List of the  links, articles, news or videos that meet the search criteria.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%adlinks%#</p>
+    </td>
+    <td>
+      <p>List of the AdLinks that meet the search criteria.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%pages%#</p>
+    </td>
+    <td>
+      <p>This variable is based on templates<span class="template"> pages_form.txt</span> or <span class="template">pages_list.txt</span>, 
+            depending on your configuration. It shows the total number of links 
+            or articles in search results, list of pages with the option to 
+            skip to other pages and also options to sort the results by another 
+            criteria.</p>
+    </td>
+  </tr>
+</table>
+<br /><br />To show search results when searching for items in the whole database 
+(this option is available in the simple search form) is used template <span class="template">search_result_all.html</span>. 
+These variables are used:<br /><table class="common_table" bordercolordark="white" bordercolorlight="black" border="1" cellpadding="5" cellspacing="0">
+<tr>
+    <td nowrap>
+      <p>#%in1%#<br />#%in2%#&nbsp;</p>
+    </td>
+    <td>
+      <p>Content of files _in1.txt .... . 
+            This may be used to insert some information to several or all pages. In 
+            these files may be also used some variables.
+            More info <a href="howitworks.htm">here</a>.</p>
+    </td>
+  </tr>  <tr>
+    <td nowrap>
+      <p>#%head%#<br /></p>
+    </td>
+    <td>
+      <p>Content of file _head2.txt. This may 
+            be used to insert some information to the begin of several or all&nbsp;pages. 
+            More info  
+            <a href="howitworks.htm">here</a>.</p>
+    </td>
+  </tr>
+ 
+<tr>
+    <td nowrap>
+      <p>#%site_url%#<br /></p>
+    </td>
+    <td>
+      <p>URL of your site</p>
+    </td>
+  </tr>
+ 
+
+ 
+<tr>
+    <td nowrap>
+      <p>#%searched%#</p>
+    </td>
+    <td>
+      <p>Searched phrase(s).</p>
+    </td>
+  </tr>
+<tr>
+    <td nowrap>
+      <p>#%result_categories%#</p>
+    </td>
+    <td>
+      <p>It displays categories whose titles, descriptions or user defined items 
+            contain the searched phrases.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%items%#</p>
+    </td>
+    <td>
+      <p>List of the links, articles, news or videos that meet the search criteria.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%adlinks%#</p>
+    </td>
+    <td>
+      <p>List of the AdLinks that meet the search criteria.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%l_items%#</p>
+    </td>
+    <td>
+      <p>Links of Links that meet the search criteria.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%a_items%#</p>
+    </td>
+    <td>
+      <p>Links of Articles&nbsp;that meet the search criteria.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%v_items%#</p>
+    </td>
+    <td>
+      <p>Links of Videos&nbsp;that meet the search criteria.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%n_items%#</p>
+    </td>
+    <td>
+      <p>Links of News&nbsp;that meet the search criteria.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%n_items%#</p>
+    </td>
+    <td>
+      <p>Links of Blogs&nbsp;that meet the search criteria.</p>
+    </td>
+  </tr>
+</table>
+<br /><br /><b><u>Using the search form on pages of your link owners</u></b><br />You can offer your link owners to place your search box directly on their pages, so their visitors will be able to search through your directory from their sites. To stimulate them to use your search box you also can count one incoming hit for each searching they send and sort the links by the number of incoming hits, so  links sending more hits 
+will be higher up on your pages.<br /><br />Link owners can place this simple code onto their pages to show the search box (&quot;YOURURL&quot; must be replaced by your real URL):
+<form name="form1">
+<pre><textarea name="formtextarea1" rows="10" cols="80"><form method="GET" action="http://YOURURL/search.php">
+<input type="hidden" name="action" value="links_simple">
+Search for <input name="phrase" size=20 maxlength=50 class="field10">
+<input type="submit" value="Search" name="submit">
+</form></textarea></pre>
+</form>
+The following code shows the same search box and also will count one incoming hit for each searching (the LINK_NUMBER must be replaced by a real number of a link, YOURURL must be replaced by your real URL):
+<form name="form1">
+<pre><textarea name="formtextarea1" rows="10" cols="80"><form method="GET" action="http://YOURURL/search.php">
+<input type="hidden" name="action" value="links_simple">
+<input type="hidden" name="refer" value="LINK_NUMBER">
+Search for <input name="phrase" size=20 maxlength=50 class="field10">
+<input type="submit" value="Search" name="submit">
+</form></textarea>&nbsp;</pre>
+</form>
+<pre>&nbsp;</pre>
+<pre><span class="text13a_bold">RSS Output</span></pre>
+<pre>The system offers also RSS output for searching. The URL's to call these RSS feeds look as follows:<br><span class="fakelink">http://www.yourdomain.com/search.php?rss=PHRASE_TO_SEARCH_FOR</span></pre>
+<pre>If you use the <a href="html_plugin_3.htm">HTML Plugin with the Rewrite</a> option active, you also can use this URL:<br><span class="fakelink">http://www.yourdomain.com/search_rss/test/</span></pre>
+<pre>&nbsp;</pre>
+</body>
+
+</html>

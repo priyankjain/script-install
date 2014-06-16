@@ -1,0 +1,102 @@
+<html>
+
+<head>
+<title>HTML pages</title>
+
+<LINK href="styles.css" rel=StyleSheet>
+</head>
+
+
+<body>
+<p><span class="text13a_bold">HTML Plugin - static HTML pages</span><br /><p>If this option 
+is used, the plugin saves most public pages to static HTML files. It can be useful if you have a high 
+traffic site - PHP scripts need more server resources than static HTML files. 
+By using this option,  your 
+pages are displayed faster. </p>
+<p>The following pages become static:<br /></p>
+<ul type="disc">
+    <li>Your home page.</li>
+    <li>All categories. Names of the files are by default 
+    created from names of categories. You also can set names of files of a selected 
+    category manually in the category edit form - there is the field &quot;Name of static html page&quot;.<br></li>
+    <li>It can optionally create a page for each individual link and article. The 
+    names of files are automatically created from the titles of the items. You 
+    also can manually enter file names in the link and article edit forms - 
+    there is the field &quot;Rewrite URL&quot; for it.</li>
+</ul>
+<p>In Configuration there are a few fields that need to be filled in if you 
+want to use this option. The required fields are these:</p>
+<ul type="disc">
+    <li>Extension of created static pages.</li>
+    <li>Name of your home page.</li>
+    <li>Folders to store pages (each of these fields should have an unique value).</li>
+</ul>
+<p>If you use this option, there are some limitations 
+because your pages are static and can't respond immediately to all actions of 
+your visitors. Below is a list of these limits:
+</p>
+<ul>
+    <li>If someone clicks on a link, article, blog, video or news item the number of clicks/reads will 
+    not increase immediately but after the next daily rebuild.</li>
+    <li>If 
+PHP on your server is running in a &quot;safe mode&quot;, you can't 
+use this feature because the script needs some time (several minutes)&nbsp;when 
+rebuilding pages and in &quot;safe mode&quot; the server doesn't allow it.</li>
+    <li>You can't use the automatic rebuild function. 
+    Set a Crontab or Task Manager job to rebuild your pages or do it manually in the Administration.</li>
+    <li>You can't use the &quot;Select style&quot; feature 
+    which allows users to select the style they like, only one style can be 
+    used. </li>
+    <li>CSS styles are taken from the style you selected in 
+    Configuration but all templates and messages are always taken from directory 
+    &quot;_common&quot;.</li>
+    <li>The field &quot;Use Ajax to load individual pages in categories&quot; 
+    must be checked.</li>
+    <li>You can't sell impressions for advertising 
+    links as the pages are static so the script can't detect each impression. 
+    For this reason you can't sell them and also users can't see them in statistics. 
+    However you can still sell clicks or days.</li>
+    <li>New RSS content can be available after the&nbsp;daily rebuild only.</li>
+    <li>The front page with a header and search form only is not available.<br />&nbsp;</li>
+</ul>
+Follow these steps to enable the option to create static pages:</li>
+<ul>
+    <li>Check field &quot;<span class=text13>Build static html files&quot; 
+    in Configuration.</span></li>
+    <li>Enter values to all the required fields (see above).</li>
+    <li>Set permission of your home directory 
+    to 777</li>
+    <li>If you set to create  category pages and detail pages in another directories, create 
+    these directories and chmod them to 
+    777.</li>
+    <li>If you want to use Crontab or Task Manager 
+    to rebuild your pages, set the Daily  job as described <a href="rebuild.htm">here</a>. 
+    Note that you can't use the automatic rebuild feature but you 
+    still can rebuild your pages manually in any time&nbsp;in the Administration.<br /></li>
+    <li>If you set to create a static page for each individual article, enter 
+    the following HTML code to template article_details.html. It lets you track 
+    number of reads, even when this page is static:<span class="fakelink"><br>&lt;img 
+    border=&quot;0&quot; width=&quot;1&quot; height=&quot;1&quot; src=&quot;#%site_url%#/article.php?n=#%n%#&amp;track_hit=1&quot;&gt;</span></li>
+    <li>If you set to create a static page for each individual video, enter 
+    the following HTML code to template video_details.html. It lets you track 
+    number of views, even when this page is static: <span class="fakelink"><br>&lt;img 
+    border=&quot;0&quot; width=&quot;1&quot; height=&quot;1&quot; src=&quot;#%site_url%#/video.php?n=#%n%#&amp;track_hit=1&quot;&gt;</span></li>
+    <li>If you set to create a static page for each individual news item, enter 
+    the following HTML code to template new_details.html. It lets you track 
+    number of reads, even when this page is static:<span class="fakelink"><br>&lt;img 
+    border=&quot;0&quot; width=&quot;1&quot; height=&quot;1&quot; src=&quot;#%site_url%#/new.php?n=#%n%#&amp;track_hit=1&quot;&gt;&nbsp;</span></li>
+    <li>If you set to create a static page for each individual blog, enter 
+    the following HTML code to template blog_details.html. It lets you track 
+    number of reads, even when this page is static:<span class="fakelink"><br>&lt;img 
+    border=&quot;0&quot; width=&quot;1&quot; height=&quot;1&quot; src=&quot;#%site_url%#/blog.php?n=#%n%#&amp;track_hit=1&quot;&gt;&nbsp;</span>&nbsp;</li>
+    <li> Use function Reset/rebuild =&gt; Daily job in 
+the Administration to rebuild pages, then check if all works well.</li>
+    <li>Delete this code in the template index.html:<br><span class="fakelink">&lt;a 
+    href=&quot;javascript:hide_home();show_home('2');show_home('3');show_home('4');show_home('5');show_home('6');&quot;&gt;All 
+    categories&lt;/a&gt;&lt;a href=&quot;javascript:hide_home();show_home('7');show_home('8');show_home('9');show_home('10');show_home('11');show_home('12');&quot;&gt;Recently 
+    added&lt;/a&gt; :</span>: &nbsp;</li>
+</ul>
+<p>&nbsp;</p>
+</body>
+
+</html>

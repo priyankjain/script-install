@@ -1,0 +1,4 @@
+<tr>
+<td nowrap align="left" valign="top">Username * </td>
+<td align="left"><input class="field10" style="width:500px;" maxlength="15" name="username" value="#%field_value%#"></td>
+</tr>

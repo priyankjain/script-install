@@ -1,0 +1,6 @@
+<tr>
+<td align="left">
+#%text%#<br />
+Comment by <a href="#%link%#">#%name%#</a>#%user_rank%#<br />
+Date: #%date%#
+</td></tr>

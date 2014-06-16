@@ -1,0 +1,6 @@
+Subject: Your Blog
+
+Title: #%title%#
+Subtitle: #%description%#
+Blog number: #%n%#
+Detail page URL: #%detail_url%#

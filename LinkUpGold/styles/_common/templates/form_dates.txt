@@ -1,0 +1,8 @@
+<tr>
+<td nowrap align="left">Valid from </td>
+<td align="left">#%date_1%#</td>
+</tr>
+<tr>
+<td nowrap align="left">Valid to </td>
+<td align="left">#%date_2%#</td>
+</tr>

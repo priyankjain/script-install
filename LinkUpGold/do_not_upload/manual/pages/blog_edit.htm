@@ -1,0 +1,486 @@
+<html>
+
+<head>
+<title>Blog submit</title>
+
+<LINK href="styles.css" rel=StyleSheet>
+</head>
+
+
+<body>
+<p><span class="text13a_bold">Editing an existing blog - blog_edit.php</span><br /><br />This script is used to edit an existing blog.</p>
+<p>To show the&nbsp;form 
+where a blog owner can login to edit a blog should be the script called as <span class="fakelink">blog_edit.php</span>. 
+ This login form is applicable only for blog owners who are not registered users. 
+Registered users can see a list of their blogs inside users area, they can edit 
+each of these blogs without the request to enter an additional password.</p>
+<p>The login form is  based on template <span class="template">blog_edit_login.html</span>. Used variables:<br /></p>
+<table class="common_table" bordercolordark="white" bordercolorlight="black" border="1" cellpadding="5" cellspacing="0">  <tr>
+    <td nowrap>
+      <p>#%in1%#<br />#%in2%#&nbsp;</p>
+    </td>
+    <td>
+      <p>Content of files _in1.txt .... . 
+            This may be used to insert some information to several or all pages. In 
+            these files may be also used some variables.
+            More info <a href="howitworks.htm">here</a>.</p>
+    </td>
+  </tr>  <tr>
+    <td nowrap>
+      <p>#%head%#<br /></p>
+    </td>
+    <td>
+      <p>Content of file _head2.txt. This may 
+            be used to insert some information to the begin of several or all&nbsp;pages. 
+            More info  
+            <a href="howitworks.htm">here</a>.</p>
+    </td>
+  </tr>
+ 
+<tr>
+    <td nowrap>
+      <p>#%site_url%#<br /></p>
+    </td>
+    <td>
+      <p>URL of your site.</p>
+    </td>
+  </tr>
+ 
+
+ 
+<tr>
+    <td nowrap>
+      <p>#%info%#<br /></p>
+    </td>
+    <td>
+      <p>If the blog owner&nbsp;just asked to 
+            send a blog password to his/her email, it shows this info.</p>
+    </td>
+  </tr>
+<tr>
+    <td nowrap>
+      <p>#%n%#<br /></p>
+    </td>
+    <td>
+      <p>If the blog owner&nbsp;just asked to 
+            send a blog password to his/her email, it shows number of the selected blog.</p>
+    </td>
+  </tr>
+</table>
+<p>If 
+the blog owner doesn't know info about the blog which he/she wants to edit, the 
+script can show a list of all blogs associated to an entered email address. There 
+is a field to enter email in the login form. The list of blogs that are associated 
+to an email is based on template<span class="template"> 
+blog_edit_list.html</span> - the list of blogs associated with the entered email. 
+This list contains links to blog details page, link to a login form to edit 
+it and a blog to password reminder. Each of the lines is based on template <span class="template">blog_edit_list.txt</span>.</p>
+<table class="common_table" bordercolordark="white" bordercolorlight="black" border="1" cellpadding="5" cellspacing="0">  <tr>
+    <td nowrap>
+      <p>#%in1%#<br />#%in2%#&nbsp;</p>
+    </td>
+    <td>
+      <p>Content of files _in1.txt .... . 
+            This may be used to insert some information to several or all pages. In 
+            these files may be also used some variables.
+            More info <a href="howitworks.htm">here</a>.</p>
+    </td>
+  </tr>  <tr>
+    <td nowrap>
+      <p>#%head%#<br /></p>
+    </td>
+    <td>
+      <p>Content of file _head2.txt. This may 
+            be used to insert some information to the begin of several or all&nbsp;pages. 
+            More info  
+            <a href="howitworks.htm">here</a>.</p>
+    </td>
+  </tr>
+ 
+<tr>
+    <td nowrap>
+      <p>#%site_url%#<br /></p>
+    </td>
+    <td>
+      <p>URL of your site.</p>
+    </td>
+  </tr>
+ 
+
+ 
+<tr>
+    <td nowrap>
+      <p>#%blogs%#</p>
+    </td>
+    <td>
+      <p>The list of blogs. User can click 
+            on one of them to edit it.</p>
+    </td>
+  </tr>
+</table>
+<p>Once a blog owner logged in and reached the blog edit form, he/she can see 
+a page which is based on template <span class="template">blog_edit.html</span>. 
+There are  used these variables:<br /></p>
+<table class="common_table" bordercolordark="white" bordercolorlight="black" border="1" cellpadding="5" cellspacing="0">  <tr>
+    <td nowrap>
+      <p>#%in1%#<br />#%in2%#&nbsp;</p>
+    </td>
+    <td>
+      <p>Content of files _in1.txt .... . 
+            This may be used to insert some information to several or all pages. In 
+            these files may be also used some variables.
+            More info <a href="howitworks.htm">here</a>.</p>
+    </td>
+  </tr>  <tr>
+    <td nowrap>
+      <p>#%head%#<br /></p>
+    </td>
+    <td>
+      <p>Content of file _head2.txt. This may 
+            be used to insert some information to the begin of several or all&nbsp;pages. 
+            More info  
+            <a href="howitworks.htm">here</a>.</p>
+    </td>
+  </tr>
+ 
+<tr>
+    <td nowrap>
+      <p>#%site_url%#<br /></p>
+    </td>
+    <td>
+      <p>URL of your site</p>
+    </td>
+  </tr>
+ 
+
+ 
+<tr>
+    <td nowrap>
+      <p>#%info%#</p>
+    </td>
+    <td>
+      <p>If an error occurred, it shows this info.</p>
+    </td>
+  </tr>
+<tr>
+    <td nowrap>
+      <p>#%n%#</p>
+    </td>
+    <td>
+      <p>Number of the selected blog.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%field_title%#</p>
+    </td>
+    <td>
+      <p>A field to enter Title. It can be 
+            visible/invisible, based on your configuration. This part is based 
+            on template form_field.txt.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%field_description%#</p>
+    </td>
+    <td>
+      <p>A field to enter Subtitle. It can be 
+            visible/invisible, based on your configuration. This part is based 
+            on template form_field.txt.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%field_text%#</p>
+    </td>
+    <td>
+      <p>A field to enter Text of the blog. It can be 
+            visible/invisible, based on your configuration.  This part is 
+            based on template form_detail_textarea.txt or form_detail_html.txt, 
+            depending on your configuration.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%current_categories%#</p>
+    </td>
+    <td>
+      <p>List of current categories of this blog.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%field_categories%#</p>
+    </td>
+    <td>
+      <p>A field to select Categories. This part is based 
+            on template form_no_field.txt.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%field_pictures%#</p>
+    </td>
+    <td>
+      <p>A field to upload Pictures. The number of these fields is editable 
+            by admin. Each of them is based on template form_upload.txt.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%field_user_defined%#</p>
+    </td>
+    <td>
+      <p>A field to enter User Defined Items (you 
+            can define them in Configuration). This part is based on templates 
+            form_user_item_text.txt, form_user_item_textarea.txt, form_user_item_htmlarea.txt, form_user_item_checkbox.txt, 
+            form_user_item_radio.txt or&nbsp;form_user_item_select.txt, 
+            depending on kind of each of these items.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%user_item_28%#<br /></p>
+    </td>
+    <td>
+      <p> If you, for some reasons, don't want 
+            to display all available User Defined Items, use this variable to 
+            display each individual item. This variable is based on form_user_item_text.txt, 
+            form_user_item_textarea.txt, form_user_item_htmlarea.txt, form_user_item_checkbox.txt, 
+            form_user_item_radio.txt or&nbsp;form_user_item_select.txt, 
+            depending on the field type.<br />This is only an example, replace the 
+            number 28 by real number of the item you want to display. These 
+            numbers can be found in Configuration =&gt; User Defined&nbsp;Items.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%user_item_name_28%#<br /></p>
+    </td>
+    <td>
+      <p> You can use this variable to 
+            display label of an individual user item.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%user_item_value_28%#<br /></p>
+    </td>
+    <td>
+      <p> You can use this variable to 
+            display edit field for an individual user item.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%field_keywords%#</p>
+    </td>
+    <td>
+      <p>A field to enter keywords. This part is based on template form_keywords.txt.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%field_dates%#</p>
+    </td>
+    <td>
+      <p>A field to enter start and end date. 
+            It can be visible/invisible, based on your configuration. This part 
+            is based on template form_dates.txt.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%field_name%#</p>
+    </td>
+    <td>
+      <p>A field to enter Name. It can be 
+            visible/invisible, based on your configuration. This part is based 
+            on template form_field.txt. This is not visible if the form is 
+            used by a registered user.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%field_email%#</p>
+    </td>
+    <td>
+      <p>A field to enter Email. It can be 
+            visible/invisible, based on your configuration. This part is based 
+            on template form_field.txt. This is not visible if the form is 
+            used by a registered user.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%field_password%#</p>
+    </td>
+    <td>
+      <p>A field to enter Password. It can be 
+            visible/invisible, based on your configuration. This part is based 
+            on template form_password.txt. This is not visible if the form is 
+            used by a registered user.</p>
+    </td>
+  </tr>
+</table>
+<p>Once a blog has been edited, a confirmation page is displayed. This page is based on template <span class="template">blog_edited.html</span> where 
+you can use the following variables:<br /></p>
+<table class="common_table" bordercolordark="white" bordercolorlight="black" border="1" cellpadding="5" cellspacing="0">  <tr>
+    <td nowrap>
+      <p>#%in1%#<br />#%in2%#&nbsp;</p>
+    </td>
+    <td>
+      <p>Content of files _in1.txt .... . 
+            This may be used to insert some information to several or all pages. In 
+            these files may be also used some variables.
+            More info <a href="howitworks.htm">here</a>.</p>
+    </td>
+  </tr>  <tr>
+    <td nowrap>
+      <p>#%head%#<br /></p>
+    </td>
+    <td>
+      <p>Content of file _head2.txt. This may 
+            be used to insert some information to the begin of several or all&nbsp;pages. 
+            More info  
+            <a href="howitworks.htm">here</a>.</p>
+    </td>
+  </tr>
+ 
+<tr>
+    <td nowrap>
+      <p>#%site_url%#<br /></p>
+    </td>
+    <td>
+      <p>URL of your site</p>
+    </td>
+  </tr>
+ 
+
+ 
+  <tr>
+    <td nowrap>
+      <p>#%row_title%#</p>
+    </td>
+    <td>
+      <p>Title. It can be visible/invisible, 
+            based on your configuration. This part is based on template form_submitted_row.txt.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%row_description%#</p>
+    </td>
+    <td>
+      <p>Subtitle. It can be visible/invisible, 
+            based on your configuration. This part is based on template form_submitted_row.txt.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%row_text%#</p>
+    </td>
+    <td>
+      <p>Blog Text. It can be visible/invisible, 
+            based on your configuration. This part is based on template form_submitted_row.txt.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%row_categories%#</p>
+    </td>
+    <td>
+      <p>List of Categories. This part is based on template form_submitted_row.txt.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%row_user_defined%#</p>
+    </td>
+    <td>
+      <p>List of User Defined Items and their 
+            values. This part is based on template form_submitted_row.txt.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%row_keywords%#</p>
+    </td>
+    <td>
+      <p>Entered keywords. This part is based on template form_submitted_row.txt.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%row_dates%#</p>
+    </td>
+    <td>
+      <p>Dates from - to when the blog is valid. 
+            It can be visible/invisible, based on your configuration. This part 
+            is based on template form_submitted_dates.txt.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%row_name%#</p>
+    </td>
+    <td>
+      <p>Name. It can be visible/invisible, 
+            based on your configuration. This part is based on template form_submitted_row.txt.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%row_email%#</p>
+    </td>
+    <td>
+      <p>Email. It can be visible/invisible, 
+            based on your configuration. This part is based on template form_submitted_row.txt.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%row_images%#</p>
+    </td>
+    <td>
+      <p>Uploaded images. This part is based on template form_submitted_pictures.txt.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%row_password%#</p>
+    </td>
+    <td>
+      <p>Password. It can be visible/invisible, 
+            based on your configuration. This part is based on template form_submitted_row.txt.</p>
+    </td>
+  </tr>
+  <tr>
+    <td nowrap>
+      <p>#%row_number%#</p>
+    </td>
+    <td>
+      <p>Blog Number. This part is based on template 
+            form_submitted_row.txt.</p>
+    </td>
+  </tr>
+</table>
+<p>Once a blog has been edited, multiple states can occur, depending on your 
+configuration. These are:</p>
+<ul type="disc">
+    <li>You selected that it has to inform admin when a link has been edited. 
+    In this case you receive an email by using template <span class="template">blog_admin.txt</span>.</li>
+    <li>You selected that updated blogs must be reviewed by an admin. In this case 
+    the blog is waiting in Administration =&gt; Queue. Once you approved it, 
+    the blog owner receives an email based on template <span class="template">blog_approved.txt</span>. 
+    </li>
+    <li>You selected that edited blogs are immediately online. In this case the 
+    old data has been deleted and the edited blog is instantly visible on public pages.</li>
+</ul>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><br />&nbsp;</p>
+</body>
+
+</html>

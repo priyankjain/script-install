@@ -1,0 +1,307 @@
+<html>
+
+<head>
+<title>advertiser.php</title>
+
+<LINK href="styles.css" rel=StyleSheet>
+</head>
+
+
+<body>
+<p><span class="text13a_bold">Advertising/sponsored links</span><br /><br />Registered 
+users can order extra features for their links and pay for it. We call such 
+links as Advertising or Sponsored links. Free links use templates link_a.txt 
+and link_details.html, while advertising links use templates <span class="template">link_advertising.txt</span> 
+and<span class="template"> link_details_advertising.html</span>. It means that you can mark advertising links 
+by some way (bigger font, another color etc.). Styles used in these paid links 
+are highlighted by default.</p>
+<p>Advertising links are always at the top of categories 
+and search results. You also can configure the system so advertising links can 
+have advantages like more pictures, the option to submit them to more categories, 
+etc.</p>
+<p>There is not an extra form to create an advertising link. Users can create 
+normal free links and then upgrade them to advertising links. The process of 
+free link submission is described <a href="link_submit.htm">here</a>.</p>
+<p>Users who want to see their links can use the link &quot;Your links &amp; invoices&quot; 
+in the menu in users area. URL of the page 
+is <SPAN 
+class=fakelink>link_edit.php?action=links_list</SPAN>. This page uses template 
+<span class="template">links_for_owner_list.html</span>.&nbsp;The first table 
+on this page shows all existing links of the user. Existing links are displayed by the 
+variable #%links%#, each line in this list is based on template <span class="template">links_for_owner_list_link.txt</span>. 
+This template contains the following variables:</p>
+<table class="common_table" bordercolordark="white" bordercolorlight="black" border="1" cellpadding="5" cellspacing="0">
+<tr>
+    <td nowrap>
+      <p>#%site_url%#<br /></p>
+    </td>
+    <td>
+      <p>URL of your site.</p>
+    </td>
+  </tr>
+ 
+<tr>
+    <td nowrap>
+      <p>#%n%#</p>
+    </td>
+    <td>
+      <p>Number of an link.</p>
+    </td>
+  </tr>
+ 
+<tr>
+    <td nowrap>
+      <p>#%created%#</p>
+    </td>
+    <td>
+      <p>Date when the link has been created.</p>
+    </td>
+  </tr>
+ 
+<tr>
+    <td nowrap>
+      <p>#%item_details_url%#</p>
+    </td>
+    <td>
+      <p>URL of public link details page.</p>
+    </td>
+  </tr>
+ 
+</table>
+<p>There is the link &quot;Extra options&quot; available for each link. The 
+URL of the page is <SPAN 
+class=fakelink>link_extra_features.php?action=link_adv_home&amp;n=LINK_NUMBER</SPAN>. 
+This page offers all the options that make the link sponsored - there are options 
+to add advertising days, clicks and impressions to it. This page uses <span class="template">template 
+link_extra_features.html</span>. There are available these variables:</p>
+<table class="common_table" bordercolordark="white" bordercolorlight="black" border="1" cellpadding="5" cellspacing="0">
+<tr>
+    <td nowrap>
+      <p>#%in1%#<br />#%in2%#&nbsp;</p>
+    </td>
+    <td>
+      <p>Content of files _in1.txt .... . 
+            This may be used to insert some information to several or all pages. In 
+            these files may be also used some variables.
+            More info <a href="howitworks.htm">here</a>.</p>
+    </td>
+  </tr>  <tr>
+    <td nowrap>
+      <p>#%head%#<br /></p>
+    </td>
+    <td>
+      <p>Content of file _head2.txt. This may 
+            be used to insert some information to the begin of several or all&nbsp;pages. 
+            More info  
+            <a href="howitworks.htm">here</a>.</p>
+    </td>
+  </tr>
+ 
+<tr>
+    <td nowrap>
+      <p>#%site_url%#<br /></p>
+    </td>
+    <td>
+      <p>URL of your site.</p>
+    </td>
+  </tr>
+ 
+<tr>
+    <td nowrap>
+      <p>#%n%#</p>
+    </td>
+    <td>
+      <p>Number of the link.</p>
+    </td>
+  </tr>
+ 
+<tr>
+    <td nowrap>
+      <p>#%title%#</p>
+    </td>
+    <td>
+      <p>Link title.</p>
+    </td>
+  </tr>
+ 
+<tr>
+    <td nowrap>
+      <p>#%description%#</p>
+    </td>
+    <td>
+      <p>Link description.</p>
+    </td>
+  </tr>
+ 
+<tr>
+    <td nowrap>
+      <p>#%status%#</p>
+    </td>
+    <td>
+      <p>Link status - enabled or disabled.</p>
+    </td>
+  </tr>
+ 
+<tr>
+    <td nowrap>
+      <p>#%is_advertising%#</p>
+    </td>
+    <td>
+      <p>Link status - it informs if the link currently uses advertising features 
+            (is sponsored).</p>
+    </td>
+  </tr>
+ 
+<tr>
+    <td nowrap>
+      <p>#%currency%#</p>
+    </td>
+    <td>
+      <p>Currency used for all payments in your system.</p>
+    </td>
+  </tr>
+ 
+<tr>
+    <td nowrap>
+      <p>#%funds_balance%#</p>
+    </td>
+    <td>
+      <p>Balance of funds (money) on users account. These funds can be used 
+            to order new impressions, clicks or days for the selected link. </p>
+    </td>
+  </tr>
+ 
+<tr>
+    <td nowrap>
+      <p>#%i_static_price%#<br>#%c_static_price%#<br>#%d_static_price%#&nbsp;</p>
+    </td>
+    <td>
+      <p>Static prices for 100 impressions, 100 clicks&nbsp;and 1 day. These 
+            prices are editable in Configuration.</p>
+    </td>
+  </tr>
+ 
+<tr>
+    <td nowrap>
+      <p>#%i_order%#<br>#%c_order%#<br>#%d_order%#&nbsp;</p>
+    </td>
+    <td>
+      <p>Total number of ordered impressions, clicks and days.</p>
+    </td>
+  </tr>
+ 
+<tr>
+    <td nowrap>
+      <p>#%i_now%#<br>#%c_now%#<br></p>
+    </td>
+    <td>
+      <p>Current balance of impressions and clicks.</p>
+    </td>
+  </tr>
+ 
+<tr>
+    <td nowrap>
+      <p>#%d_validby%#</p>
+    </td>
+    <td>
+      <p>If the link currently uses payments for days, it shows date until the 
+            link is prepaid.</p>
+    </td>
+  </tr>
+ 
+<tr>
+    <td nowrap>
+      <p>#%price_dynamic_min%#<br>#%price_dynamic_max%#<br></p>
+    </td>
+    <td>
+      <p>The lowest and highest allowed price for clicks with dynamic prices. 
+            These limits are editable in Configuration.</p>
+    </td>
+  </tr>
+ 
+<tr>
+    <td nowrap>
+      <p>#%c_dynamic_pricex%#<br></p>
+    </td>
+    <td>
+      <p>Current price of 1 click with dynamic price valid for this link.</p>
+    </td>
+  </tr>
+ 
+<tr>
+    <td nowrap>
+      <p>#%i_dynamic_order%#<br></p>
+    </td>
+    <td>
+      <p>Current balance of impressions and clicks.</p>
+    </td>
+  </tr>
+ 
+<tr>
+    <td nowrap>
+      <p>#%c_dynamic_order%#<br></p>
+    </td>
+    <td>
+      <p>Total number of ordered&nbsp;clicks with dynamic prices.</p>
+    </td>
+  </tr>
+ 
+<tr>
+    <td nowrap>
+      <p>#%c_dynamic_now%#<br></p>
+    </td>
+    <td>
+      <p>Current balance of clicks with dynamic prices.</p>
+    </td>
+  </tr>
+ 
+<tr>
+    <td nowrap>
+      <p>#%d_valid_by_simple%#<br></p>
+    </td>
+    <td>
+      <p>This is used in the form to order days by the simple order process. 
+            The whole process is described <a href="payment_system.htm">here</a>. 
+            This variable shows the date until the link is prepaid by using 
+            this option.</p>
+    </td>
+  </tr>
+ 
+<tr>
+    <td nowrap>
+      <p>#%days_simple_options%#<br></p>
+    </td>
+    <td>
+      <p>This is used in the form to order days by the simple order process. 
+            The whole process is described <a href="payment_system.htm">here</a>. 
+            This variable shows a select list of all offers you have in this 
+            simple option. You can enter these offers in Administration =&gt; 
+            Simple prices. There is also an explanation of the system.</p>
+    </td>
+  </tr>
+ 
+</table>
+<p>This page offers two main options:</p>
+<ul type="disc">
+    <li>Simple option - User orders a limited number of days, pays by a credit 
+    card and the link becomes immediately sponsored or it adds new days to it 
+    if the link was sponsored before. The order process is described <a href="payment_system.htm">here</a>.</li>
+    <li>Flexible options - These options use funds (money) prepaid before. These 
+    funds are on users account and can be used for advertising links and AdLinks. 
+    Your users can use packages you created in Administration =&gt; Packages 
+    to add new funds to their accounts. The order process is described <a href="payment_system.htm">here</a>. 
+    These flexible options allow users to order clicks, impressions or days, 
+    the prices for all these are editable in Configuration. If they want to 
+    order clicks, they can choose between fixed prices (in this case prices 
+    for all clicks are the same) or dynamic prices (in this case you set a range 
+    of prices and users can choose a price for each click&nbsp;inside this range, 
+    more expensive links are higher).<br>These flexible options also contain 
+    the option to cancel unused clicks, impressions and days. If this is used, 
+    the funds are refunded to users main account and can be used for another 
+    options or for another link.</li>
+</ul>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</body>
+
+</html>

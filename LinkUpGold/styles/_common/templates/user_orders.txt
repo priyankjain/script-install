@@ -1,0 +1,8 @@
+<tr>
+<td align="left" nowrap>#%n%#</td>
+<td align="center" nowrap>#%order_date%#</td>
+<td align="center" nowrap>#%currency%##%price%#</td>
+<td align="center" nowrap>#%status%#</td>
+<td align="center" nowrap>#%type%#</td>
+<td align="center" nowrap>#%payment_link%#</td>
+</tr>

@@ -1,0 +1,4 @@
+<tr>
+<td nowrap align="left" valign="top">Picture </td>
+<td align="left" valign="top"><input type="file" maxlength="255" name="#%field_name%#" class="field10" style="width:500px">#%hide_max_size_begin%#<br /><span class="text10">Maximum width #%max_image_w%# px, height #%max_image_h%# px, #%max_image_bytes%# bytes#%hide_max_size_end%#</td>
+</tr>

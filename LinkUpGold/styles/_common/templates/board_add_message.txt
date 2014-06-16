@@ -1,0 +1,31 @@
+<div id="board_add_message_link" style="display:#%board_add_message_link_display%#">
+<a href="#a_enter_comment" onclick="show_hide_div_id(0,'board_add_message_link'); show_hide_div_id(1,'board_add_message_box');">Add your message</a>
+</div>
+
+<div id="board_add_message_box" style="display:#%board_add_message_box_display%#;width:700px;">
+#%info%#
+#%hide_add_message_form_begin%#
+<div id="board_add_message_wait" name="board_add_message_wait"></div>
+<form method="post" id="board_add_message_form" name="board_add_message_form" action="javascript:parse_ajax_request(document.getElementById('board_add_message_form'),'#%site_url%#/board.php','board_add_message_box');">
+<div class="common_div1"><table border="0" width="100%" cellpadding="5" cellspacing="0" class="inside_table">
+<tr><td align="left" colspan="2"><span class="text_bold">Add Your Message</td></tr>
+<tr>
+<td>Your Message<br><br>
+<span class="text10">
+Click to a smilie to include it to the message<br>
+#%smilies%#
+</span>
+</td>
+<td align="left"><textarea class="field10" name="board_comment" id="board_comment" style="width:500px;height:200px;">#%comment%#</textarea></td>
+</tr>
+#%field_name%#
+#%field_email%#
+#%field_captcha_test%#
+<tr>
+ <td align="center" colspan=2><input type="submit" value="Submit" name="B1" class="button10" onclick="show_waiting('board_add_message_wait');">&nbsp;<input type="reset" value="Cancel" onclick="show_hide_div_id(0,'board_add_message_box'); show_hide_div_id(1,'board_add_message_link');" class="button10"></td>
+</tr>
+</table>
+</div>
+</form>
+#%hide_add_message_form_end%#
+</div>

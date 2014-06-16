@@ -1,0 +1,32 @@
+
+
+<div id="contact_form_wait#%what%##%n%#" name="contact_form_wait#%what%##%n%#"></div>
+
+<form method="post" id="contact_form#%what%##%n%#" name="contact_form#%what%##%n%#" action="javascript:parse_ajax_request(document.getElementById('contact_form#%what%##%n%#'),'#%site_url%#/contact.php','contact_box#%what%##%n%#');">
+<input type="hidden" name="what" value="#%what%#">
+<input type="hidden" name="n" value="#%n%#">
+<input type="hidden" name="hide_cancel" value="#%hide_cancel%#">
+
+#%info%#
+
+<table border="0" width="100%" cellpadding="0" cellspacing="0" class="table_20px_padding">
+<tr>
+<td nowrap align="left" valign="top">Message </td>
+<td align="left"><textarea class="field10" name="message" style="width:500px;height:200px;">#%message%#</textarea></td>
+</tr>
+<tr>
+<td nowrap align="left" valign="top">Your Name </td>
+<td align="left"><input class="field10" maxlength="255" style="width:500px" name="name" value="#%name%#"></td>
+</tr>
+<tr>
+<td nowrap align="left" valign="top">Email </td>
+<td align="left"><input class="field10" maxlength="255" style="width:500px"  name="email" value="#%email%#"></td>
+</tr>
+#%field_captcha_test%#
+<tr>
+ <td align="center" colspan=2><input type="submit" value="Submit" name="B1" class="button10" onclick="show_waiting('contact_form_wait#%what%##%n%#');"></td>
+</tr>
+</table>
+
+</form>
+

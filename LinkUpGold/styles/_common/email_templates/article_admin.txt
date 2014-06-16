@@ -1,0 +1,11 @@
+Subject: Article Submitted/Updated
+
+A article has been submitted or updated. If you want review this article, you have to go to #%adminfile%#
+Title: #%title%#
+Subtitle: #%description%#
+Category: #%categories%#
+Name: #%name%#
+Email: #%email%#
+Username: #%user%#
+Article number: #%n%#
+#%user_defined%#

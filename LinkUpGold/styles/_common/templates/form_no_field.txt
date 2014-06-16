@@ -1,0 +1,4 @@
+<tr>
+<td nowrap align="left" style="vertical-align:top;">#%item_name%# </td>
+<td nowrap align="left" valign="top">#%content%#</td>
+</tr>

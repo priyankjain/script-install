@@ -1,0 +1,3 @@
+#%items%#
+<br><a href="#%site_url%#/">Content powered by #%site_title%#</a>
+<br>

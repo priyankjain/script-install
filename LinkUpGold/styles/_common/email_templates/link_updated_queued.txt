@@ -1,0 +1,13 @@
+Subject: Your Link
+
+Thank you for updating your link. We will review it as soon as possible.
+Title: #%title%#
+URL: #%url%#
+Recip URL: #%recip%#
+Description: #%description%#
+Categories: #%categories%#
+Name: #%name%#
+Email: #%email%#
+Password: #%password%#
+Link number: #%n%#
+#%user_defined%#

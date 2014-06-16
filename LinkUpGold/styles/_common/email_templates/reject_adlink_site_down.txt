@@ -1,0 +1,6 @@
+Subject: Your AdLink
+
+Your AdLink has been rejected for the following reason:
+Your site returns 404 error.
+Title: #%title%#
+URL: #%url%#

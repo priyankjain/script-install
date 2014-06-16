@@ -1,0 +1,6 @@
+Subject: Your Membership
+
+Someone (probably you) just joined our Search Engine. To confirm this submission, please go to .
+#%confirm_url%#
+
+Please confirm your submission as soon as possible. Unconfirmed accounts are automatically deleted after #%days%# days.

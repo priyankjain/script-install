@@ -1,0 +1,112 @@
+
+#%head%#
+
+
+
+
+<div class="div_navigation">
+<a href="#%site_url%#/index.php">Home</a> >> <a href="#%site_url%#/user.php?action=user_home">User Home</a> >> <h1>Link #%title%#</h1>
+</div>
+
+<table cellspacing="0" cellpadding="0" style="table-layout:fixed;">
+<tr>
+<td style="width:250px;height:1px;padding:0px;margin:0px;line-height:1px;" class="left_column"><img border="0" src="#%site_url%#/images/blank.gif" width="250" height="1"></td>
+<td width="100%" style="height:1px;padding:0px;margin:0px;line-height:1px;"><img border="0" src="#%site_url%#/images/blank.gif" width="50" height="1"></td>
+<td style="width:250px;height:1px;padding:0px;margin:0px;line-height:1px;" class="right_column"><img border="0" src="#%site_url%#/images/blank.gif" width="250" height="1"></td>
+</tr>
+<tr>
+<td class="left_column">
+
+#%in1%#
+
+
+</td>
+<td class="cell_middle">
+
+#%in3%#
+
+
+#%info%#
+
+
+<div class="common_div_main">
+<div class="common_div_title">Your Link</div>
+<div class="common_div_content"><table class="inside_table" cellspacing="0" cellpadding="2" border="0">
+<tr>
+<td align="left">Number </td>
+<td align="left">#%n%#</td>
+</tr>
+<tr>
+<td align="left">Title </td>
+<td align="left">#%title%#</td>
+</tr>
+<tr>
+<td align="left">Description </td>
+<td align="left">#%description%#</td>
+</tr>
+<tr>
+<td align="left">Status </td>
+<td align="left">#%status%#</td>
+</tr>
+</table></div>
+</div>
+
+
+<div class="common_div_main">
+<div class="common_div_title">Overall Statistic</div>
+<div class="common_div_content"><table class="inside_table" cellspacing="0" cellpadding="2" border="0">
+<tr>
+<td nowrap align="left">&nbsp;</td>
+<td nowrap align="center" width="23%">Impressions</td>
+<td nowrap align="center" width="23%">Clicks</td>
+<td nowrap align="center" width="23%">Ratio</td>
+<td nowrap align="center">&nbsp;</td>
+</tr>
+<tr>
+<td nowrap align="left">Overall</td>
+<td nowrap align="center">#%i%#</td>
+<td nowrap align="center">#%c%#</td>
+<td nowrap align="center">#%r%#%</td>
+<td nowrap align="center">&nbsp;</td>
+</tr>
+<tr>
+<td nowrap align="left">Since #%statistic_reset%#</td>
+<td nowrap align="center">#%i_reset%#</td>
+<td nowrap align="center">#%c_reset%#</td>
+<td nowrap align="center">#%r_reset%#%</td>
+<td nowrap align="center"><a href="link_edit.php?action=link_reset_statistic&amp;n=#%n%#">Reset now</a></td>
+</tr>
+</table></div>
+</div>
+</div>
+
+
+<div class="common_div_main">
+<div class="common_div_title">Statistic - #%month_name%# #%year%#</div>
+<div class="common_div_content"><table class="inside_table" border="0" width="100%" cellpadding="5" cellspacing="0">
+<tr>
+<td nowrap align="left">Day</td>
+<td nowrap align="center">Clicks</td>
+</tr>
+#%statistic_days%#
+<tr>
+<td nowrap align="left"><b>Total</b></td>
+<td nowrap align="center"><b>#%days_c%#</b></td>
+</tr>
+<tr>
+<td nowrap align="center" colspan="4"><a href="#%previous_month%#"><< Previous month</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#%next_month%#">Next month >></a></td>
+</tr>
+</table></div>
+</div>
+
+
+
+</td>
+
+<td class="right_column">
+
+#%in2%#
+
+</td></tr></table>
+
+

@@ -1,0 +1,4 @@
+<tr>
+<td nowrap align="left" width="50%">#%day%#</td>
+<td nowrap align="center" width="50%">#%c%#</td>
+</tr>

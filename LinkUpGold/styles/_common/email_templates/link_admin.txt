@@ -1,0 +1,13 @@
+Subject: Link Submitted/Updated
+
+A new link has been submitted or updated in your search engine. If you want review this link, you have to go to #%site_url%#/administration/
+Title: #%title%#
+URL: #%url%#
+Recip URL: #%recip%#
+Description: #%description%#
+Categories: #%categories%#
+Owner: #%name%#
+Email: #%email%#
+Password: #%password%#
+Link number: #%n%#
+#%user_defined%#

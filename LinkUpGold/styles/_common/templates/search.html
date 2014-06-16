@@ -1,0 +1,320 @@
+#%head%#
+
+
+
+
+<div class="div_navigation">
+<a href="#%site_url%#/index.php">Home</a> >> <h1>Advanced Search</h1>
+</div>
+
+<table cellspacing="0" cellpadding="0" style="table-layout:fixed;">
+<tr>
+<td style="width:250px;height:1px;padding:0px;margin:0px;line-height:1px;" class="left_column"><img border="0" src="#%site_url%#/images/blank.gif" width="250" height="1"></td>
+<td width="100%" style="height:1px;padding:0px;margin:0px;line-height:1px;"><img border="0" src="#%site_url%#/images/blank.gif" width="50" height="1"></td>
+<td style="width:250px;height:1px;padding:0px;margin:0px;line-height:1px;" class="right_column"><img border="0" src="#%site_url%#/images/blank.gif" width="250" height="1"></td>
+</tr>
+<tr>
+<td class="left_column">
+
+#%in1%#
+
+
+</td>
+<td class="cell_middle">
+
+#%in3%#
+
+
+#%info%#
+
+
+<br />
+
+
+
+
+
+
+
+
+
+
+
+<div align="center">
+
+<div class="common_div_main">
+<div class="common_div_title">Advanced Search</div>
+<div class="common_div_content"><table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr><td align="center">
+<div class="item_detail_menu">
+<ul>
+#%begin_l%#<li><a href="javascript:show_submenu('1');" id="details_li_1" class="details_li_highlight">Search for Links</a></li>#%end_l%#
+#%begin_v%#<li><a href="javascript:show_submenu('2');" id="details_li_2">Search for Videos</a></li>#%end_v%#
+#%begin_b%#<li><a href="javascript:show_submenu('3');" id="details_li_3">Search for Blogs</a></li>#%end_b%#
+#%begin_a%#<li><a href="javascript:show_submenu('4');" id="details_li_4">Search for Articles</a></li>#%end_a%#
+#%begin_n%#<li><a href="javascript:show_submenu('5');" id="details_li_5">Search for News</a></li>#%end_n%#
+</ul>
+</div>
+</td>
+</tr>
+</table>
+
+<div id="div_search_1" style="display:block;">
+<div class="common_div1"><table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr><td align="center">
+<form method="GET" action="#%site_url%#/search.php">
+<input type="hidden" name="action" value="links_advanced">
+<table cellspacing="0" cellpadding="2" width="100%" border="0" class="inside_table">
+<tr>
+<td align="left" valign="top" nowrap>Phrases or Words</td>
+<td align="left" valign="top" nowrap><input class="field10" name="phrase[0]" maxlength="50" style="width:500px"></td>
+</tr>
+<tr>
+<td align="left" valign="top" nowrap>&nbsp;</td>
+<td align="left" valign="top" nowrap><input class="field10" name="phrase[1]" maxlength="50" style="width:500px"></td>
+</tr>
+<tr>
+<td align="left" valign="top" nowrap>&nbsp;</td>
+<td align="left" valign="top" nowrap><input class="field10" name="phrase[2]" maxlength="50" style="width:500px"></td>
+</tr>
+<tr>
+<td align="left" valign="top" nowrap>Type of search</td>
+<td align="left" valign="top" nowrap>AND <input type="radio" value="and" name="boolean" checked>&nbsp;&nbsp;OR <input type="radio" value="or" name="boolean"></td></tr>
+<tr>
+<td align="left" valign="top" nowrap>In category</td>
+<td align="left" valign="top" nowrap><select class="select10" name="category"><option value="0">Any category</option>#%l_all_cats%#</select></td>
+</tr>
+<tr>
+<td align="left" valign="top" nowrap>In category</td>
+<td align="left" valign="top" nowrap><select class="select10" name="bigboss"><option value="0">Any category</option>#%l_first_cats%#</select> incl. subcategories</td>
+</tr>
+<tr>
+<td align="left" valign="top" nowrap>Sort by&nbsp;&nbsp;</td>
+<td align="left" valign="top" nowrap><select class="select10" name="sort">#%sort_options_l%#</select></td>
+</tr>
+<tr>
+<td align="left" valign="top" nowrap>Per page&nbsp;&nbsp;</td>
+<td align="left" valign="top" nowrap>
+<input type="radio" value="5" name="perpage"> 5&nbsp;&nbsp;
+<input type="radio" value="10" name="perpage"> 10&nbsp;&nbsp;
+<input type="radio" value="20" name="perpage" checked> 20&nbsp;&nbsp;
+<input type="radio" value="30" name="perpage"> 30&nbsp;&nbsp;
+<input type="radio" value="50" name="perpage"> 50</td></tr>
+<tr><td colspan=2 align="center"><input type="submit" value="Search" name="B1" class="button10"></td>
+</tr>
+</table></form>
+</td></tr></table></div>
+</div>
+
+<div id="div_search_2" style="display:none;">
+<div class="common_div1"><table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr><td align="center">
+<form method="GET" action="#%site_url%#/search.php">
+<input type="hidden" name="action" value="videos_advanced">
+<table cellspacing="0" cellpadding="2" width="100%" border="0" class="inside_table">
+<tr>
+<td align="left" valign="top" nowrap>Phrases or Words</td>
+<td align="left" valign="top" nowrap><input class="field10" name="phrase[0]" maxlength="50" style="width:500px"></td>
+</tr>
+<tr>
+<td align="left" valign="top" nowrap>&nbsp;</td>
+<td align="left" valign="top" nowrap><input class="field10" name="phrase[1]" maxlength="50" style="width:500px"></td>
+</tr>
+<tr>
+<td align="left" valign="top" nowrap>&nbsp;</td>
+<td align="left" valign="top" nowrap><input class="field10" name="phrase[2]" maxlength="50" style="width:500px"></td>
+</tr>
+<tr>
+<td align="left" valign="top" nowrap>Type of search</td>
+<td align="left" valign="top" nowrap>AND <input type="radio" value="and" name="boolean" checked>&nbsp;&nbsp;OR <input type="radio" value="or" name="boolean"></td>
+</tr>
+<tr>
+<td align="left" valign="top" nowrap>In category</td>
+<td align="left" valign="top" nowrap><select class="select10" name="category"><option value="0">Any category</option>#%v_all_cats%#</select></td>
+</tr>
+<tr>
+<td align="left" valign="top" nowrap>In category</td>
+<td align="left" valign="top" nowrap><select class="select10" name="bigboss"><option value="0">Any category</option>#%v_first_cats%#</select> incl. subcategories</td>
+</tr>
+<tr>
+<td align="left" valign="top" nowrap>Sort by&nbsp;&nbsp;</td>
+<td align="left" valign="top" nowrap><select class="select10" name="sort">#%sort_options_v%#</select></td>
+</tr>
+<tr>
+<td align="left" valign="top" nowrap>Per page&nbsp;&nbsp;</td>
+<td align="left" valign="top" nowrap>
+<input type="radio" value="5" name="perpage"> 5&nbsp;&nbsp;
+<input type="radio" value="10" name="perpage"> 10&nbsp;&nbsp;
+<input type="radio" value="20" name="perpage" checked> 20&nbsp;&nbsp;
+<input type="radio" value="30" name="perpage"> 30&nbsp;&nbsp;
+<input type="radio" value="50" name="perpage"> 50</td>
+</tr>
+<tr><td colspan=2 align="center"><input type="submit" value="Search" name="B1" class="button10"></td></tr>
+</table></form>
+</td></tr></table></div>
+</div>
+
+<div id="div_search_3" style="display:none;">
+<div class="common_div1"><table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr><td align="center">
+<form method="GET" action="#%site_url%#/search.php">
+<input type="hidden" name="action" value="blogs_advanced">
+<table cellspacing="0" cellpadding="2" width="100%" border="0" class="inside_table">
+<tr>
+<td align="left" valign="top" nowrap>Phrases or Words</td>
+<td align="left" valign="top" nowrap><input class="field10" name="phrase[0]" maxlength="50" style="width:500px"></td>
+</tr>
+<tr>
+<td align="left" valign="top" nowrap>&nbsp;</td>
+<td align="left" valign="top" nowrap><input class="field10" name="phrase[1]" maxlength="50" style="width:500px"></td>
+</tr>
+<tr>
+<td align="left" valign="top" nowrap>&nbsp;</td>
+<td align="left" valign="top" nowrap><input class="field10" name="phrase[2]" maxlength="50" style="width:500px"></td>
+</tr>
+<tr>
+<td align="left" valign="top" nowrap>Type of search</td>
+<td align="left" valign="top" nowrap>AND <input type="radio" value="and" name="boolean" checked>&nbsp;&nbsp;OR <input type="radio" value="or" name="boolean"></td></tr>
+<tr>
+<td align="left" valign="top" nowrap>In category</td>
+<td align="left" valign="top" nowrap><select class="select10" name="category"><option value="0">Any category</option>#%b_all_cats%#</select></td>
+</tr>
+<tr>
+<td align="left" valign="top" nowrap>In category</td>
+<td align="left" valign="top" nowrap><select class="select10" name="bigboss"><option value="0">Any category</option>#%b_first_cats%#</select> incl. subcategories</td>
+</tr>
+<tr>
+<td align="left" valign="top" nowrap>Sort by&nbsp;&nbsp;</td>
+<td align="left" valign="top" nowrap><select class="select10" name="sort">#%sort_options_b%#</select></td>
+</tr>
+<tr>
+<td align="left" valign="top" nowrap>Per page&nbsp;&nbsp;</td>
+<td align="left" valign="top" nowrap>
+<input type="radio" value="5" name="perpage"> 5&nbsp;&nbsp;
+<input type="radio" value="10" name="perpage"> 10&nbsp;&nbsp;
+<input type="radio" value="20" name="perpage" checked> 20&nbsp;&nbsp;
+<input type="radio" value="30" name="perpage"> 30&nbsp;&nbsp;
+<input type="radio" value="50" name="perpage"> 50</td>
+</tr>
+<tr><td colspan=2 align="center"><input type="submit" value="Search" name="B1" class="button10"></td></tr>
+</table></form>
+</td></tr></table></div>
+</div>
+
+<div id="div_search_4" style="display:none;">
+<div class="common_div1"><table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr><td align="center">
+<form method="GET" action="#%site_url%#/search.php">
+<input type="hidden" name="action" value="articles_advanced">
+<table cellspacing="0" cellpadding="2" width="100%" border="0" class="inside_table">
+<tr>
+<td align="left" valign="top" nowrap>Phrases or Words</td>
+<td align="left" valign="top" nowrap><input class="field10" name="phrase[0]" maxlength="50" style="width:500px"></td>
+</tr>
+<tr>
+<td align="left" valign="top" nowrap>&nbsp;</td>
+<td align="left" valign="top" nowrap><input class="field10" name="phrase[1]" maxlength="50" style="width:500px"></td>
+</tr>
+<tr>
+<td align="left" valign="top" nowrap>&nbsp;</td>
+<td align="left" valign="top" nowrap><input class="field10" name="phrase[2]" maxlength="50" style="width:500px"></td>
+</tr>
+<tr>
+<td align="left" valign="top" nowrap>Type of search</td>
+<td align="left" valign="top" nowrap>AND <input type="radio" value="and" name="boolean" checked>&nbsp;&nbsp;OR <input type="radio" value="or" name="boolean"></td></tr>
+<tr>
+<td align="left" valign="top" nowrap>In category</td>
+<td align="left" valign="top" nowrap><select class="select10" name="category"><option value="0">Any category</option>#%a_all_cats%#</select></td>
+</tr>
+<tr>
+<td align="left" valign="top" nowrap>In category</td>
+<td align="left" valign="top" nowrap><select class="select10" name="bigboss"><option value="0">Any category</option>#%a_first_cats%#</select> incl. subcategories</td>
+</tr>
+<tr>
+<td align="left" valign="top" nowrap>Sort by&nbsp;&nbsp;</td>
+<td align="left" valign="top" nowrap><select class="select10" name="sort">#%sort_options_a%#</select></td>
+</tr>
+<tr>
+<td align="left" valign="top" nowrap>Per page&nbsp;&nbsp;</td>
+<td align="left" valign="top" nowrap>
+<input type="radio" value="5" name="perpage"> 5&nbsp;&nbsp;
+<input type="radio" value="10" name="perpage"> 10&nbsp;&nbsp;
+<input type="radio" value="20" name="perpage" checked> 20&nbsp;&nbsp;
+<input type="radio" value="30" name="perpage"> 30&nbsp;&nbsp;
+<input type="radio" value="50" name="perpage"> 50</td>
+</tr>
+<tr><td colspan=2 align="center"><input type="submit" value="Search" name="B1" class="button10"></td></tr>
+</table></form>
+</td></tr></table></div>
+</div>
+
+<div id="div_search_5" style="display:none;">
+<div class="common_div1"><table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr><td align="center">
+<form method="GET" action="#%site_url%#/search.php">
+<input type="hidden" name="action" value="news_advanced">
+<table cellspacing="0" cellpadding="2" width="100%" border="0" class="inside_table">
+<tr>
+<td align="left" valign="top" nowrap>Phrases or Words</td>
+<td align="left" valign="top" nowrap><input class="field10" name="phrase[0]" maxlength="50" style="width:500px"></td>
+</tr>
+<tr>
+<td align="left" valign="top" nowrap>&nbsp;</td>
+<td align="left" valign="top" nowrap><input class="field10" name="phrase[1]" maxlength="50" style="width:500px"></td>
+</tr>
+<tr>
+<td align="left" valign="top" nowrap>&nbsp;</td>
+<td align="left" valign="top" nowrap><input class="field10" name="phrase[2]" maxlength="50" style="width:500px"></td>
+</tr>
+<tr>
+<td align="left" valign="top" nowrap>Type of search</td>
+<td align="left" valign="top" nowrap>AND <input type="radio" value="and" name="boolean" checked>&nbsp;&nbsp;OR <input type="radio" value="or" name="boolean"></td>
+</tr>
+<td align="left" valign="top" nowrap>In category</td>
+<td align="left" valign="top" nowrap><select class="select10" name="category"><option value="0">Any category</option>#%n_all_cats%#</select></td>
+</tr>
+<tr>
+<td align="left" valign="top" nowrap>In category</td>
+<td align="left" valign="top" nowrap><select class="select10" name="bigboss"><option value="0">Any category</option>#%n_first_cats%#</select> incl. subcategories</td>
+</tr>
+<tr>
+<td align="left" valign="top" nowrap>Sort by&nbsp;&nbsp;</td>
+<td align="left" valign="top" nowrap><select class="select10" name="sort">#%sort_options_n%#</select></td>
+</tr>
+<tr>
+<td align="left" valign="top" nowrap>Per page&nbsp;&nbsp;</td>
+<td align="left" valign="top" nowrap>
+<input type="radio" value="5" name="perpage"> 5&nbsp;&nbsp;
+<input type="radio" value="10" name="perpage"> 10&nbsp;&nbsp;
+<input type="radio" value="20" name="perpage" checked> 20&nbsp;&nbsp;
+<input type="radio" value="30" name="perpage"> 30&nbsp;&nbsp;
+<input type="radio" value="50" name="perpage"> 50</td>
+</tr>
+<tr><td colspan=2 align="center"><input type="submit" value="Search" name="B1" class="button10"></td></tr>
+</table></form>
+</td></tr></table></div>
+</div>
+
+</div>
+</div>
+
+<div class="common_div_main">
+<div class="common_div_title">Top Tags</div>
+<div class="common_div_content">
+<table border="0" width="100%" cellspacing="0" cellpadding="2" class="inside_table">
+<tr><td align="center">
+#%top_tags%#
+</td></tr>
+</table>
+</div>
+</div>
+
+</td>
+
+<td class="right_column">
+
+#%in2%#
+
+</td></tr></table>
+
+

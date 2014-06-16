@@ -1,0 +1,28 @@
+
+#%info%#
+
+<div id="user_wall_post_wait" name="user_wall_post_wait"></div>
+
+<form method="post" id="user_wall_post" name="user_wall_post" action="javascript:parse_ajax_request(document.getElementById('user_wall_post'),'#%site_url%#/user.php','user_wall_box');">
+<input type="hidden" name="action" value="user_wall_posted">
+
+<div class="common_div_title">Post a New Message</div>
+<div class="common_div_content" align="center">
+
+<table border="0" width="100%" cellpadding="5" cellspacing="0">
+<tr>
+<td nowrap align="left" valign="top" width="20%">Title </td>
+<td align="left"><input class="field10" maxlength="255" style="width:500px" name="title" value="#%title%#"></td>
+</tr>
+<tr>
+<td nowrap align="left" valign="top">Text </td>
+<td align="left"><textarea class="field10" name="text" style="width:500px;height:200px;">#%text%#</textarea></td>
+</tr>
+<tr>
+ <td align="center" colspan=2><input type="submit" value="Submit" name="B1" class="button10" onclick="show_waiting('user_wall_post_wait');"></td>
+</tr>
+</table>
+</div>
+
+</form>
+

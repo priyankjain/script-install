@@ -1,0 +1,8 @@
+
+<tr>
+<td align="left" valign="top" colspan="2">#%item_name%# </td>
+</tr>
+<tr>
+<td align="left" valign="top" colspan="2"><div class="html_editor">#%html_editor%#</div></td>
+</tr>
+

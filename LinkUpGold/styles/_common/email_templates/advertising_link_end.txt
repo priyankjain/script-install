@@ -1,0 +1,8 @@
+Subject: Your Link
+
+Your advertising link in our search engine reached its last impression. You can purchase additional clicks or impressions at #%site_url%#/user.php?action=login.
+Link details are below.
+Title: #%title%#
+URL: #%url%#
+Description: #%description%#
+Link number: #%n%#

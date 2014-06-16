@@ -1,0 +1,603 @@
+
+#%info%#
+
+<form method="POST" action="messages.php">
+<input class="field10" style="width:500px" type="hidden" name="action" value="messages_edited">
+<input class="field10" style="width:500px" type="hidden" name="selected_style" value="#%selected_style%#">
+<input class="field10" style="width:500px" type="hidden" name="script" value="common.php">
+<table border="0" width="900" cellspacing="0" cellpadding="0" class="common_table">
+<tr><td class="common_table_top_cell" colspan="2" nowrap>Messages used in multiple scripts</td></tr>
+<tr><td align="center" width="100%">
+<table border="0" width="100%" cellspacing="0" cellpadding="2" class="inside_table">
+<tr>
+<td align="left" nowrap><span class="text10a_bold">Original message</span></td>
+<td align="left" nowrap><span class="text10a_bold">Your message</span></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">Your account and/or IP address has been temporary locked because of too many attempts to log in with incorrect data.</span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="too_log_fail" value="#%too_log_fail%#"></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">None</span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="none" value="#%none%#"></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">Home</span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="home" value="#%home%#"></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">Item</span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="black1" value="#%black1%#"></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">is in the blacklist, you can not use it.</span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="black2" value="#%black2%#"></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">disabled</span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="disabled" value="#%disabled%#"></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">invisible</span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="invisible" value="#%invisible%#"></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">City</span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="City" value="#%City%#"></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">Postal code</span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="ZIP" value="#%ZIP%#"></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">Miles</span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="Miles" value="#%Miles%#"></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">Kilometres</span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="Kilometres" value="#%Kilometres%#"></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">Nothing found</span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="nothing_found" value="#%nothing_found%#"></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">Your password has been sent to email</span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="pass_sent" value="#%pass_sent%#"> <span class="text10">+ ENTERED EMAIL</span></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">Data has been saved</span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="data_saved" value="#%data_saved%#"></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">Wrong password. Please try again.</span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="wrong_pass" value="#%wrong_pass%#"></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">One or more errors found. Please try again.</span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="errorsfound" value="#%errorsfound%#"></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">characters<br />(This is used in some other messages)</span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="characters" value="#%characters%#"></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">Wrong confirmation code.</span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="w_code1" value="#%w_code1%#"></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">Correct code was</span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="w_code2" value="#%w_code2%#"></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">, you entered</span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="w_code3" value="#%w_code3%#"></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">Title is missing.</span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="m_title" value="#%m_title%#"></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">Title must be between </span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="title_ls" value="#%title_ls%#"> <span class="text10">+ Numbers + CHARACTERS</span></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">Subtitle is missing.</span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="m_subt" value="#%m_subt%#"></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">Subtitle must be between </span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="subt_ls" value="#%subt_ls%#"> <span class="text10">+ Numbers + CHARACTERS</span></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">Text is missing.</span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="m_text" value="#%m_text%#"></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">Text must be between </span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="text_ls" value="#%text_ls%#"> <span class="text10">+ Numbers + CHARACTERS</span></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">Category is missing.</span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="m_cat" value="#%m_cat%#"></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">The category you have selected does not exist.</span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="na_cat" value="#%na_cat%#"></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">Submit an article to this category</span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="item_submit_here_a" value="#%item_submit_here_a%#"></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">You cannot submit an article to this category.</span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="w_cat_art" value="#%w_cat_art%#"></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">Submit a blog to this category</span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="item_submit_here_b" value="#%item_submit_here_b%#"></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">You cannot submit a blog to this category.</span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="w_cat_blog" value="#%w_cat_blog%#"></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">Missing field -</span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="mis_field" value="#%mis_field%#"></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">Username</span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="username" value="#%username%#"></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">Password</span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="password" value="#%password%#"></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">Email</span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="email" value="#%email%#"></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">Name</span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="name" value="#%name%#"></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">Your name is too long. Maximum is 100 characters.</span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="l_name" value="#%l_name%#"></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">Your email is too long. Maximum is 100 characters.</span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="l_email" value="#%l_email%#"></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">Nick</span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="nick" value="#%nick%#"></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">Email is not valid.</span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="w_email" value="#%w_email%#"></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">Incorrect image format. It should be gif, jpg or png.</span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="incorrect_img_format" value="#%incorrect_img_format%#"></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">Image too big.</span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="big_image" value="#%big_image%#"></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">bytes (This is used in some messages below)</span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="bytes" value="#%bytes%#"></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">Your image has</span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="bytes_image_has" value="#%bytes_image_has%#"> <span class="text10">+ No. + BYTES</span></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">It's allowed maximum of</span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="bytes_allow_is" value="#%bytes_allow_is%#"> <span class="text10">+ No. + BYTES</span></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">You are not authorized to edit this link. Please login again.</span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="no_auth_link" value="#%no_auth_link%#"></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">Number</span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="n" value="#%n%#"></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">URL</span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="url" value="#%url%#"></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">URL is missing.</span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="m_url" value="#%m_url%#"></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">Reciprocal URL is missing.</span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="m_recip" value="#%m_recip%#"></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">Recip link not found at URL</span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="not_recip" value="#%not_recip%#"> <span class="text10">+ ENTERED URL</span></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">Description is missing.</span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="m_desc" value="#%m_desc%#"></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">Description must be between </span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="desc_ls" value="#%desc_ls%#"> <span class="text10">+ Numbers + CHARACTERS</span></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">Detailed description is missing.</span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="m_detail" value="#%m_detail%#"></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">Detailed description must be between </span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="detail_ls" value="#%detail_ls%#"> <span class="text10">+ Numbers + CHARACTERS</span></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">Keywords are missing.</span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="m_keywords" value="#%m_keywords%#"></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">Keywords must be between </span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="keywords_ls" value="#%keywords_ls%#"> <span class="text10">+ Numbers + CHARACTERS</span></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">It's allowed to use maximum of</span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="max_allowed_keywords" value="#%max_allowed_keywords%#"></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">keywords</span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="keywords" value="#%keywords%#"></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">Mail (street) address is missing.</span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="m_map" value="#%m_map%#"></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">A map is not available for the entered mail (street) address.</span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="w_map" value="#%w_map%#"></td>
+</tr>
+
+<tr>
+<td align="left" valign="top"><span class="text10">Category name</span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="category_name" value="#%category_name%#"></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">Submit a link to this category</span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="item_submit_here_l" value="#%item_submit_here_l%#"></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">You cannot submit a link to this category.</span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="w_cat_link" value="#%w_cat_link%#"></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">is missing</span></td>
+<td align="left" valign="top"><span class="text10">Name of user def. field + </span><input class="field10" style="width:500px" name="m_field" value="#%m_field%#"></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">Missing field:</span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="missing_field" value="#%missing_field%#"> + <span class="text10">Name of the field</span></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">is too long. Maximum is</span></td>
+<td align="left" valign="top"><span class="text10">Name of user def. field +<input class="field10" style="width:500px" name="l_field" value="#%l_field%#">+ No. + CHARACTERS</span></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">Password is missing.</span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="m_pass" value="#%m_pass%#"></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">Password too long. Maximum is 15 characters.</span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="l_pass" value="#%l_pass%#"></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">Password should contain only letters and numbers.</span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="w_pass" value="#%w_pass%#"></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">Wrong URL:</span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="w_url" value="#%w_url%#"> <span class="text10">+ ENTERED URL</span></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">URL too long:</span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="l_url" value="#%l_url%#"> <span class="text10">+ ENTERED URL</span></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">Unable to connect to</span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="noconnect_url" value="#%noconnect_url%#"> <span class="text10">+ ENTERED URL</span></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">This URL is already listed:</span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="url_dupl" value="#%url_dupl%#"> <span class="text10">+ ENTERED URL</span></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">This domain is already listed:</span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="domain_dupl" value="#%domain_dupl%#"> <span class="text10">+ ENTERED DOMAIN</span></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">We accept submissions of URL's with Google pagerank</span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="l_pr_google_min1" value="#%l_pr_google_min1%#"></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">or higher. Your pagerank is</span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="l_pr_google_min2" value="#%l_pr_google_min2%#"></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">Delete this picture</span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="delete_picture" value="#%delete_picture%#"></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">, dynamic price for one click: $</span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="dyn_price" value="#%dyn_price%#"></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">All categories</span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="all_cats" value="#%all_cats%#"></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">Link</span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="Link" value="#%Link%#"></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">AdLink</span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="AdLink" value="#%AdLink%#"></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">Links</span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="links" value="#%links%#"></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">Articles</span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="articles" value="#%articles%#"></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">Blogs</span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="blogs" value="#%blogs%#"></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">Videos</span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="videos" value="#%videos%#"></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">News</span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="news" value="#%news%#"></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">links</span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="links1" value="#%links1%#"></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">articles</span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="articles1" value="#%articles1%#"></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">videos</span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="videos1" value="#%videos1%#"></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">news</span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="news1" value="#%news1%#"></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">You are not allowed to enter this directory</span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="ban_ip" value="#%ban_ip%#"></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">Yes</span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="yes" value="#%yes%#"></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">No</span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="no" value="#%no%#"></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">and</span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="a" value="#%a%#"></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">or</span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="nebo" value="#%nebo%#"></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">Ascending</span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="ascending" value="#%ascending%#"></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">Descending</span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="descending" value="#%descending%#"></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">N/A</span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="na" value="#%na%#"></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">Paid</span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="paid" value="#%paid%#"></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">Unpaid</span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="unpaid" value="#%unpaid%#"></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">Enabled </span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="Enabled" value="#%Enabled%#"></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">Disabled </span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="Disabled" value="#%Disabled%#"></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">Pages:</span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="pages_list" value="#%pages_list%#"></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">Bookmark it </span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="bookmark_it" value="#%bookmark_it%#"></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">Bookmark this category</span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="bookmark_this_category" value="#%bookmark_this_category%#"></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">Remove bookmark</span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="remove_from_bookmarks" value="#%remove_from_bookmarks%#"></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">Category</span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="Category" value="#%Category%#"></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">More links of the same owner </span></td>
+<td align="left" nowrap><span class="text10">&nbsp;<input class="field10" style="width:500px" name="more_l" value="#%more_l%#"></span></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">More articles from the same owner</span></td>
+<td align="left" nowrap><span class="text10">&nbsp;<input class="field10" style="width:500px" name="more_a" value="#%more_a%#"></span></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">Only registered users are allowed to see this page</span></td>
+<td align="left" nowrap><span class="text10">&nbsp;<input class="field10" style="width:500px" name="reg_users_only" value="#%reg_users_only%#"></span></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">There is not enough funds on your account to fulfil your order.</span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="no_funds" value="#%no_funds%#"></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">Subcategories</span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="subcats" value="#%subcats%#"></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">Similar Categories</span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="similar_cats" value="#%similar_cats%#"></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">Next in category</span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="next_in_cat" value="#%next_in_cat%#"></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">Previous in category</span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="previous_in_cat" value="#%previous_in_cat%#"></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">Next in any category</span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="next_in_any" value="#%next_in_any%#"></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">Previous in any category</span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="previous_in_any" value="#%previous_in_any%#"></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">This category does not exist.</span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="cat_no_exists" value="#%cat_no_exists%#"></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">Item does not exist.</span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="item_not_exists" value="#%item_not_exists%#"></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">Error reported. Thank you!<br>We will review it as soon as possible. </span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="reported" value="#%reported%#"></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">Message sent. Thank you!</span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="message_sent" value="#%message_sent%#"></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">No one comment found.</span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="no_one_comment" value="#%no_one_comment%#"></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">Enter comment</span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="enter_comment" value="#%enter_comment%#"></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">Show comments</span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="show_comments" value="#%show_comments%#"></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">Comment submitted. Thank you!</span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="comment_entered" value="#%comment_entered%#"></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">Close this window</span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="close_this_window" value="#%close_this_window%#"></td>
+</tr>
+
+<tr>
+<td align="left" valign="top"><span class="text10">Title</span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="title" value="#%title%#"></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">Description</span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="description" value="#%description%#"></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">Mail (street) address </span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="map" value="#%map%#"></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">RSS URL </span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="rss_url" value="#%rss_url%#"></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">Popularity</span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="hits_m" value="#%hits_m%#"></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">Incoming clicks</span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="clicks_in_m" value="#%clicks_in_m%#"></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">Rating</span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="rating" value="#%rating%#"></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">No. of votes</span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="votes" value="#%votes%#"></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">votes</span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="votes1" value="#%votes1%#"></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">Date created</span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="created" value="#%created%#"></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">Editor's pick</span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="pick" value="#%pick%#"></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">Popularity</span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="hits_m" value="#%hits_m%#"></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">Thank you for your vote!</span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="thank_for_vote" value="#%thank_for_vote%#"></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">Package to add funds to account</span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="package_funds" value="#%package_funds%#"></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">This link currently uses advertising features.</span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="link_is_adv" value="#%link_is_adv%#"></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">This link currently doesn\'t use advertising features, you can upgrade it on this page.</span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="link_isnot_adv" value="#%link_isnot_adv%#"></td>
+</tr>
+<tr>
+<td align="left" valign="top"><span class="text10">Click here to pay it now</span></td>
+<td align="left" valign="top"><input class="field10" style="width:500px" name="click_to_pay" value="#%click_to_pay%#"></td>
+</tr>
+
+<tr>
+<td align="middle" width="100%" colSpan=2><input class="button10" type="submit" value="Save" name="submitbut"></td>
+</tr>
+</table></td></tr></table></form>
+<br />
